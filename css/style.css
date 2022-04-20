@@ -1,0 +1,24 @@
+.navbg{
+	background:#F5F5F5;
+	border-bottom: 3px solid green;
+}
+
+.log1 a {
+
+	margin-left:300px;
+}
+.hd ul li{
+	padding: 10px;
+	font-family: poppins;
+	font-size:16px;
+}
+
+.navbar  li a:hover,
+.navbar li a.active
+{
+background: red;
+color:white;
+}
+
+
+
