@@ -61,41 +61,6 @@
  <!-- Menu  Start End -->
 
 
-
-
-<!-- // Start Code From Here -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- // Start Social Icon -->
-
 <section>
 	<div class="social">
 		<ul>
@@ -110,7 +75,34 @@
 </section>
 
 
-<!-- // End Social Icon -->
+<section>
+	<div class="container">
+		<div class="row">
+		
+			<div class="col-md-12">	
+			
+					<h2>Our  Partners</h2>
+					 <section class="customer-logos slider">
+						<div class="slide"><a href=""><img src="img/partner/Brac_Bank.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/City_Bank 1.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/dachbank.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/easternbank.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/eximbank.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/dachbank.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/easternbank.png"></a></div>
+						<div class="slide"><a href=""><img src="img/partner/eximbank.png"></a></div>
+					
+						
+					 </section>
+				  
+			</div>
+			
+			
+		</div>
+
+	</div>
+</section>
+
 
 
  <!-- Footer  Start -->
@@ -144,8 +136,37 @@
 
 	
 	
-	
-	<script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+		
+
+<script src="js/bootstrap.min.js"></script>
+<script src="Js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<script>
+	$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+});
+</script>
+
+  
 </body>
 </html>
