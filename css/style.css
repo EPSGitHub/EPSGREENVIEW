@@ -13,13 +13,13 @@
 	
 }
 .logo1 img{
-	width: 104px;
-	height: 38px;
+	width: 125px;
+	height: 45px;
 }
 
 .hddownbtn {
 	padding: 2px 5px;
-	margin-left: 50px;
+	margin-left: 51px;
 }
 
 :before,
@@ -59,7 +59,7 @@ color:rgb(233, 23, 23);
 	height: 2px;
 
 	left:0px;
-	bottom: -11px;
+	bottom: -13px;
 }
 
 .hd ul li a.active:after{
@@ -341,7 +341,6 @@ padding-right:30px;
 
 /* Privacy Policy Start */
 .privacy{
-	margin-top: 100px;
 	margin-bottom: 100px;
 	font-family:'poppins',sans-serif;
 	color: #666666;
@@ -500,6 +499,41 @@ padding-right:30px;
  /* Social Icons End */
 
 
+
+/* Sample page front Banner*/
+
+.front_banner{
+	text-align: center;
+	
+}
+.front_banner h1{
+	font-size: 40px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+}
+
+.front_banner h5{
+	font-size: 18px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 28%;
+	margin-top:-80px;
+
+}
+
+.front_banner h5 span{
+	color:green;
+}
+
+
+
+
+
  /* Mobile Footer Section start*/
  .footer ul {
 
@@ -584,6 +618,25 @@ padding-right:30px;
 		color: black;
 		margin-left: 28%;
 		margin-top:-100px;
+	}
+
+	.logo1{
+		margin-left: 40px;
+		
+	}
+	.logo1 img{
+		width: 141px;
+		height: 51px;
+	}
+
+	.hd ul li a:after{
+		content:"";
+		position:absolute;
+		background: red;
+		height: 2px;
+	
+		left:0px;
+		bottom: -16px;
 	}
   }
 
