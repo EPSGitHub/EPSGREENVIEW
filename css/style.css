@@ -374,6 +374,45 @@ padding-right:30px;
 /* Privacy Policy End */
 
 
+/* Tems & ConditionEnd */
+#terms{
+
+	text-align: left;
+}
+
+#terms p{
+	text-align: justify;
+	font-size: 15px;
+}
+
+#terms ul li{
+	list-style-type: square;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Tems & Condition End */
+
+
+/* Cookie Section Start */
+
+
+
+/* Cookie Section End */
+
+#cookie{
+	margin-bottom:200px;
+}
+
+#cookie ul li{
+	list-style-type: square;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#cookie p{
+	margin-bottom: 20px;
+}
+
 
 /* Footer Code */
 
@@ -411,6 +450,10 @@ padding-right:30px;
 }
 .footer ul li a i{
 	display: none;
+}
+
+.footer ul li a:hover{
+	color:red;
 }
 
 .copyright{
@@ -561,9 +604,13 @@ padding-right:30px;
 
 
  }
+
+ 
  .footer ul li a i{
 	display: inline;
  }
+
+
  /* Mobile Footer Section End*/
  .mobilesocial{
 	display: inline;
@@ -600,7 +647,26 @@ padding-right:30px;
 
 }
 
+#terms{
+	margin-bottom: 300px;
+	padding: 0px 20px;
+	font-size: 13px;
+	text-align: left;
+}
 
+#terms p{
+	text-align: justify;
+}
+
+#terms ul li{
+	list-style-type: square;
+	text-align: justify;
+}
+
+#cookie{
+	margin-bottom:200px;
+	padding: 0px 20px;
+}
 
 /* ======================================================== Large Device ================================================================== */
 
