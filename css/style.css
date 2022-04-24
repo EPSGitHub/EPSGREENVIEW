@@ -1,5 +1,6 @@
 /* Menu Code */
 
+
 .navbg{
 	background:#F5F5F5;
 	border-bottom: 3px solid green;
@@ -247,11 +248,11 @@ h2{
 
 /* Contact Us Start*/
 
-.contact{
+.front_banner{
 	text-align: center;
 	
 }
-.contact h1{
+.front_banner h1{
 	font-size: 80px;
 	font-weight: 900;
 	color: #F0F0F0;
@@ -259,7 +260,7 @@ h2{
 	position: relative;
 }
 
-.contact h5{
+.front_banner h5{
 	font-size: 25px;
 	font-weight: 900;
 	color: #F0F0F0;
@@ -268,9 +269,10 @@ h2{
 	color: black;
 	margin-left: 37%;
 	margin-top:-100px;
+
 }
 
-.contact h5 span{
+.front_banner h5 span{
 	color:green;
 }
 
@@ -337,7 +339,40 @@ padding-right:30px;
 /* Contact Us End*/
 
 
+/* Privacy Policy Start */
+.privacy{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-family:'poppins',sans-serif;
+	color: #666666;
 
+}
+
+.privacy span {
+	font-size:30px;
+	
+
+	
+
+}
+.privacy h3 {
+	font-size:25px;
+
+}
+
+.privacy h4 {
+	font-size:24px;
+
+}
+.privacy h5 {
+	font-size:18px;
+
+}
+.privacy p{
+	font-size: 14px;
+}
+
+/* Privacy Policy End */
 
 
 
@@ -382,6 +417,7 @@ padding-right:30px;
 .copyright{
 	display: none;
 }
+
 /* End Footer Code */
 
 /* ========================================================== Mobile Responsive ===================================================================== */
@@ -449,38 +485,39 @@ padding-right:30px;
 
 	left:0px;
 	bottom: -11px;
-}
+  }
 
 
-/* Social Icons Start*/
 
-.social
-{
+ /* Social Icons Start*/
+
+ .social
+ {
 	display: none;
-}
+ }
 
 
-/* Social Icons End */
+ /* Social Icons End */
 
 
-/* Mobile Footer Section start*/
-.footer ul {
+ /* Mobile Footer Section start*/
+ .footer ul {
 
 	
 	height: max-content;
 	margin-top: 10px;
 	margin-left: 5%;
-}
+ }
 
-.footer ul li {
+ .footer ul li {
 	margin-top: 5px;
 	padding: 2px 15px;
 	list-style: none;
 	float: left;
-}
+ }
 
 
-.footer ul li a {
+ .footer ul li a {
 
 	text-decoration: none;
 	color:#666666;
@@ -489,47 +526,56 @@ padding-right:30px;
 	letter-spacing: 0.8px;
 
 
-}
-.footer ul li a i{
+ }
+ .footer ul li a i{
 	display: inline;
-}
-/* Mobile Footer Section End*/
-.mobilesocial{
+ }
+ /* Mobile Footer Section End*/
+ .mobilesocial{
 	display: inline;
 	
 
-}
+ }
 
-.mobilesocial ul{
+ .mobilesocial ul{
 	border-top:1px solid green
-}
-.mobilesocial ul li  {
+ }
+ .mobilesocial ul li  {
 	position: relative;
 	left: 15%;
 	margin-bottom: 6px;
 	margin-top: 10px;
-}
+ }
 
-.copyright{
+ .copyright{
 	display: block;
-}
+ }
 
-.copyright p{
+ .copyright p{
 	font-size: 10px;
 	text-align: center;
-}
+ }
+
+ }
+
+ .privacy{
+	padding: 10px 30px;
+	margin-bottom: 200px;
+	font-family:'poppins',sans-serif;
+	color: #666666;
 
 }
-
-
-
 
 
 
 /* ======================================================== Large Device ================================================================== */
 
 @media screen and (min-width: 1900px) {
-	.contact h5{
+	.front_banner h1{
+		font-size: 80px;
+	}
+	
+	.front_banner h5{
 		font-size: 25px;
 		font-weight: 900;
 		color: #F0F0F0;
