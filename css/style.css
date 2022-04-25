@@ -145,7 +145,14 @@ color:rgb(233, 23, 23);
    
     background-color: #009456;
     color: #FFFFFF;
-  
+    border-radius: 4px;
+	font-family: 'Poppins',sans-serif;
+    font-size: 0.8em;
+    }
+.btn-1:hover{
+   
+    background-color: #009456;
+    color: #FFFFFF;
     border-radius: 4px;
 	font-family: 'Poppins',sans-serif;
     font-size: 0.8em;
@@ -337,9 +344,73 @@ color:rgb(233, 23, 23);
   /*********************Home Easy Payment System Part end****************/
       
   /*********************Home Popup start ****************/
-.popup{
-	background-color: red;
-
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+  .popup{
+	background-color: #FFFFFF;
+	padding: 0 20px;
+	border: 1px solid #009456;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
+	width: 52rem;
+	margin-left: 160px;
+transform: translateY(-200%);
+position: absolute;
+display: none;
+}
+.popup p{
+	padding: 0px 20px;
+	padding-top: 40px;
+	color: #666666;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+	width: 600px;
+	font-weight: 600;
+	
+	text-align: justify;
+}
+.popup #close{
+	display: block;
+	margin: 0 0 20px auto;
+	float: right;
+    color: #000000;
+	cursor: pointer;
+	font-size: 30px;
+	outline: none;
+	border: none;
+}
+.popup .cookie-link{
+	color: #666666;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+}
+.popup .button{
+	float: right;
+}
+.popup .button .accept{
+	background-color:  #009456;
+	transform: translateY(-80%);
+	width: 100px;
+	height: 42px;
+	border-radius: 8px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 8px;
+}
+.popup .button .deny{
+	background-color: #FF5569;
+	transform: translateY(-80%);
+	width: 100px;
+	height: 42px;
+	border-radius: 8px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 8px;
 }
   /*********************Home Popup end****************/
 
