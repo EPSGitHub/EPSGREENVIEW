@@ -430,16 +430,17 @@ padding-right:30px;
 
 /* Footer Code */
 
-
-
 .footer {
 	
 	background-image: url("../img/footerimg.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #F5F5F5;
+	position: fixed;
+	bottom: 0px;
 	
 }
+
 
 .footer ul {
 
@@ -482,7 +483,7 @@ padding-right:30px;
 /* Mobile Device Responsive */
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
 	body {
 	  background: white;
 	}
@@ -591,6 +592,12 @@ padding-right:30px;
 
 
  /* Mobile Footer Section start*/
+
+.ftd{
+background-color: red;
+}
+
+
  .footer ul {
 
 	
