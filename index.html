@@ -43,7 +43,7 @@
 					<a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-circle-info"></i> About Us</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="#"> <i class="fa-solid fa-envelope-circle-check"></i> Contact Us</a>
+					<a class="nav-link " aria-current="page" href="#"> <i class="fa-solid fa-headset"></i> Contact Us</a>
 				  </li>
 				 
 				</ul>
@@ -70,6 +70,67 @@
 
 <!-- // Start Code From Here -->
 
+<!-- // Main section Start -->
+<section>
+	<div class="container-fluid mt-4">
+		<div class="container">
+		<div class="row">
+		  
+		 
+		  <div class="col-xl-7 col-lg-7 col-md-7  col-sm-12  main-content mt-2" style=""> <!--main-content-->
+			  <a class=" btn-1 btn-lg" href="" ><span class="text" > Easy solution for all transaction</span></a>
+			<h6 class="easy" style="font-family: ;">Easy</h6>  
+			<h6 class="payment" style="">Payment</h6>
+			 <h6 class="system" style="">System</h6>
+			 <p> Easy Payment System (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with an easy and instant payment solution... Read More </p>
+			 <!--button start!--> <!--automatic navigation start-->
+			<div class="slides d-flex " style="">
+			  <div class="navigation-manual">
+				<label for="radio1" class="manual-btn  btn btn-lg  active">Send Money</label>
+				<label for="radio2" class="manual-btn btn btn-lg ">Bill Pay</label>
+			  <label for="radio3" class="manual-btn btn btn-lg "> Corporate</label>
+			  <label for="radio4" class="manual-btn btn btn-lg ">Marchent</label>
+			  </div><!--manual navigation end-->
+			   
+			</div>  <!--button end!--> 
+		  </div><!--main-content end!-->
+	   
+		
+		<!--Slider start!-->
+		 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 mt-3 mobile-slider" id="slider" style="">
+		   
+		  <div class="slides"> <!--img slider start!-->
+		  
+			  <input type="radio" name="radio-btn" id="radio1">
+			  <input type="radio" name="radio-btn" id="radio2">
+			  <input type="radio" name="radio-btn" id="radio3">
+			  <input type="radio" name="radio-btn" id="radio4">
+		   
+			  <div class="slide-mobile first">
+				<img src="img/slider/slider1.png" alt="" class="">
+			  </div>
+			 
+			  <div class="slide-mobile">
+				<img src="img/slider/Easy.svg" alt="" class="">
+			  </div>
+			  
+			  <div class="slide-mobile">
+				<img src="img/slider/service.png" alt="" class="">
+			  </div>
+			 
+			  <div class="navigation-auto">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+			  </div>
+	  
+			</div>  <!--img slider endt!-->
+		 </div><!--mobile slider end!-->
+		</div> <!--row!-->
+		</div>
+	</div>
+</section><!-- // Main section End -->
 
 
 
@@ -118,10 +179,10 @@
 <!-- // End Social Icon -->
 
 <section>
-	<div class="container">
+	<div class="container mt-2">
 		<div class="row">
 		
-			<div class="col-md-12">	
+			<div class="col-md-12" style=" padding-right: 120px;padding-left: 150px;">	
 			
 					<h2>Our  Partners</h2>
 					 <section class="customer-logos slider">
@@ -144,6 +205,26 @@
 
 	</div>
 </section>
+
+
+<!-- // Home Popup section Start -->
+<section>
+	<div class="container mt-4">
+	 <div class="col-md-12" style=" padding-left: 150px;">	
+		<div class="card" style="width: 50rem;">
+			<div class="card-body">
+			  
+			  
+			  <p class="card-text">Easy Payment Solution (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with <a href="#" class="card-link" style="text-decoration:underline">Cookie Policy</a></p>
+			  
+		
+			</div>
+		  </div>
+		</div>
+	</div>
+</section>
+
+<!-- // Home Popup section End -->
  <!-- Footer  Start -->
 
 		<footer class="container-fluid  footer ">
@@ -231,6 +312,19 @@
 		});
 		</script>
 		
+		<script type="text/javascript">
+ 
+			var counter = 1;
+		  
+		   setInterval(function(){
+			  document.getElementById('radio' + counter).checked = true;
+			  counter++;
+			  if(counter > 4){
+				counter = 1;
+			  }
+			}, 5000);
+		   
+			</script>
 		  
 		</body>
 		</html>
