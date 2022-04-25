@@ -79,11 +79,11 @@
 <section>
 	<div class="social">
 		<ul>
-			<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-			<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-			<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-			<li><a href="" class="active"><i class="fa-brands fa-facebook-f"></i></a></li>
-			
+			<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+			<li><a id="twitter" onmouseover="twitterShow()" onmouseout="twitterOut()" href="www.facebook.com"><i class="fa-brands fa-twitter"></i></a></li>
+			<li><a  href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+			<li><a id="facebook"  onmouseover="FacebookShow()"  onmouseout="FacebookOut()" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+		
 			
 		</ul>
 	</div>
@@ -122,6 +122,8 @@
 							<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
 							<li><a href="" class="active"><i class="fa-brands fa-facebook-f"></i></a></li>
 							
+						
+							
 							
 						</ul>
 						
@@ -147,11 +149,37 @@
 		<!-- Footer End -->
 
 	
-
+		<!-- ' <div style=" transform: rotate(-90deg); position:absolute; margin-left:-40px; "> © - <span><a href=""><i class="fa-brands fa-youtube"></i></a> - Youtube<div>' -->
 	
 	
 	
 	<script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+	
+
+	function twitterShow() {
+	  document.getElementById("twitter").innerHTML = '<p style=" transform: rotate(-90deg); margin-left:-50px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-twitter"></i><span> — Twitter <span><p>';
+	//  document.getElementById("facebook").innerHTML = '<p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-facebook-f"></i><span> — Facebook <span><p>';
+	}
+	
+	function twitterOut() {
+	  document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
+	//   document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
+	}
+
+	function FacebookShow() {
+	 
+	 document.getElementById("facebook").innerHTML = '<p style=" transform: rotate(-90deg); margin-left:-50px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-facebook-f"></i><span> — Facebook <span><p>';
+	}
+	
+	function FacebookOut() {
+
+     document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
+	}
+
+	</script>
+
+  
 </body>
 </html>
