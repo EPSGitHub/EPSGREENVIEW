@@ -1,9 +1,8 @@
 
-
 body{
 
 	background-color: #F9F9F9;
-	min-height: 55rem;
+	min-height: 40rem;
 	/* padding-top: 4.5rem; */
 }
 a{
@@ -351,25 +350,25 @@ color:rgb(233, 23, 23);
 }
   .popup{
 	background-color: #FFFFFF;
-	padding: 0 20px;
+	padding: 0 5px;
 	border: 1px solid #009456;
 	border-radius: 12px;
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
-	width: 52rem;
-	margin-left: 160px;
-transform: translateY(-200%);
+	width: 45rem;
+	margin-left: 210px;
+transform: translateY(-130%);
 position: absolute;
 display: none;
 }
 .popup p{
-	padding: 0px 20px;
+	padding: 0px 10px;
 	padding-top: 40px;
 	color: #666666;
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
-	line-height: 30px;
+	line-height: 25px;
 	width: 600px;
-	font-weight: 600;
+	font-weight: 500;
 	
 	text-align: justify;
 }
@@ -394,7 +393,8 @@ display: none;
 }
 .popup .button .accept{
 	background-color:  #009456;
-	transform: translateY(-80%);
+	transform: translate(-40%,-40%);
+	
 	width: 100px;
 	height: 42px;
 	border-radius: 8px;
@@ -404,7 +404,7 @@ display: none;
 }
 .popup .button .deny{
 	background-color: #FF5569;
-	transform: translateY(-80%);
+	transform: translate(-40%,-40%);
 	width: 100px;
 	height: 42px;
 	border-radius: 8px;
