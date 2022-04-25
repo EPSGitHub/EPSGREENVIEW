@@ -1,3 +1,28 @@
+
+
+body{
+
+	background-color: #F9F9F9;
+	min-height: 55rem;
+	/* padding-top: 4.5rem; */
+}
+a{
+	text-decoration: none;
+  
+  }
+  li{
+	list-style: none;
+  }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.1px;
+    font-weight: 500;
+    line-height: 1;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
 /* Menu Code */
 
 
@@ -110,8 +135,213 @@ color:rgb(233, 23, 23);
 /*end social Code  */
 
 
+/*********************Home Easy Payment System Part start****************/
+.main-content{
+   
+    padding-left: 180px;
+    padding-right:  30px;
+  }
+.btn-1{
+   
+    background-color: #009456;
+    color: #FFFFFF;
+  
+    border-radius: 4px;
+	font-family: 'Poppins',sans-serif;
+    font-size: 0.8em;
+    }
 
+	.main-content .easy{
+     
+		font-size:3.5rem;
+		text-transform: uppercase;
+	  padding-top: 5px;
+	  color: #FFFFFF;
+	  font-weight:900;
+	  font-family: 'Poppins',sans-serif;
+	  -webkit-text-stroke: 1.5px #EE2D43;
+	
+  
+	  }
+  .main-content .payment{
+	
+		text-transform: uppercase;
+		color: #FFFFFF;
+		font-size:3.5rem;
+		font-family: 'Poppins',sans-serif;
+		-webkit-text-stroke: 1.5px #009456;
+		font-weight: 900;
+	
+	  }
+   .main-content .system{
+	
+		text-transform: uppercase;
+		color: #FFFFFF;
+		font-size:3.5rem;
+		font-family: 'Poppins',sans-serif;
+		-webkit-text-stroke: 1.5px #009456;
+		font-weight: 900;
+		margin-bottom: 0.5rem;
+	
+	  }
+  .main-content p{
+	font-family: 'Poppins',sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	width: 450px;
+	text-align: justify;
+	color: #666666;
+	margin-bottom: 0.5rem;
+  }
+  
+ 
+.slides .btn{
+	font-family: 'Poppins',sans-serif;
+	font-size: 0.8rem;
+	color: #666666;
+	/* width:100px;
+	height:30px; */
+	background-color: #FFFFFF;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+	padding-top:5px ;
+	font-weight: 800;
+  }
+ .slides .btn.active{
+  
+    /* background-color: #009456; */
+    color: #FFFFFF;
+    
+ }  
 
+.mobile-slider{
+  overflow: hidden;
+  border:6px solid #3F3D56;
+  border-radius: 24px;
+  width:170px;
+ margin-left:150px;
+  /* margin: 0;
+  m: 0; */
+ 
+}
+
+.slides{
+  width: 650%;
+  /* height: 500px; */
+  display: flex;
+  padding-right:30px ;
+
+}
+
+.slides input{
+  display: none;
+  /* margin-left: 12px; */
+}
+
+.slide-mobile{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide-mobile img{
+  height: 315px;
+  width:150px;
+  border-radius: 24px;
+  margin: 0 0 0 -10px;
+ 
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+
+  display: flex;
+  /* justify-content: center; */
+}
+
+.manual-btn{
+  /* border: 2px solid #40D3DC; */
+  /* padding: 5px; */
+ 
+  cursor: pointer;
+  transition: 2s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 12px;
+}
+
+.manual-btn.active,
+.manual-btn:hover{
+  background-color: #009456;
+  color: #FFFFFF;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: none;
+  width: 800px;
+  /* justify-content: center; */
+  /* margin-top: 460px;
+  */
+ 
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: red;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: red;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: red;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: red;
+}
+      
+  /*********************Home Easy Payment System Part end****************/
+      
+  /*********************Home Popup start ****************/
+.popup{
+	background-color: red;
+
+}
+  /*********************Home Popup end****************/
 
 
 
@@ -120,7 +350,7 @@ color:rgb(233, 23, 23);
 
 h2{
 	text-align:center;
-	padding: 20px;
+	padding: 3px;
 	font-family: 'poppins',sans-serif;
 	color:#F0F0F0;
 	font-size: 75px;
