@@ -25,6 +25,7 @@ p {
 }
 /* Menu Code */
 
+
 .navbg{
 	background:#F5F5F5;
 	border-bottom: 3px solid green;
@@ -37,13 +38,13 @@ p {
 	
 }
 .logo1 img{
-	width: 104px;
-	height: 38px;
+	width: 125px;
+	height: 45px;
 }
 
 .hddownbtn {
 	padding: 2px 5px;
-	margin-left: 50px;
+	margin-left: 51px;
 }
 
 :before,
@@ -83,7 +84,7 @@ color:rgb(233, 23, 23);
 	height: 2px;
 
 	left:0px;
-	bottom: -11px;
+	bottom: -13px;
 }
 
 .hd ul li a.active:after{
@@ -477,11 +478,11 @@ h2{
 
 /* Contact Us Start*/
 
-.contact{
+.front_banner{
 	text-align: center;
 	
 }
-.contact h1{
+.front_banner h1{
 	font-size: 80px;
 	font-weight: 900;
 	color: #F0F0F0;
@@ -489,7 +490,7 @@ h2{
 	position: relative;
 }
 
-.contact h5{
+.front_banner h5{
 	font-size: 25px;
 	font-weight: 900;
 	color: #F0F0F0;
@@ -498,18 +499,20 @@ h2{
 	color: black;
 	margin-left: 37%;
 	margin-top:-100px;
+
 }
 
-.contact h5 span{
+.front_banner h5 span{
 	color:green;
 }
 
 .frm{
 	border: 1px solid #F0F0F0;
 	margin-top: 50px;
-	border-radius: 5px;
+	border-radius: 8px;
 	padding: 20px 10px;
 	margin-bottom: 250px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frm h5{
 	margin-top: 50px;
@@ -522,6 +525,15 @@ h2{
 	border-right: none;
 	border-left:none;
 	border-radius: 0px;
+}
+
+.frm form textarea{
+	margin-top: 20px;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+	height: 130px;
 }
 
 .frm .sbt{
@@ -541,6 +553,7 @@ h2{
 .adr i{
 	margin-top: 55px;
 	font-size: 25px;
+	color: #666666;
 }
 .adr p{
 	font-size: 14px;
@@ -563,12 +576,86 @@ padding-right:30px;
 }
 .contact_social ul li a i{
 	font-size: 18px;
+	margin-left: -12px;
 }
+
+
 /* Contact Us End*/
 
 
+/* Privacy Policy Start */
+.privacy{
+	margin-bottom: 100px;
+	font-family:'poppins',sans-serif;
+	color: #666666;
+
+}
+
+.privacy span {
+	font-size:30px;
+	
+
+	
+
+}
+.privacy h3 {
+	font-size:25px;
+
+}
+
+.privacy h4 {
+	font-size:24px;
+
+}
+.privacy h5 {
+	font-size:18px;
+
+}
+.privacy p{
+	font-size: 14px;
+}
+
+/* Privacy Policy End */
 
 
+/* Tems & ConditionEnd */
+#terms{
+
+	text-align: left;
+}
+
+#terms p{
+	text-align: justify;
+	font-size: 15px;
+}
+
+#terms ul li{
+	list-style-type: square;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Tems & Condition End */
+
+
+/* Cookie Section Start */
+
+
+
+/* Cookie Section End */
+
+#cookie{
+	margin-bottom:200px;
+}
+
+#cookie ul li{
+	list-style-type: square;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#cookie p{
+	margin-bottom: 20px;
+}
 
 
 /* Footer Code */
@@ -609,9 +696,14 @@ padding-right:30px;
 	display: none;
 }
 
+.footer ul li a:hover{
+	color:red;
+}
+
 .copyright{
 	display: none;
 }
+
 /* End Footer Code */
 
 /* ========================================================== Mobile Responsive ===================================================================== */
@@ -679,38 +771,73 @@ padding-right:30px;
 
 	left:0px;
 	bottom: -11px;
-}
+  }
 
 
-/* Social Icons Start*/
 
-.social
-{
+ /* Social Icons Start*/
+
+ .social
+ {
 	display: none;
+ }
+
+
+ /* Social Icons End */
+
+
+
+/* Sample page front Banner*/
+
+.front_banner{
+	text-align: center;
+	
+}
+.front_banner h1{
+	font-size: 40px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+}
+
+.front_banner h5{
+	font-size: 18px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 28%;
+	margin-top:-80px;
+
+}
+
+.front_banner h5 span{
+	color:green;
 }
 
 
-/* Social Icons End */
 
 
-/* Mobile Footer Section start*/
-.footer ul {
+ /* Mobile Footer Section start*/
+ .footer ul {
 
 	
 	height: max-content;
 	margin-top: 10px;
 	margin-left: 5%;
-}
+ }
 
-.footer ul li {
+ .footer ul li {
 	margin-top: 5px;
 	padding: 2px 15px;
 	list-style: none;
 	float: left;
-}
+ }
 
 
-.footer ul li a {
+ .footer ul li a {
 
 	text-decoration: none;
 	color:#666666;
@@ -719,47 +846,86 @@ padding-right:30px;
 	letter-spacing: 0.8px;
 
 
-}
-.footer ul li a i{
+ }
+
+ 
+ .footer ul li a i{
 	display: inline;
-}
-/* Mobile Footer Section End*/
-.mobilesocial{
+ }
+
+
+ /* Mobile Footer Section End*/
+ .mobilesocial{
 	display: inline;
 	
 
-}
+ }
 
-.mobilesocial ul{
+ .mobilesocial ul{
 	border-top:1px solid green
-}
-.mobilesocial ul li  {
+ }
+ .mobilesocial ul li  {
 	position: relative;
 	left: 15%;
 	margin-bottom: 6px;
 	margin-top: 10px;
-}
+ }
 
-.copyright{
+ .copyright{
 	display: block;
-}
+ }
 
-.copyright p{
+ .copyright p{
 	font-size: 10px;
 	text-align: center;
-}
+ }
+
+ }
+
+ .privacy{
+	padding: 10px 30px;
+	margin-bottom: 200px;
+	font-family:'poppins',sans-serif;
+	color: #666666;
 
 }
 
+#terms{
+	margin-bottom: 300px;
+	padding: 0px 20px;
+	font-size: 13px;
+	text-align: left;
+}
+
+#terms p{
+	text-align: justify;
+}
+
+#terms ul li{
+	list-style-type: square;
+	text-align: justify;
+}
+
+#cookie{
+	margin-bottom:200px;
+	padding: 0px 20px;
+}
 
 
 
+.scl{
+	display: hidden;
+}
 
 
 /* ======================================================== Large Device ================================================================== */
 
 @media screen and (min-width: 1900px) {
-	.contact h5{
+	.front_banner h1{
+		font-size: 80px;
+	}
+	
+	.front_banner h5{
 		font-size: 25px;
 		font-weight: 900;
 		color: #F0F0F0;
@@ -768,6 +934,25 @@ padding-right:30px;
 		color: black;
 		margin-left: 28%;
 		margin-top:-100px;
+	}
+
+	.logo1{
+		margin-left: 40px;
+		
+	}
+	.logo1 img{
+		width: 141px;
+		height: 51px;
+	}
+
+	.hd ul li a:after{
+		content:"";
+		position:absolute;
+		background: red;
+		height: 2px;
+	
+		left:0px;
+		bottom: -16px;
 	}
   }
 
