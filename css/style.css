@@ -8,6 +8,7 @@ body{
 }
 a{
 	text-decoration: none;
+	color:#000;
   
   }
   li{
@@ -219,6 +220,30 @@ color:rgb(233, 23, 23);
 	
   }
 /*end social Code  */
+
+
+.subcription{
+	
+	position: fixed;
+	right: -80px;
+	top:45%;
+}
+
+.subcription span{
+	position: absolute;
+	right:120px;
+
+	
+}
+
+.subcription span a i{
+	color:7C7C7C;
+	font-weight: 900;
+	
+	
+}
+
+
 
 
 /*********************Home Easy Payment System Part start****************/
