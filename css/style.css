@@ -187,7 +187,7 @@ color:rgb(233, 23, 23);
 		font-family: 'Poppins',sans-serif;
 		-webkit-text-stroke: 1.5px #009456;
 		font-weight: 900;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.8rem;
 	
 	  }
   .main-content p{
@@ -197,7 +197,7 @@ color:rgb(233, 23, 23);
 	width: 450px;
 	text-align: justify;
 	color: #666666;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.9rem;
   }
   
  
@@ -210,8 +210,8 @@ color:rgb(233, 23, 23);
 	background-color: #FFFFFF;
 	border-radius: 8px;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-	padding-top:5px ;
-	font-weight: 800;
+	padding-top:8px ;
+	font-weight: 600;
   }
  .slides .btn.active{
   
@@ -305,7 +305,7 @@ color:rgb(233, 23, 23);
 
 .navigation-auto{
   position: absolute;
-  display: none;
+  /* display: none; */
   width: 800px;
   /* justify-content: center; */
   /* margin-top: 460px;
@@ -341,9 +341,21 @@ color:rgb(233, 23, 23);
 }
       
   /*********************Home Easy Payment System Part end****************/
-      
+
   /*********************Home Popup start ****************/
-.container#blur.active{
+  .popup {
+	display: inline-block;
+	margin: -3rem 0.9rem;
+  
+	animation:bounceIn; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  .animate__animated.animate__bounceIn{
+	--animate-duration: 2s;
+
+  }
+  
+  .container#blur.active{
     filter: blur(20px);
     pointer-events: none;
     user-select: none;
@@ -356,9 +368,10 @@ color:rgb(233, 23, 23);
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 	width: 45rem;
 	margin-left: 210px;
-transform: translateY(-130%);
+
 position: absolute;
 display: none;
+z-index: 1000;
 }
 .popup p{
 	padding: 0px 10px;
@@ -383,7 +396,7 @@ display: none;
 	border: none;
 }
 .popup .cookie-link{
-	color: #666666;
+	color: #EE2C43;
 	font-family: 'Poppins', sans-serif;
 	font-size: 18px;
 	font-weight: 900;
@@ -421,7 +434,7 @@ display: none;
 
 h2{
 	text-align:center;
-	padding: 3px;
+	padding:5px 5px;
 	font-family: 'poppins',sans-serif;
 	color:#F0F0F0;
 	font-size: 75px;
