@@ -1,12 +1,14 @@
 
 body{
 
-	background-color: #F9F9F9;
-	min-height: 100rem;
+	background-color: white;
+	min-height: 55rem;
+
 	/* padding-top: 4.5rem; */
 }
 a{
 	text-decoration: none;
+	color:#000;
   
   }
   li{
@@ -183,7 +185,7 @@ color:rgb(233, 23, 23);
 
 
 /* social Icon */
-.social
+/* .social
 {
 	position: fixed;
 	top:37%;
@@ -197,12 +199,122 @@ color:rgb(233, 23, 23);
 .social ul li a {
 	color: #666666;
 }
+
+
+.social ul li a:hover::before{
+	content: " — ";
+	transition: all 1s;
+}
+.social ul li a:hover::after{
+	content: " Youtube";
+	transition: all 1s;
+	
+}
+
+.social ul li a:hover{
+	transform: rotate(-90deg);
+	transition: all 1s;
+} */
+
 .mobilesocial{
 	display: none;
 }
+.social {
+	position: fixed;
+	top: 35%;
+  }
+  .social ul {
+	padding: 0px;
+	-webkit-transform: translate(-270px, 0);
+	-moz-transform: translate(-270px, 0);
+	-ms-transform: translate(-270px, 0);
+	-o-transform: translate(-270px, 0);
+	transform: translate(-270px, 0);
+  }
+  .social ul li {
+	
+	margin-top: 0px;
+	margin-left:50px;
+	
 
+	width: 300px;
+	text-align: right;
+	padding: 10px;
+	-webkit-border-radius: 0 30px 30px 0;
+	-moz-border-radius: 0 30px 30px 0;
+	border-radius: 0 30px 30px 0;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	
+  }
+  
 
+  .social ul li a i{
+	color:#666666;
+	font-size: 18px;
+	padding: 0px 25px;
+	text-align: left;
+	
+	
+	
+  }
+  .social ul li:hover {
+	-webkit-transform: translate(110px, 0);
+	-moz-transform: translate(110px, 0);
+	-ms-transform: translate(110px, 0);
+	-o-transform: translate(110px, 0);
+	transform: translate(90px, 0);
+
+	background: rgba(242, 231, 231, 0.36);
+
+  }
+  .social ul li:hover a {
+	color: #000;
+  }
+  .social ul li:hover i {
+	color:#666666;
+
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+  }
+  .social ul li i {
+	margin-left: 10px;
+	color: #000;
+
+	font-size: 20px;
+	
+  }
 /*end social Code  */
+
+
+.subcription{
+	
+	position: fixed;
+	right: -80px;
+	top:45%;
+}
+
+.subcription span{
+	position: absolute;
+	right:120px;
+
+	
+}
+
+.subcription span a i{
+	color:7C7C7C;
+	font-weight: 900;
+	
+	
+}
+
+
 
 
 /*********************Home Easy Payment System Part start****************/
@@ -661,7 +773,7 @@ h2{
 	position: absolute;
 	color: black;
 	margin-left: 37%;
-	margin-top:-100px;
+	margin-top:-90px;
 
 }
 
@@ -720,7 +832,11 @@ h2{
 }
 .adr p{
 	font-size: 14px;
-	line-height: 0.5px;
+
+}
+
+.adr .row{
+	margin-bottom: -15px;
 }
 
 .contact_social{
@@ -732,6 +848,8 @@ display: flex;
 float: left;
 padding-right:30px;
 
+}.mscl{
+	display: inline;
 }
 .contact_social ul li a{
 	color: #666666;
@@ -741,6 +859,7 @@ padding-right:30px;
 	font-size: 18px;
 	margin-left: -12px;
 }
+
 
 
 /* Contact Us End*/
@@ -776,6 +895,11 @@ padding-right:30px;
 }
 .privacy p{
 	font-size: 14px;
+}
+.privacy p{
+	text-align: justify;
+	margin-top: 20px;
+	margin-left: 0px;
 }
 
 /* Privacy Policy End */
@@ -823,16 +947,17 @@ padding-right:30px;
 
 /* Footer Code */
 
-
-
 .footer {
 	
 	background-image: url("../img/footerimg.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #F5F5F5;
+	position: fixed;
+	bottom: 0px;
 	
 }
+
 
 .footer ul {
 
@@ -869,18 +994,34 @@ padding-right:30px;
 
 /* End Footer Code */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================================================== Mobile Responsive ===================================================================== */
 
 
 /* Mobile Device Responsive */
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
 	body {
 	  background: white;
 	}
 
-	
+	/* Mobile Nav View Start */
 
 	.logo1 {
 	margin-left: 0px;
@@ -938,19 +1079,11 @@ padding-right:30px;
 
 
 
- /* Social Icons Start*/
-
- .social
- {
-	display: none;
- }
-
-
- /* Social Icons End */
+/* Mobile Nav View End */
 
 
 
-/* Sample page front Banner*/
+/* Front Banner Mobile view Start */
 
 .front_banner{
 	text-align: center;
@@ -972,7 +1105,7 @@ padding-right:30px;
 	position: absolute;
 	color: black;
 	margin-left: 28%;
-	margin-top:-80px;
+	margin-top:-68px;
 
 }
 
@@ -980,10 +1113,16 @@ padding-right:30px;
 	color:green;
 }
 
-
+/* Front Banner Mobile view End */
 
 
  /* Mobile Footer Section start*/
+
+.footer{
+position: relative;
+bottom: 0px;
+}
+
  .footer ul {
 
 	
@@ -1017,7 +1156,7 @@ padding-right:30px;
  }
 
 
- /* Mobile Footer Section End*/
+
  .mobilesocial{
 	display: inline;
 	
@@ -1043,15 +1182,44 @@ padding-right:30px;
 	text-align: center;
  }
 
+  /* Mobile Footer Section End*/
+
+
+ /* Destop Social Icons Hidden*/
+
+ .social
+ {
+	display: none;
  }
 
+
+ /* Social Icons End */
+
+
+
+/* Privacy Mobile View */
+
  .privacy{
-	padding: 10px 30px;
-	margin-bottom: 200px;
+	padding: 10px 20px;
+	margin-bottom: 50px;
 	font-family:'poppins',sans-serif;
 	color: #666666;
+	text-align: left;
+	margin: 0px auto;
 
 }
+
+.privacy p{
+	text-align: justify;
+	margin-top: 20px;
+	margin-left: 0px;
+}
+
+
+
+/* Privacy Mobile View End */
+
+/* Terms Page Mobile View */
 
 #terms{
 	margin-bottom: 300px;
@@ -1069,17 +1237,56 @@ padding-right:30px;
 	text-align: justify;
 }
 
+/* Terms Page Mobile View End */
+
+
+/* Cookie page  MObile view Code  Start*/
+
 #cookie{
 	margin-bottom:200px;
 	padding: 0px 20px;
 }
 
+/* Cookie page Mobile view Code  End*/
 
 
-.scl{
-	display: hidden;
+
+/* contact Us page Mobile view Code  End*/
+
+.mfrm{
+
+	padding: 5px 20px;
+}
+.frmst{
+	width: 100%;
+	margin: 0px auto;
+	
 }
 
+.frm{
+	margin-bottom: 10px;
+
+	
+}
+
+.adr h5{
+	margin-top: 2px;
+}
+.adr{
+	margin-bottom: 100px;
+}
+
+.mfrm .adr{
+	text-align: center;
+}
+
+.mscl{
+	display: none;
+}
+
+}
+/* contact Us page Mobile View Code End  */
+/* ========================================================== Mobile Responsive End ===================================================================== */
 
 /* ======================================================== Large Device ================================================================== */
 
@@ -1096,7 +1303,7 @@ padding-right:30px;
 		position: absolute;
 		color: black;
 		margin-left: 28%;
-		margin-top:-100px;
+		margin-top:-90px;
 	}
 
 	.logo1{
