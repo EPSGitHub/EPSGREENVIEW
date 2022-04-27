@@ -15,7 +15,7 @@ document.querySelector("#close").addEventListener
     "none";
 });/***Cookie policy Home Popup Script end *****/
 
-
+/*** for hover button *****/
 
 function service(evt, service) {
   var i, tabcontent, tablinks;
