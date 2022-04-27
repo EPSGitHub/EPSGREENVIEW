@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
 
@@ -72,51 +75,104 @@
 
 <!-- // Main section Start -->
 <section>
-	<div class="container-fluid mt-4">
-		<div class="container">
+	<div class="container mt-3" >
+	
 		<div class="row">
 		  
 		 
-		  <div class="col-xl-7 col-lg-7 col-md-7  col-sm-12  main-content mt-2"> <!--main-content-->
+		  <div class="col-xl-7 col-lg-7 col-md-7  col-sm-12  main-content mt-2" > <!--main-content-->
 			  <a class=" btn-1 btn-lg" href="" ><span class="text" > Easy solution for all transaction</span></a>
 			<h6 class="easy" >Easy</h6>  
-			<h6 class="payment">Payment</h6>
-			 <h6 class="system">System</h6>
+			<h6 class="payment" >Payment</h6>
+			 <h6 class="system" >System</h6>
 			 <p> Easy Payment System (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with an easy and instant payment solution... Read More </p>
 			 <!--button start!--> <!--automatic navigation start-->
-			<div class="slides d-flex ">
-			  <div class="navigation-manual">
-				<label for="radio1" class="manual-btn  btn btn-lg  active">Send Money</label>
+			 
+			<div class="slides d-flex " >
+				<!--hover button!-->
+				<div class="navigation-manual">
+				
+					
+					<a href="Cookie.html" class="tablinks manual-btn  btn btn-lg" onmouseover="service(event, 'sendMony')">Send Mony</a>
+					<a class="tablinks manual-btn  btn btn-lg " onmouseover="service(event, 'billPay')">Bill Pay</a>
+					<a class="tablinks manual-btn  btn btn-lg " onmouseover="service(event, 'corPorate')">Corporate</a>
+					<a class="tablinks manual-btn  btn btn-lg " onmouseover="service(event, 'Tokyo')">Marchent</a>
+				</div><!--hover button!-->
+				
+			  <!-- <div class="navigation-manual">
+				<label for="radio1"  class="manual-btn  btn btn-lg  active"> Send Money</label>
 				<label for="radio2" class="manual-btn btn btn-lg ">Bill Pay</label>
 			  <label for="radio3" class="manual-btn btn btn-lg "> Corporate</label>
 			  <label for="radio4" class="manual-btn btn btn-lg ">Marchent</label>
-			  </div><!--manual navigation end-->
-			   
+			  </div> -->
+		
 			</div>  <!--button end!--> 
 		  </div><!--main-content end!-->
 	   
 		
 		<!--Slider start!-->
-		 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 mt-3 mobile-slider" id="slider">
-		   
+		 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 mt-2 mobile-slider" id="slider" data-interval="false">
+
 		  <div class="slides"> <!--img slider start!-->
 		  
 			  <input type="radio" name="radio-btn" id="radio1">
 			  <input type="radio" name="radio-btn" id="radio2">
 			  <input type="radio" name="radio-btn" id="radio3">
 			  <input type="radio" name="radio-btn" id="radio4">
-		   
-			  <div class="slide-mobile first">
+			  
+		      
+			 <!--hover img!-->
+			 <div id="sendMony" class="tabcontent" style="z-index: 100;">
+				
 				<img src="img/slider/slider1.png" alt="" class="">
 			  </div>
-			 
-			  <div class="slide-mobile">
+			  <div id="billPay" class="tabcontent"style="z-index: 100;">
+				<img src="img/slider/slider1.png" alt="" class="">
+			</div>
+			<!--hover img end!-->
+
+			<!--slide img!-->
+			 <div class="slide-mobile first">
+				<img src="img/slider/slider1.png" alt="" class="">
+			 </div>
+			
+			
+			<div class="slide-mobile" >
+				<img src="img/slider/slider1.png" alt="" class=""style="background-color: blue;">
+			  </div>
+			<!--slide img end!-->
+		
+			  <!-- <div id="Tokyo" class="tabcontent">
+				<div class="slide-mobile">
+					<img src="img/slider/Easy.svg" alt="" class="">
+			 </div>
+			</div>
+			 -->
+			
+			 <!-- <div class="slide-mobile first tabcontent" id="sendMony">
+				<img src="img/slider/slider1.png" alt="" class="">
+				
+			</div> -->
+<!-- 			
+				<div class="slide-mobile first">
+					<img src="img/slider/slider1.png" alt="" class="">
+				  </div>
+			 -->
+				<!-- <div class="slide-mobile ">
+					<img src="img/slider/Easy.svg" alt="" class="">
+				  </div>
+			
+				
+			  
+		
+			<div class="slide-mobile">
+				<img src="img/slider/service.png" alt="" class="">
+			</div>
+			
+            <div class="slide-mobile">
 				<img src="img/slider/Easy.svg" alt="" class="">
 			  </div>
-			  
-			  <div class="slide-mobile">
-				<img src="img/slider/service.png" alt="" class="">
-			  </div>
+		 -->
 			 
 			  <div class="navigation-auto">
 				<div class="auto-btn1"></div>
@@ -128,39 +184,22 @@
 			</div>  <!--img slider endt!-->
 		 </div><!--mobile slider end!-->
 		</div> <!--row!-->
-		</div>
+		
 	</div>
 </section><!-- // Main section End -->
 
+  <div class="clearfix"></div>
+  <style>
+	
 
+	/* Clear floats after the tab */
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  /* display: table; */
+	}
+	</style>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- // Start Social Icon -->
 
 <section>
 	<div class="social">
@@ -177,12 +216,26 @@
 
 
 <!-- // End Social Icon -->
+<!-- // Home Popup section Start -->
+<section>
+	<div class="container ">
+	 <div class="col-md-12 mb-4" >
 
-<div class="subcription">
-	<button class="btn btn-success text-white" style="transform: rotate(-90deg);">Lets Make a Connection</button>
-	<a href=""><span><i class="fa-solid fa-angle-left"></i></span></a>
-</div>
-
+		<div class="popup animate__animated animate__bounceIn " >
+			
+			  <buttton id="close" onclick="toggle()">&times;</buttton>
+			  
+			  <p class="card-text">Easy Payment Solution (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with <a href="Cookie.html" target="_blank" class="cookie-link" style="text-decoration:underline">Cookie Policy</a></p>
+		<div class="button" >
+			<a href="" class="btn btn-sm accept">Accept</a>
+			<a href="" class="btn btn-sm deny">Deny</a>
+			   
+		</div>	  
+		
+		 </div>
+		</div>
+	</div>
+</section>
 <section>
 	<div class="container mt-2">
 		<div class="row">
@@ -212,22 +265,7 @@
 </section>
 
 
-<!-- // Home Popup section Start -->
-<section>
-	<div class="container mt-4">
-	 <div class="col-md-12" style=" padding-left: 150px;">	
-		<div class="card" style="width: 50rem;">
-			<div class="card-body">
-			  
-			  
-			  <p class="card-text">Easy Payment Solution (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with <a href="#" class="card-link" style="text-decoration:underline">Cookie Policy</a></p>
-			  
-		
-			</div>
-		  </div>
-		</div>
-	</div>
-</section>
+
 
 
 
@@ -290,10 +328,18 @@
 	
 	
 	
+		<script src="js/script.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="Js/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+		<script>
+			function toggle() {
+				var blur=document.getElementById('blur');
+				blur.classList.toggle('active');
+				var popup = document.getElementById('popup');
+				popup.classList.toggle('active');
+			}
+		</script>
 		<script>
 			$(document).ready(function(){
 			$('.customer-logos').slick({
@@ -318,9 +364,9 @@
 			});
 		});
 		</script>
-		
-		<script type="text/javascript">
- 
+	
+		 <script type="text/javascript">
+    
 			var counter = 1;
 		  
 		   setInterval(function(){
@@ -329,9 +375,11 @@
 			  if(counter > 4){
 				counter = 1;
 			  }
-			}, 5000);
-		   
+			}, 1000);
+
 			</script>
+	
+
 		  
 		</body>
 		</html>
