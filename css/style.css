@@ -2,7 +2,7 @@
 body{
 
 	background-color: #F9F9F9;
-	min-height: 100rem;
+	min-height: 40rem;
 	/* padding-top: 4.5rem; */
 }
 a{
@@ -108,79 +108,6 @@ color:rgb(233, 23, 23);
 /* Menu Code End */
 
 
-.main{
-	position: relative;
-	height:100vh;
-	width:100%;
-	margin:0;
-	padding:0;
-}
-.navigation-manual nav {
-	padding:0;
-	margin:0;
-	position:relative;
-	height:100%;
-	width:100%;
-}
-.navigation-manual nav::before{
-	position: absolute;
-	content: '';
-	height:100%;
-	width:100%;
-	z-index: 0;
-	background:rgba(0, 0, 0, 0.5);
-	top:0;
-	left:0;
-}
-.navigation-manual nav ul{
-	position: absolute;
-	padding:0;
-	margin:0;
-	height:100%;
-	width:100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.navigation-manual nav ul li{
-	list-style-type: none;
-	display: inline-block;
-}
-.navigation-manual nav ul li img{
-	top:0;
-	left:0;
-	display: none;
-	/* position: absolute; */
-	height:100%;
-	width:100%;
-	z-index: -1;
-	display: block;
-	transition: 0.5s ease-in-out;
-	opacity:0 ;
-
-}
-.navigation-manual nav ul li a{
-	height:100%;
-	width:100%;   
-	color:#aaa;
-	display: block;
-	text-decoration: none;
-	padding:20px;
-	z-index: 10;
-	padding-top:200px;
-	font-size: 35px;
-	font-family: 'Lato',sans-serif;
-	font-weight: 600;
-	transition: 0.5s ease-in-out;
-}
-.navigation-manual nav ul li a:hover{
-	/* color:rgba(255, 255, 255, 0.99);
-	text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); */
-}
-.navigation-manual nav ul li a:hover + img{
-	opacity: 1;
-}
-
 
 /* social Icon */
 .social
@@ -204,7 +131,7 @@ color:rgb(233, 23, 23);
 
 /*end social Code  */
 
-
+/*********************Home Main content Part start****************/
 /*********************Home Easy Payment System Part start****************/
 .main-content{
    
@@ -271,7 +198,8 @@ color:rgb(233, 23, 23);
 	margin-bottom: 0.9rem;
   }
   
- 
+/*********************End Home Easy Payment System Part start****************/
+/********************* Home Hover button Part start****************/
 .slides .btn{
 	font-family: 'Poppins',sans-serif;
 	font-size: 0.8rem;
@@ -286,7 +214,6 @@ color:rgb(233, 23, 23);
   }
  .slides .btn.active{
   
-    /* background-color: #009456; */
     color: #FFFFFF;
     
  }  
@@ -314,7 +241,7 @@ color:rgb(233, 23, 23);
 .slides input{
   display: none;
   /* margin-left: 12px; */
-}
+}/*********************End Home Hover button Part ****************/
 
 .slide-mobile{
   width: 20%;
@@ -322,22 +249,22 @@ color:rgb(233, 23, 23);
 }
 
 .tabcontent img{
-  height: 316px;
-  width:154px;
-  border-radius: 24px;
-  margin: 0 0 0 -18px;
+  height: 312px;
+  width:164px;
+  border-radius: 22px;
+  margin: 0 0 0 -16px;
  
 }
 .slide-mobile img{
-  height: 315px;
-  width:150px;
+  height: 311px;
+  width:162px;
   border-radius: 24px;
-  margin: 0 0 0 -10px;
+  margin: 0 0 0 -14px;
  
 }
 
-/*css for manual slide navigation*/
 
+/***********************************css for manual slide navigation***************************/
 .navigation-manual{
   position: absolute;
   width: 800px;
@@ -379,8 +306,8 @@ color:rgb(233, 23, 23);
 #radio4:checked ~ .first{
   margin-left: -60%;
 }
-
-/*css for automatic navigation*/
+/***********************************End css for manual slide navigation***************************/
+/********************css for automatic navigation********************************************/
 
 .navigation-auto{
   position: absolute;
@@ -418,18 +345,18 @@ color:rgb(233, 23, 23);
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: red;
 }
-      
-  /*********************Home Easy Payment System Part end****************/
+ /********************end css for automatic navigation********************************************/     
+  /*********************Main content End********************/
 
   /*********************Home Popup start ****************/
   .popup {
 	display: inline-block;
 	margin: -3rem 0.9rem;
   
-	animation:bounceIn; /* referring directly to the animation's @keyframe declaration */
+	animation:pulse; /* referring directly to the animation's @keyframe declaration */
 	animation-duration: 2s; /* don't forget to set a duration! */
   }
-  .animate__animated.animate__bounceIn{
+  .animate__animated.animate__pulse{
 	--animate-duration: 2s;
 
   }
