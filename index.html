@@ -221,9 +221,11 @@
 </section>
 <!-- // Home Popup section End -->
 
-<div class="subcription">
-	<button class="btn btn-success text-white rs" onclick="subscription()" style="transform: rotate(-90deg);">Lets Make a Connection</button>
-	<a href=""><span><i class="fa-solid fa-angle-left"></i></span></a> 
+<div class="subcription" id="subscrip">
+	<button class="btn btn-success text-white rs" onclick="subscription()" id="sbt" style="transform: rotate(-90deg);">Let's Make a Connection</button>
+	<a id="arw" onclick="subscription()"><span><i class="fa-solid fa-angle-left"></i></span></a> 
+	<a id="arw2" onclick="subscriptionclose()" class="close"></a> 
+
 
 	<div id="sub" style="margin-top: -50%;"></div>
 
@@ -259,27 +261,7 @@
 </section>
 
 
-<!-- // Home Popup section Start -->
-<section>
-	
-	 <div class="col-md-12 mb-4" >
 
-		<div class="popup animate__animated animate__pulse " >
-			
-			  <buttton id="close" onclick="toggle()">&times;</buttton>
-			  
-			  <p class="card-text">Easy Payment Solution (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with <a href="Cookie.html" target="_blank" class="cookie-link" style="text-decoration:underline">Cookie Policy</a></p>
-		<div class="button" >
-			<a href="" class="btn btn-sm accept">Accept</a>
-			<a href="" class="btn btn-sm deny">Deny</a>
-			   
-		</div>	  
-		
-		 </div>
-		</div>
-	
-</section>
-<!-- // Home Popup section End -->
  <!-- Footer  Start -->
 
 		<footer class="container-fluid  footer ">
@@ -382,11 +364,28 @@
 		   
 			</script>
 
+			<!-- Subscription button feature -->
+
 			<script>
 				function subscription(){
-					document.getElementById("sub").innerHTML='<div class="subform" style="margin-right:200px;  padding:10px 50px; position:relative; top:-40%"><img src="img/subimg.png" width="158px" height="129px" alt=""><button class="btn btn-sm btn-success text-white lbtn " style="transform: rotate(-90deg); width:200px; position:absolute; margin-left: -110%; margin-top: 60%;">Lets Make a Connection</button><p style="margin-bottom:25px;font-size:12px">Subscribe and get our exclusive offers delivered directly to your inbox</p><form action="" class="from-group"><input type="text" placeholder="Email / Phone Number" class="form-control"><input style="background:green; color:white; margin-top:20px" type="button" value="submit" style="margin-top:20px" class="form-control"></form> <img src="img/Ellipse.Png" style=" margin-top:88px; margin-left:200px"</div> ';
+					document.getElementById("sub").innerHTML='<div class="subform" style="margin-right:200px; padding:10px 50px; position:relative; top:-40%"><img src="img/subimg.png" width="158px" height="129px" alt=""><button class="btn btn-sm btn-success text-white lbtn " style="transform: rotate(-90deg); width:200px; position:absolute; margin-left: -110%; margin-top: 60%;">Lets Make a Connection</button><p style="margin-bottom:25px;font-size:12px">Subscribe and get our exclusive offers delivered directly to your inbox</p><form action="" class="from-group"><input type="text" placeholder="Email / Phone Number" class="form-control"><input style="background:green; color:white; margin-top:20px" type="button" value="submit" style="margin-top:20px" class="form-control"></form> <img src="img/Ellipse.Png" style=" margin-top:88px; margin-left:200px"</div> ';
+					document.getElementById("arw").innerHTML="";
+					document.getElementById("arw2").innerHTML='<i class="fa-solid fa-angle-right" style="margin-left:150px; font-size:20px;font-weight:900"></i></span>';
+				}
+
+				function subscriptionclose(){
+					
+					document.getElementById("sub").innerHTML='';
+					document.getElementById("subscrip").innerHTML=`<button class="btn btn-success text-white rs" onclick="subscription()" id="sbt" style="transform: rotate(-90deg);">Let's Make a Connection</button>
+	<a id="arw" onclick="subscription()"><span><i class="fa-solid fa-angle-left"></i></span></a> 
+	<a id="arw2" onclick="subscriptionclose()" class="close"></a> 
+
+
+	<div id="sub" style="margin-top: -50%;"></div>`;
 					
 				}
+
+			
 			</script>
 		<!-- Script for slider hover image -->	
 	

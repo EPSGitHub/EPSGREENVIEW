@@ -1280,7 +1280,7 @@ bottom: 0px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 		width: 45rem;
 		margin-left: 210px;
-		margin-top:11%;
+		margin-top:10%;
 	
 	
 	position: absolute;
@@ -1290,7 +1290,7 @@ bottom: 0px;
 
 	.main-content .easy{
      
-		font-size:6rem;
+		font-size:5.5rem;
 		text-transform: uppercase;
 	  padding-top: 5px;
 	  color: #FFFFFF;
@@ -1304,7 +1304,7 @@ bottom: 0px;
 	
 		text-transform: uppercase;
 		color: #FFFFFF;
-		font-size:6rem;
+		font-size:5.5rem;
 		font-family: 'Poppins',sans-serif;
 		-webkit-text-stroke: 1.5px #009456;
 		font-weight: 900;
@@ -1314,7 +1314,7 @@ bottom: 0px;
 	
 		text-transform: uppercase;
 		color: #FFFFFF;
-		font-size:6rem;
+		font-size:5.5rem;
 		font-family: 'Poppins',sans-serif;
 		-webkit-text-stroke: 1.5px #009456;
 		font-weight: 900;
