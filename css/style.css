@@ -3,7 +3,7 @@
 body{
 
 	background-color: white;
-	min-height: 55rem;
+	min-height: 40rem;
 	/* padding-top: 4.5rem; */
 }
 a{
@@ -256,7 +256,7 @@ color:rgb(233, 23, 23);
 	margin-left: 25px;
 }
 
-
+/*********************Home Main content Part start****************/
 /*********************Home Easy Payment System Part start****************/
 .main-content{
    
@@ -267,7 +267,14 @@ color:rgb(233, 23, 23);
    
     background-color: #009456;
     color: #FFFFFF;
-  
+    border-radius: 4px;
+	font-family: 'Poppins',sans-serif;
+    font-size: 0.8em;
+    }
+.btn-1:hover{
+   
+    background-color: #009456;
+    color: #FFFFFF;
     border-radius: 4px;
 	font-family: 'Poppins',sans-serif;
     font-size: 0.8em;
@@ -303,7 +310,7 @@ color:rgb(233, 23, 23);
 		font-family: 'Poppins',sans-serif;
 		-webkit-text-stroke: 1.5px #009456;
 		font-weight: 900;
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.8rem;
 	
 	  }
   .main-content p{
@@ -313,10 +320,11 @@ color:rgb(233, 23, 23);
 	width: 450px;
 	text-align: justify;
 	color: #666666;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.9rem;
   }
   
- 
+/*********************End Home Easy Payment System Part start****************/
+/********************* Home Hover button Part start****************/
 .slides .btn{
 	font-family: 'Poppins',sans-serif;
 	font-size: 0.8rem;
@@ -326,17 +334,17 @@ color:rgb(233, 23, 23);
 	background-color: #FFFFFF;
 	border-radius: 8px;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-	padding-top:5px ;
-	font-weight: 800;
+	padding-top:8px ;
+	font-weight: 600;
   }
  .slides .btn.active{
   
-    /* background-color: #009456; */
     color: #FFFFFF;
     
  }  
 
 .mobile-slider{
+	height: 315px;
   overflow: hidden;
   border:6px solid #3F3D56;
   border-radius: 24px;
@@ -358,23 +366,30 @@ color:rgb(233, 23, 23);
 .slides input{
   display: none;
   /* margin-left: 12px; */
-}
+}/*********************End Home Hover button Part ****************/
 
 .slide-mobile{
   width: 20%;
   transition: 2s;
 }
 
+.tabcontent img{
+  height: 312px;
+  width:164px;
+  border-radius: 22px;
+  margin: 0 0 0 -16px;
+ 
+}
 .slide-mobile img{
-  height: 315px;
-  width:150px;
+  height: 311px;
+  width:162px;
   border-radius: 24px;
-  margin: 0 0 0 -10px;
+  margin: 0 0 0 -14px;
  
 }
 
-/*css for manual slide navigation*/
 
+/***********************************css for manual slide navigation***************************/
 .navigation-manual{
   position: absolute;
   width: 800px;
@@ -416,8 +431,8 @@ color:rgb(233, 23, 23);
 #radio4:checked ~ .first{
   margin-left: -60%;
 }
-
-/*css for automatic navigation*/
+/***********************************End css for manual slide navigation***************************/
+/********************css for automatic navigation********************************************/
 
 .navigation-auto{
   position: absolute;
@@ -455,13 +470,87 @@ color:rgb(233, 23, 23);
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: red;
 }
-      
-  /*********************Home Easy Payment System Part end****************/
-      
-  /*********************Home Popup start ****************/
-.popup{
-	background-color: red;
+ /********************end css for automatic navigation********************************************/     
+  /*********************Main content End********************/
 
+  /*********************Home Popup start ****************/
+  .popup {
+	display: inline-block;
+	margin: -3rem 0.9rem;
+  
+	animation:pulse; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  .animate__animated.animate__pulse{
+	--animate-duration: 2s;
+
+  }
+  
+
+  .popup{
+	background-color: #FFFFFF;
+	padding: 0 5px;
+	border: 1px solid #009456;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
+	width: 45rem;
+	margin-left: 210px;
+
+position: absolute;
+display: none;
+z-index: 1000;
+}
+.popup p{
+	padding: 0px 10px;
+	padding-top: 40px;
+	color: #666666;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	line-height: 25px;
+	width: 600px;
+	font-weight: 500;
+	
+	text-align: justify;
+}
+.popup #close{
+	display: block;
+	margin: 0 0 20px auto;
+	float: right;
+    color: #000000;
+	cursor: pointer;
+	font-size: 30px;
+	outline: none;
+	border: none;
+}
+.popup .cookie-link{
+	color: #EE2C43;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+}
+.popup .button{
+	float: right;
+}
+.popup .button .accept{
+	background-color:  #009456;
+	transform: translate(-40%,-40%);
+	
+	width: 100px;
+	height: 42px;
+	border-radius: 8px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 8px;
+}
+.popup .button .deny{
+	background-color: #FF5569;
+	transform: translate(-40%,-40%);
+	width: 100px;
+	height: 42px;
+	border-radius: 8px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 8px;
 }
   /*********************Home Popup end****************/
 
@@ -472,13 +561,14 @@ color:rgb(233, 23, 23);
 
 h2{
 	text-align:center;
-	padding: 3px;
+	padding:5px 5px;
 	font-family: 'poppins',sans-serif;
 	color:#F0F0F0;
 	font-size: 75px;
 	font-weight: 900;
   }
   /* Slider */
+  
   
   .slick-slide {
 	  margin: 0px 20px;
