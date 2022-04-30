@@ -2,7 +2,7 @@
 
 body{
 
-	background-color: white;
+	background-color: #F9F9F9;
 	min-height: 40rem;
 	/* padding-top: 4.5rem; */
 }
@@ -354,10 +354,12 @@ color:rgb(233, 23, 23);
   m: 0; */
  
 }
-
+.mobile-slider .info{
+	transform: translate(-200px);
+}
 .slides{
   width: 650%;
-  /* height: 500px; */
+
   display: flex;
   padding-right:30px ;
 
@@ -403,7 +405,7 @@ color:rgb(233, 23, 23);
   /* padding: 5px; */
  
   cursor: pointer;
-  transition: 2s;
+  transition: 3s;
 }
 
 .manual-btn:not(:last-child){
@@ -434,41 +436,71 @@ color:rgb(233, 23, 23);
 /***********************************End css for manual slide navigation***************************/
 /********************css for automatic navigation********************************************/
 
-.navigation-auto{
+.navigation-visibility{
   position: absolute;
-  display: none;
-  width: 800px;
+  /* display: none; */
+  /* width: 800px; */
   /* justify-content: center; */
   /* margin-top: 460px;
   */
- 
+ display: flex;
 }
 
-.navigation-auto div{
-  border: 2px solid #40D3DC;
+.navigation-visibility div{
+  /* border: 2px solid #40D3DC; */
+  display: none;
   padding: 5px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  transition: 2s;
+  transform: translate(-650px , 310px);
+  /* transform: translateY(300px); */
+}
+/* .navigation-visibility .slide-icon:first-child.active{
+	background: #4285F4;
+
+  }
+.navigation-visibility .slide-icon:nth-child(2).active{
+	background: red;
+	
+  }
+.navigation-visibility .slide-icon:nth-child(3).active{
+	background: red;
+
+  }
+.navigation-visibility .slide-icon:nth-child(4).active{
+	background: yellow;
+
+  } */
+
+/* .navigation-visibility div:not(:last-child){
+  margin-right: 100px;
+} */
+.navigation-visibility .slide-icon1{
+  margin-right: 105px;
+}
+.navigation-visibility .slide-icon2{
+  margin-right: 80px;
+}
+.navigation-visibility .slide-icon3{
+  margin-right: 100px;
+}
+
+#radio1:checked ~ .navigation-visibility .slide-icon1{
+  background: red;
   transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
+#radio2:checked ~ .navigation-visibility .slide-icon2{
+  background: red;	transition: 1s;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: red;
+#radio3:checked ~ .navigation-visibility .slide-icon3{
+  background: red;	transition: 1s;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio4:checked ~ .navigation-visibility .slide-icon4{
   background: red;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: red;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: red;
+  	transition: 1s;
 }
  /********************end css for automatic navigation********************************************/     
   /*********************Main content End********************/
@@ -486,7 +518,11 @@ color:rgb(233, 23, 23);
 
   }
   
-
+  .container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
   .popup{
 	background-color: #FFFFFF;
 	padding: 0 5px;

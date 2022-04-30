@@ -89,47 +89,53 @@
 				<!--hover button!-->
 				<div class="navigation-manual">
 				
-					
-					<a href="Cookie.html" id="slid" class="tablinks manual-btn  btn btn-lg" onmouseover="setimage()" onmouseout="imageout()">Send Mony</a>
+					<a href="Cookie.html" class="tablinks manual-btn  btn btn-lg" onmouseover="setimage()" onmouseout="imageout()">Send Mony</a>
 					<a class="tablinks manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Bill Pay</a>
 					<a class="tablinks manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Corporate</a>
 					<a class="tablinks manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Marchent</a>
+				
 				</div><!--hover button!-->
-			
+				
+					
+				 
+		  
 		
 			</div>  <!--button end!--> 
 		  </div><!--main-content end!-->
 	   
 		
 		<!--Slider start!-->
-		 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 mt-2 mobile-slider" id="slider" data-interval="false">
-
-		  <div class="slides"> <!--img slider start!-->
-		  
+		 <div class="mobile-slider col-xl-5 col-lg-5 col-md-5 col-sm-12 mt-2 " data-interval="false">
+			
+		  <div class="slides"> <!--SLIDEER img slider start!-->
+		
+		  		 <!--hover img!-->
+				   <div id="sendMony" class="tabcontent"></div>
+				   <div id="billPay" class="tabcontent"style="z-index: 100;"></div> 
+				   <div id="corPorate" class="tabcontent"style="z-index: 100;"></div> 
+				   <div id="marChent" class="tabcontent"style="z-index: 100;"></div> 
+				 
+				 <!--hover img end!-->
+				 
 			  <input type="radio" name="radio-btn" id="radio1">
 			  <input type="radio" name="radio-btn" id="radio2">
 			  <input type="radio" name="radio-btn" id="radio3">
 			  <input type="radio" name="radio-btn" id="radio4">
-			  
+			 
 		      
-			 <!--hover img!-->
-			 <div id="sendMony" class="tabcontent">
-
-			 </div>
-			  <div id="billPay" class="tabcontent"style="z-index: 100;"></div> 
-			  <div id="corPorate" class="tabcontent"style="z-index: 100;"></div> 
-			  <div id="marChent" class="tabcontent"style="z-index: 100;"></div> 
 			
-			<!--hover img end!-->
 
 			<!--slide img!-->
+			
 			 <div class="slide-mobile first">
 				<img src="img/slider/slider1.png" alt="" class="">
+				
 			 </div>
 			
 			
 			<div class="slide-mobile" >
 				<img src="img/slider/slider1.png" alt="" class="">
+				
 			</div>
 		
 			<div class="slide-mobile" >
@@ -139,14 +145,19 @@
 			<div class="slide-mobile" >
 				<img src="img/slider/slider1.png" alt="" class="">
 			</div>
+			<div class="info" style="z-index: 2000; position: absolute; background-color: white; width: 310px;height: 70px; border-radius: 12px; float: left;" >
+				<img src="img/slider/sendmony.png" alt="" style="padding-left: 30%; padding-top: 10px;">
+				<p style="font-family: Poppins; font-weight: 400; font-size: 13px;text-align: center; color:#666666;">Send Money to any Bank By EPS</p>
+			</div>
+		<div class="navigation-visibility">
+			<div class="slide-icon1 "></div>
+			<div class="slide-icon2"></div>
+			<div class="slide-icon3"></div>
+			<div class="slide-icon4"></div>
+        
+		</div>
 		
-			  <div class="navigation-auto">
-				<div class="auto-btn1"></div>
-				<div class="auto-btn2"></div>
-				<div class="auto-btn3"></div>
-				<div class="auto-btn4"></div>
-			  </div>
-	  
+			
 			</div>  <!--img slider endt!-->
 		 </div><!--mobile slider end!-->
 		</div> <!--row!-->
@@ -342,7 +353,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="Js/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-		<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
 		<script>
 			$(document).ready(function(){
 			$('.customer-logos').slick({
@@ -378,7 +389,7 @@
 			  if(counter > 4){
 				counter = 1;
 			  }
-			}, 5000);
+			}, 3000);
 		   
 			</script>
 
@@ -419,6 +430,38 @@
 	  document.getElementById("marChent").innerHTML=""
 	}
 	</script>
-<!-- Script for slider hover image end-->			  
+<!-- Script for slider hover image end-->		
+
+
+<script>
+    const slides = document.querySelectorAll(".slide-mobile");
+    const slideIcons = document.querySelectorAll(".radio-btn");
+    const numberOfSlides = slides.length;
+    var slideNumber = 0;
+    //image slider autoplay
+    var playSlider;
+
+    var repeater = () => {
+      playSlider = setInterval(function(){
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
+        slideIcons.forEach((slideIcon) => {
+          slideIcon.classList.remove("active");
+        });
+
+        slideNumber++;
+
+        if(slideNumber > (numberOfSlides - 1)){
+          slideNumber = 0;
+        }
+
+        slides[slideNumber].classList.add("active");
+        slideIcons[slideNumber].classList.add("active");
+      }, 3000);
+    }
+    repeater();
+
+</script>
 	</body>
 </html>
