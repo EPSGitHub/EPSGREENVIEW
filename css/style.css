@@ -106,15 +106,8 @@ color:rgb(233, 23, 23);
 
 }
 
-
-/* Menu Code End */
-
-
-
-
-
-/* social Icon */
-/* .social
+/* Social Icon start */
+.social
 {
 	position: fixed;
 	top:37%;
@@ -129,98 +122,12 @@ color:rgb(233, 23, 23);
 	color: #666666;
 }
 
-
-.social ul li a:hover::before{
-	content: " — ";
-	transition: all 1s;
-}
-.social ul li a:hover::after{
-	content: " Youtube";
-	transition: all 1s;
-	
-}
-
-.social ul li a:hover{
-	transform: rotate(-90deg);
-	transition: all 1s;
-} */
-
 .mobilesocial{
 	display: none;
 }
-.social {
-	position: fixed;
-	top: 35%;
-  }
-  .social ul {
-	padding: 0px;
-	-webkit-transform: translate(-270px, 0);
-	-moz-transform: translate(-270px, 0);
-	-ms-transform: translate(-270px, 0);
-	-o-transform: translate(-270px, 0);
-	transform: translate(-270px, 0);
-  }
-  .social ul li {
-	
-	margin-top: 0px;
-	margin-left:50px;
-	
 
-	width: 300px;
-	text-align: right;
-	padding: 10px;
-	-webkit-border-radius: 0 30px 30px 0;
-	-moz-border-radius: 0 30px 30px 0;
-	border-radius: 0 30px 30px 0;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	-ms-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-	
-  }
-  
-
-  .social ul li a i{
-	color:#666666;
-	font-size: 18px;
-	padding: 0px 25px;
-	text-align: left;
-	
-	
-	
-  }
-  .social ul li:hover {
-	-webkit-transform: translate(110px, 0);
-	-moz-transform: translate(110px, 0);
-	-ms-transform: translate(110px, 0);
-	-o-transform: translate(110px, 0);
-	transform: translate(90px, 0);
-
-	background: rgba(242, 231, 231, 0.36);
-
-  }
-  .social ul li:hover a {
-	color: #000;
-  }
-  .social ul li:hover i {
-	color:#666666;
-
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	-ms-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-  }
-  .social ul li i {
-	margin-left: 10px;
-	color: #000;
-
-	font-size: 20px;
-	
-  }
- 
 /*end social Code  */
+
 
 
 .subcription{

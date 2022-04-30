@@ -43,7 +43,7 @@
 					<a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-circle-info"></i> About Us</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="#"> <i class="fa-solid fa-headset"></i> Contact Us</a>
+					<a class="nav-link " aria-current="page" href="Contact.html"> <i class="fa-solid fa-headset"></i> Contact Us</a>
 				  </li>
 				 
 				</ul>
@@ -186,11 +186,11 @@
 <section>
 	<div class="social">
 		<ul>
-			<li class="youtube"><a href="e">Youtube <i class="fa-brands fa-youtube"></i></a></li>
-			<li><a href="" class="twitter">Twitter <i class="fa-brands fa-twitter"></i></a></li>
-			<li><a href="" class="linkedin">LinkedIn <i class="fa-brands fa-linkedin-in"></i></a></li>
-			<li style="margin-left: 45px;"><a href="" class=" facebook active"> Facebook <i class="fa-brands fa-facebook-f"></i></a></li>
-			
+			<li id="ytb"><a id="youtube" onmouseover="YoutubeShow()" onmouseout="YoutubeOut()" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+			<li id="twt"><a id="twitter" onmouseover="twitterShow()" onmouseout="twitterOut()" href="www.facebook.com"  target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+			<li id="lnk"><a id="linkedin" onmouseover="LinkedInShow()" onmouseout="LinkedInOut()" href="https://www.linkedin.com/company/epspay"  target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+			<li id="fb"><a id="facebook"  onmouseover="FacebookShow()"  onmouseout="FacebookOut()" href="https://eps.com.bd/"  target="_blank"><p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-facebook-f"></i><span> — Facebook <span><p></p></a></li>
+		
 			
 		</ul>
 	</div>
@@ -274,9 +274,9 @@
 						<li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Event</a></li>
 						<li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Career</a></li>
 						<li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Support</a></li>
-						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Terms & Condition</a></li>
-						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Privacy Policy</a></li>
-						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Cookie</a></li>
+						<li><a href="Terms-condition.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Terms & Condition</a></li>
+						<li><a href="privacy.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Privacy Policy</a></li>
+						<li><a href="cookie.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Cookie</a></li>
 						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> App Support</a></li>
 						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Site Map</a></li>
 					
@@ -320,10 +320,11 @@
 	
 	
 	
-		<script src="js/script.js"></script>
+		
 		<script src="js/bootstrap.min.js"></script>
 		<script src="Js/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+		<script src="js/script.js"></script>
 		
 		<script>
 			$(document).ready(function(){
@@ -418,6 +419,8 @@
 	  document.getElementById("marChent").innerHTML=""
 	}
 	</script>
-<!-- Script for slider hover image end-->			  
+<!-- Script for slider hover image end-->	
+
+	
 	</body>
 </html>

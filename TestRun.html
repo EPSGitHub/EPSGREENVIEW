@@ -79,10 +79,10 @@
 <section>
 	<div class="social">
 		<ul>
-			<li><a id="youtube" onmouseover="YoutubeShow()" onmouseout="YoutubeOut()" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-			<li><a id="twitter" onmouseover="twitterShow()" onmouseout="twitterOut()" href="www.facebook.com"  target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-			<li><a id="linkedin" onmouseover="LinkedInShow()" onmouseout="LinkedInOut" href="https://www.linkedin.com/company/epspay"  target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-			<li><a id="facebook"  onmouseover="FacebookShow()"  onmouseout="FacebookOut()" href="https://eps.com.bd/"  target="_blank"><p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-facebook-f"></i><span> — Facebook <span><p></p></a></li>
+			<li id="ytb"><a id="youtube" onmouseover="YoutubeShow()" onmouseout="YoutubeOut()" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+			<li id="twt"><a id="twitter" onmouseover="twitterShow()" onmouseout="twitterOut()" href="www.facebook.com"  target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+			<li id="lnk"><a id="linkedin" onmouseover="LinkedInShow()" onmouseout="LinkedInOut()" href="https://www.linkedin.com/company/epspay"  target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+			<li id="fb"><a id="facebook"  onmouseover="FacebookShow()"  onmouseout="FacebookOut()" href="https://eps.com.bd/"  target="_blank"><p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-facebook-f"></i><span> — Facebook <span><p></p></a></li>
 		
 			
 		</ul>
@@ -152,66 +152,10 @@
 		<!-- ' <div style=" transform: rotate(-90deg); position:absolute; margin-left:-40px; "> © - <span><a href=""><i class="fa-brands fa-youtube"></i></a> - Youtube<div>' -->
 	
 	
-	
+	<script src="js/script.js"></script>
 	<script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script>
-	
-
-	function twitterShow() {
-	  document.getElementById("twitter").innerHTML='<p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-twitter"></i><span> — Facebook <span><p>';
-		document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
-		document.getElementById("linkedin").innerHTML = '<i class="fa-brands fa-linkedin-in"></i>';
-		document.getElementById("youtube").innerHTML = '<i class="fa-brands fa-youtube"></i>';
-		
-	}
-	
-	function twitterOut() {
-	  document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
-	//   document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
-	}
-
-	function FacebookShow() {
-	 
-	 document.getElementById("facebook").innerHTML = '<p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-facebook-f"></i><span> — Facebook <span><p>';
-		document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
-		document.getElementById("linkedin").innerHTML = '<i class="fa-brands fa-linkedin-in"></i>';
-		document.getElementById("youtube").innerHTML = '<i class="fa-brands fa-youtube"></i>';
-	}
-	
-	function FacebookOut() {
-
-     document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
-	}
-
-	function LinkedInShow() {
-	 
-	 document.getElementById("linkedin").innerHTML = '<p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-linkedin-in"></i><span> — LinkedIn <span><p>';
-		document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
-		document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
-		document.getElementById("youtube").innerHTML = '<i class="fa-brands fa-youtube"></i>';
-	}
-	function LinkedInOut() {
-
-     document.getElementById("linkedin").innerHTML = '<i class="fa-brands fa-linkedin-in"></i>';
-	}
-
-	function YoutubeShow() {
-	 
-	 document.getElementById("youtube").innerHTML = '<p style=" transform: rotate(-90deg); margin-left:-55px; padding-top:50px;padding-bottom:50px"><span> — </span><i class="fa-brands fa-youtube"></i><span> — Youtube <span><p>';
-		document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
-		document.getElementById("linkedin").innerHTML = '<i class="fa-brands fa-linkedin-in"></i>';
-		document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
-	}
-	
-	function YoutubeOut() {
-
-     document.getElementById("youtube").innerHTML = '<i class="fa-brands fa-youtube"></i>';
-	}
-
-	
-
-	</script>
+ 
 	
 
   
