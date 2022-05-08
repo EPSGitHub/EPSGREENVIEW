@@ -719,6 +719,130 @@ padding-right:30px;
 /* Contact Us End*/
 
 
+/* ABout Us page start*/
+.details{
+	margin-top:3%;;
+}
+
+.details span{
+	font-size: 22px;
+	font-weight: 900;
+	font-family: 'poppins',sans-serif;
+	color:#666666;
+	line-height: 24.64px;
+	margin-left: 10px;
+}
+.details h3{
+font-size: 72px;
+font-family:'poppins',sans-serif;
+font-weight: 900;
+color:#666666;
+}
+
+.details p {
+	margin-top: 15px;
+	text-align: justify;
+	font-size: 14px;
+	font-family: 'poppins',sans-serif;
+	color:#666666;
+}
+.details ul{
+	position: relative;
+}
+
+.details ul li span{
+	font-size: 30px;
+	color:#666666;
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 30PX;
+	font-weight: 900;
+	font-family: 'poppins',sans-serif;
+	
+}
+
+#team_head{
+	margin-top: 100px;
+
+	
+}
+/* ABout Us page End*/
+
+
+
+#gallery img{
+	width: 310px;
+	height: auto;
+	box-sizing: border-box;
+	border: 1px solid rgba(0.19, 0.19, 0.19, 0.19);
+	border-radius: 5px;
+	position: relative;
+}
+
+#gallery .dtl {
+
+	width: 250px;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 2%;
+	text-align: center;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+	padding-top: 5px;
+	
+}
+
+#gallery .tag h4{
+	display: block;
+	transform: rotate(-90deg); width:300px; margin-left: -20px; margin-top: 120px;
+}
+
+#gallery .sigdiv{
+	margin-top: 80px;
+
+}
+
+#gallery .dtl h5{
+	font-size: 14px;
+	margin-top: 8px;
+	margin-bottom: -5px;
+}
+#gallery .dtl p{
+	font-size: 12px;
+	margin-bottom: 8px;
+	
+}
+
+#official_logo{
+	margin-top: 50px;
+
+
+}
+
+#official_logo img{
+	width: 740px;
+	margin-left: 25%;
+
+	
+	
+}
+#official_logo a:hover img{
+	background: rgba(0, 0, 0, 0.25);
+	background-image:url(../img/logohover.png);
+background-repeat: no-repeat;
+background-position: center bottom;
+
+
+}
+#achivement{
+	margin-bottom: 150px;
+}
+
+
+
+
+
+
 /* Privacy Policy Start */
 .privacy{
 	margin-bottom: 100px;
@@ -1138,7 +1262,96 @@ bottom: 0px;
 	display: none;
 }
 
+
+
+
+/* About Us page start*/
+
+.details span{
+	font-size: 18px;
+	font-weight: 900;
+	font-family: 'poppins',sans-serif;
+	color:#666666;
+	line-height: 24.64px;
+	margin-left: 18px;
 }
+.details h3{
+	font-size: 36px;
+	font-family:'poppins',sans-serif;
+	font-weight: 900;
+	color:#666666;
+	margin: 15px;
+	}
+	
+	.details p {
+		margin: 15px;
+		text-align: justify;
+		font-size: 14px;
+		font-family: 'poppins',sans-serif;
+		color:#666666;
+	
+	}
+	.details ul{
+		position: relative;
+		margin-top: 50px;
+		margin-left: 0px;
+		margin-right: 10px;
+	}
+	
+	.details ul li span{
+		font-size: 30px;
+		color:#666666;
+		position: absolute;
+		margin-top: 3px;
+		margin-left: 15PX;
+		font-weight: 900;
+		font-family: 'poppins',sans-serif;
+		
+	}
+
+	#gallery img{
+		width: 300px;
+		height: auto;
+		box-sizing: border-box;
+		border: 1px solid rgba(0.19, 0.19, 0.19, 0.19);
+		border-radius: 5px;
+		position: relative;
+	}
+	
+	#gallery .dtl {
+	
+		width: 250px;
+		position: absolute;
+		margin-top: -20px;
+		margin-left: 2%;
+		text-align: center;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+		padding-top: 5px;
+		
+	}
+	
+	#gallery .tag h4{
+	display: none;
+		transform: rotate(-90deg); width:300px; margin-left: -20px; margin-top: 120px;
+	}
+	
+	#gallery .sigdiv{
+		margin-top: 80px;
+	
+	}
+
+	#official_logo img{
+		width: 300px;
+	
+		margin-left:15px;
+		
+		
+	}
+}
+/* About Us page end*/
+
+
 /* contact Us page Mobile View Code End  */
 /* ========================================================== Mobile Responsive End ===================================================================== */
 
@@ -1231,6 +1444,14 @@ bottom: 0px;
 		
 		font-size:72px;
 		margin-bottom: -20px;
+	}
+
+	#official_logo img{
+		width: 740px;
+		margin-left: 30%;
+	
+		
+		
 	}
   }
 
