@@ -3,7 +3,15 @@ body{
 
 	background-color: white;
 	min-height: 40rem;
+/* 	background-image: url(../img/Border_background.svg);
+	background-position:  center ; */
 	/* padding-top: 4.5rem; */
+}
+
+.modalp{
+	margin: 0px auto;
+	position: absolute;
+	top:50%
 }
 a{
 	text-decoration: none;
@@ -836,12 +844,120 @@ background-position: center bottom;
 }
 #achivement{
 	margin-bottom: 150px;
+	
+}
+
+/* Modal View*/
+.mbody
+{
+
+	border: 1px solid black;
+	margin: 20px;
+	background-image: url(../img/Vector\ 19.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	
+
+	
+}
+
+.mbody button{
+	width:10px;
+	margin-left: 30px;
+}
+
+.mbody h4{
+	font-size: 24px;
+	font-weight: 900;
+	margin-top: 100px;
+	margin-left: 12%;
+}
+
+.mbody p{
+	font-family: 'poppins',sans-serif;
+	font-size: 18px;
+	color: #666666;
+	font-weight: 600;
+	margin-top: 50px;
+	margin-bottom:50px;
+	line-height: 34px;
+	
+
+
+	
+}
+.mbody a {
+	background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+margin-left: 20%;
+}
+
+.mbody span{
+	font-size: 14px;
+	margin-left: 35%;
+	
+/* END Modal*/
+	
+}
+.mmg{
+
+	width: 232px;
+	height:232px;
+	border-radius: 50%;
+	margin-top: 70px;
+	margin-left: 30px;
+
+}
+
+.qr  {
+	width: 118px;
+	height: 116px;
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-bottom: 100px;
+
+}
+
+/*Details single view*/
+.sin_img{
+	
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sin_des{
+	
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+	margin-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 150px;
+}
+.single_img{
+	width: 232px;
+	height:232px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-left: 35%;
 }
 
 
+.sing_text{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-family: 'poppins',sans-serif;
+}
+
+.full_des{
+	padding: 20px 20px 0px 20px;
+	font-family:spartan;
+	font-size: 18px;
+	line-height: 34px;
+
+}
 
 
-
+/*Details single view End*/
 
 /* Privacy Policy Start */
 .privacy{
@@ -927,10 +1043,10 @@ background-position: center bottom;
 
 .footer {
 	
-	background-image: url("../img/footerimg.png");
+	background-image: url("../img/Footer_banner_2.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-color: #F5F5F5;
+	background-color: #FFFFFF;
 	position: fixed;
 	bottom: 0px;
 	
@@ -1330,6 +1446,10 @@ bottom: 0px;
 		padding-top: 5px;
 		
 	}
+
+	#gallery .teamtable{
+		margin-bottom: 300px;
+	}
 	
 	#gallery .tag h4{
 	display: none;
@@ -1341,6 +1461,7 @@ bottom: 0px;
 	
 	}
 
+
 	#official_logo img{
 		width: 300px;
 	
@@ -1348,6 +1469,29 @@ bottom: 0px;
 		
 		
 	}
+
+
+	/* Team Member All View Start*/
+	
+	  
+	/* .btn {
+		border: none;
+		outline: none;
+		padding: 12px 30px;
+		background-color: white;
+		cursor: pointer;
+	  }
+	  
+	  .btn:hover {
+		background-color: #ddd;
+	  }
+	  
+	  .btn.active {
+		background-color: rgb(237, 16, 16);
+		color: white;
+	  } */
+
+	
 }
 /* About Us page end*/
 
