@@ -5,7 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
 
 <body>
@@ -72,29 +77,29 @@
 
 <!-- // Main section Start -->
 <section>
-	<div class="container mt-3" >
+	<div class="container mt-4" >
 	
 		<div class="row">
 		  
 		  <!--main-content-->
-		  <div class="col-xl-7 col-lg-7 col-md-7  col-sm-12  main-content mt-2" >
-			  <a class=" btn-1 btn-lg" href="" ><span class="text" > Easy solution for all transaction</span></a>
-			<h6 class="easy" >Easy</h6>  
+		  <div class=" main-content col-xl-7 col-lg-7 col-md-7  col-sm-12 mt-3" >
+			  <a class=" btn-1 btn-lg"  href="" ><span class="text" style="font-size: 14px; padding: 15px 0px;" > Easy solution for all transaction</span></a>
+			<h6 class="easy" style="margin-top: 10px;" >Easy</h6>  
 			<h6 class="payment" >Payment</h6>
 			 <h6 class="system" >System</h6>
-			 <p> Easy Payment System (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with an easy and instant payment solution... Read More </p>
+			 <p> Easy Payment System (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with an easy and instant payment solution... <a href="Cookie.html" target="_blank" class="readmore" style="">Read More </a></p>
 			 <!--button start!--> <!--automatic navigation start-->
 			 
 			<div class="slides d-flex " >
 				<!--hover button!-->
-				<div class="navigation-manual">
+			
 				
-					<a href="Cookie.html" class="tablinks manual-btn  btn btn-lg" onmouseover="setimage()" onmouseout="imageout()">Send Mony</a>
-					<a class="tablinks manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Bill Pay</a>
-					<a class="tablinks manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Corporate</a>
-					<a class="tablinks manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Marchent</a>
+					<a href="Cookie.html" class="manual-btn  btn btn-lg" onmouseover="setimage()" onmouseout="imageout()">Send Mony</a>
+					<a class="manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Bill Pay</a>
+					<a class="manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Corporate</a>
+					<a class="manual-btn  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()">Marchent</a>
 				
-				</div><!--hover button!-->
+				<!--hover button!-->
 				
 					
 				 
@@ -145,9 +150,13 @@
 			<div class="slide-mobile" >
 				<img src="img/slider/slider1.png" alt="" class="">
 			</div>
-			<div class="info" style="z-index: 2000; position: absolute; background-color: white; width: 310px;height: 70px; border-radius: 12px; float: left;" >
-				<img src="img/slider/sendmony.png" alt="" style="padding-left: 30%; padding-top: 10px;">
-				<p style="font-family: Poppins; font-weight: 400; font-size: 13px;text-align: center; color:#666666;">Send Money to any Bank By EPS</p>
+			<div class="sendmony " style="z-index: 2000;margin-right: 30%; position: absolute; background-color: white;  border-radius: 8px; " >
+				<img src="img/slider/sendmony.png" alt="" style="padding-left: 25%; padding-top: 10px;">
+				<p style="font-family: Poppins; font-weight: 400; font-size: 12px;text-align: center; color:#666666;">Send Money to any Bank By EPS</p>
+			</div>
+			<div class="billpay" style="z-index: 2000; position: absolute; background-color: white;  border-radius: 8px; " >
+				<img src="img/slider/bilpay.png" alt="" style=" width: 250px; height: 70px; margin-top: 12px;margin-left:17px;">
+				
 			</div>
 		<div class="navigation-visibility">
 			<div class="slide-icon1 "></div>
@@ -215,7 +224,7 @@
 	<div class="container ">
 	 <div class="col-md-12 mb-4" >
 
-		<div class="popup animate__animated animate__pulse " >
+		<div class="popup animate__animated animate__pulse " style="position: absolute;" >
 			
 			  <buttton id="close" onclick="toggle()">&times;</buttton>
 			  
@@ -232,9 +241,11 @@
 </section>
 <!-- // Home Popup section End -->
 
-<div class="subcription">
-	<button class="btn btn-success text-white rs" onclick="subscription()" style="transform: rotate(-90deg);">Lets Make a Connection</button>
-	<a href=""><span><i class="fa-solid fa-angle-left"></i></span></a> 
+<div class="subcription" id="subscrip">
+	<button class="btn btn-success text-white rs" onclick="subscription()" id="sbt" style="transform: rotate(-90deg);">Let's Make a Connection</button>
+	<a id="arw" onclick="subscription()"><span><i class="fa-solid fa-angle-left"></i></span></a> 
+	<a id="arw2" onclick="subscriptionclose()" class="close"></a> 
+
 
 	<div id="sub" style="margin-top: -50%;"></div>
 
@@ -247,8 +258,8 @@
 		
 			<div class="col-md-12" style=" padding-right: 120px;padding-left: 150px;">	
 			
-					<h2>Our  Partners</h2>
-					 <section class="customer-logos slider">
+					<h2  class ="partnertitle" style="margin-top: 30px;">Our  Partners</h2>
+					 <section class="customer-logos slider" style="margin-top: 50px;">
 						<div class="slide"><a href=""><img src="img/partner/Brac_Bank.png"></a></div>
 						<div class="slide"><a href=""><img src="img/partner/City_Bank 1.png"></a></div>
 						<div class="slide"><a href=""><img src="img/partner/dachbank.png"></a></div>
@@ -270,27 +281,7 @@
 </section>
 
 
-<!-- // Home Popup section Start -->
-<section>
-	
-	 <div class="col-md-12 mb-4" >
 
-		<div class="popup animate__animated animate__pulse " >
-			
-			  <buttton id="close" onclick="toggle()">&times;</buttton>
-			  
-			  <p class="card-text">Easy Payment Solution (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with <a href="Cookie.html" target="_blank" class="cookie-link" style="text-decoration:underline">Cookie Policy</a></p>
-		<div class="button" >
-			<a href="" class="btn btn-sm accept">Accept</a>
-			<a href="" class="btn btn-sm deny">Deny</a>
-			   
-		</div>	  
-		
-		 </div>
-		</div>
-	
-</section>
-<!-- // Home Popup section End -->
  <!-- Footer  Start -->
 
 		<footer class="container-fluid  footer ">
@@ -353,7 +344,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="Js/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-
+		
 		<script>
 			$(document).ready(function(){
 			$('.customer-logos').slick({
@@ -378,27 +369,9 @@
 			});
 		});
 		</script>
-		
-		<script type="text/javascript">
- 
-			var counter = 1;
-		  
-		   setInterval(function(){
-			  document.getElementById('radio' + counter).checked = true;
-			  counter++;
-			  if(counter > 4){
-				counter = 1;
-			  }
-			}, 3000);
-		   
-			</script>
+	
 
-			<script>
-				function subscription(){
-					document.getElementById("sub").innerHTML='<div class="subform" style="margin-right:200px;  padding:10px 50px; position:relative; top:-40%"><img src="img/subimg.png" width="158px" height="129px" alt=""><button class="btn btn-sm btn-success text-white lbtn " style="transform: rotate(-90deg); width:200px; position:absolute; margin-left: -110%; margin-top: 60%;">Lets Make a Connection</button><p style="margin-bottom:25px;font-size:12px">Subscribe and get our exclusive offers delivered directly to your inbox</p><form action="" class="from-group"><input type="text" placeholder="Email / Phone Number" class="form-control"><input style="background:green; color:white; margin-top:20px" type="button" value="submit" style="margin-top:20px" class="form-control"></form> <img src="img/Ellipse.Png" style=" margin-top:88px; margin-left:200px"</div> ';
-					
-				}
-			</script>
+
 		<!-- Script for slider hover image -->	
 	
 <script>
@@ -463,5 +436,9 @@
     repeater();
 
 </script>
+<script>var element = document.getElementById("element");
+
+	TweenMax.to(element, 0.1, {x:"+=20", yoyo:true, repeat:-1});
+	TweenMax.to(element, 0.1, {x:"-=20", yoyo:true, repeat:-1});</script>
 	</body>
 </html>
