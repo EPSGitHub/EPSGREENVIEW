@@ -16,6 +16,11 @@ body{
 	color:white;
 
 }
+.pagehead p{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 5px;
+}
 .pagehead h3{
 	text-align: center;
 	padding-top: 30px;
@@ -1142,19 +1147,206 @@ margin-left: 20%;
 */
 
 .career{
+
 	padding: 40px 0px 30px 0px;
+
 }
 
 .srcbtn{
-	background: none;
+	background: green;
 	border: none;
+	border-radius: 0px;
 }
 
 .srcbtn i {
 	font-size: 20px;
 	margin-top: 8px;
-	margin-left: -100px;
+	color:white;
+	
+	
 }
+
+.career_cat{
+
+	padding: 20px  10px;
+	font-family: 'poppins',sans-serif;
+	margin-bottom: 100px;
+	
+}
+
+.career_cat ul{
+	margin-top: 20px;
+}
+.career_cat ul li{
+	margin-left: -25px;
+	padding: 10px 0px;
+	border-bottom: 1px solid black;
+}
+
+.career_cat ul li a {
+	margin-top: 10px;
+	
+}
+
+.career_cat ul li a i {
+	font-size: 20px;
+	
+}
+
+
+.jobpost{
+background: #FFFFFF;
+margin: 10px;
+padding: 20px 30px;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+border-radius: 8px;
+font-family: 'poppins',sans-serif;
+
+}
+
+.jobpost p{
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color:#009456;
+}
+
+.jobpost h3{
+font-weight: 700;
+font-size: 26px;
+line-height: 34px;
+}
+.jobpost h6{
+font-weight: 400;
+font-size: 12px;
+line-height: 28px;
+}
+.jobpost  span{
+	margin-right: 100px;
+	
+}
+
+.jobpost a{
+	margin: 30px 0px 20px 0px;
+
+}
+
+.jdate{
+	float: right;
+	margin-top: 30px;
+	font-size: 16px;
+	
+}
+
+/*
+
+Job Details page.......................
+
+*/
+
+.job_details{
+	margin: 30px 0px;
+}
+.job_details_page
+{
+background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+border-radius: 8px;
+padding: 50px 20px 20px;
+font-family: 'poppins',sans-serif;
+margin-bottom: 100px;;
+margin-right: 10px;
+
+}
+
+
+.job_details_page h3{
+	margin-bottom: 10px;
+}
+
+.job_details_page h6{
+font-weight: 400;
+font-size: 12px;
+line-height: 28px;
+} 
+
+.job_details_page span{
+	margin-right: 100px;
+}
+
+.job_details_page a{
+margin-left: 30%;
+width:250px;	
+}
+.job_details_page h4{
+	font-size: 16px;
+	margin: 10px 0px;
+	font-weight: 600;
+}
+.job_details_page p{
+	font-size: 14px;
+}
+
+
+.job_details_side{
+background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+border-radius: 8px;
+padding: 30px 20px 20px;
+margin-bottom: 30px;
+}
+
+.job_details_side h4{
+	font-size: 18px;
+}
+.job_side_item p{
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: -5px;
+	text-transform: uppercase;
+}
+.job_side_item span{
+font-size: 12px;
+
+}
+
+.job_side_item hr{
+	margin-top: 5px;
+}
+
+.job_details_side ul{
+	margin-top: 10px;
+}
+.job_details_side ul li{
+	list-style: disc;
+	font-size: 14px;
+}
+
+.jobapp{
+	background: none;
+}
+.jobform_head{
+margin-top: 20px;
+text-align: center;
+}
+
+.jobform_head span{
+	margin-left: 0%;
+}
+
+.jobform_head_close{
+	margin-left: -20px;
+}
+.jobform label{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.uploadfile{
+	margin-bottom: 30px;
+}
+
 
 /*
 *** Career Section Code End
@@ -1317,8 +1509,13 @@ margin-left: 20%;
 	  background: white;
 	}
 
+
 	/* Mobile Nav View Start */
 
+	.pagehead {
+		
+		padding-bottom: 130px;
+	}
 	.logo1 {
 	margin-left: 0px;
 		
@@ -1678,16 +1875,106 @@ bottom: 0px;
 	.career {
 		padding: 20px;
 	}
-	.career input{
-		width:95%;
+	.career form{
+		width:100%;
 		margin-top: 20px;
 	}
 
-	.srcbtn i{
-		color:red;
-		margin-left: -100px;
+
+	.srcbtn{
+		background: red;
+		padding: 8px 15px;
+		cursor: pointer;
+		border-radius: 0px;
+		
 	}
+	.srcbtn i{
+		color:white;
+		font-size: 14px;
+		margin-left: 0px;
+		margin-top: -20px;
+		position: right;
+		
+
+	}
+
 	/*Career Section*/
+
+	.career_cat h5{
+		margin-left: 5px;
+	}
+	.jobpost{
+		background: #FFFFFF;
+		margin: 10px;
+		padding: 20px 30px;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+		border-radius: 8px;
+		font-family: 'poppins',sans-serif;
+		
+		}
+		
+		.jobpost p{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color:#009456;
+		}
+		
+		.jobpost h3{
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 34px;
+		}
+		.jobpost h6{
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 28px;
+		}
+		.jobpost  span{
+			margin-right: 15px;
+			
+		}
+		
+		.jobpost a{
+			margin: 10px 0px 0px 0px;
+		
+		}
+		
+		.jdate{
+			
+			margin-top: 15px;
+			float: right;
+			margin-left: 20px;
+			font-size: 8px;
+		}
+
+		.job_details_page{
+			box-shadow: none;
+			padding-top: 10px;
+		}
+
+		.job_details_page a{
+			margin-left: 5%;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			width:250px;	
+			}
+
+			.job_details_page span{
+				margin-right: 10px;
+				
+			}
+
+			.jobform_head_close{
+				margin-top: -100px;
+				margin-left: 75%;
+			}
+
+	/*Career Section End*/
+
+
+
+
 
 	/* Team Member All View Start*/
 	
@@ -1760,7 +2047,6 @@ bottom: 0px;
 		border-radius: 12px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 		width: 820px;
-		
 		margin-top:5%;
 	
 	position: absolute;
@@ -1885,4 +2171,8 @@ position: absolute;
 display: none;
 z-index: 1000;
 }
+
+/**/
+
+
   }
