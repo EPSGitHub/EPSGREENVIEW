@@ -188,7 +188,7 @@ color:rgb(233, 23, 23);
 .main-content{
    
     padding-left: 180px;
-    padding-right:  30px;
+
   }
 .btn-1{
    
@@ -247,7 +247,13 @@ color:rgb(233, 23, 23);
 	width: 450px;
 	text-align: justify;
 	color: #666666;
-	margin-bottom: 1.5rem;
+
+  }
+  /**Read More****/
+  .main-content .readmore{
+	/* font-family: 'Poppins',sans-serif; */
+	/* font-size: 14px; */
+	color: #666666;
   }
   
   .partnertitle {
@@ -260,12 +266,14 @@ color:rgb(233, 23, 23);
 
 /*********************End Home Easy Payment System Part start****************/
 /********************* Home Hover button Part start****************/
+
 .slides .btn{
 	font-family: 'Poppins',sans-serif;
 	font-size: 0.8rem;
 	color: #666666;
-	/* width:100px;
+	/* 
 	height:30px; */
+	width:110px;
 	background-color: #FFFFFF;
 	border-radius: 8px;
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
@@ -279,21 +287,88 @@ color:rgb(233, 23, 23);
  }  
 
 .mobile-slider{
-	height: 315px;
+	height: 400px;
+	width:198px;
   overflow: hidden;
   border:6px solid #3F3D56;
   border-radius: 24px;
-  width:170px;
- margin-left:150px;
+
+ margin-left:100px;
 
   /* margin: 0;
   m: 0; */
  
 }
+.sendmony {
+	animation: animate-shake 3s ease infinite;
 
+	position: absolute;
+  }
+  @keyframes  animate-shake{
+	0%{
+	  transform: translateX(-10px)
+	}
+	
+  25%{
+		transform: translateX(1px);
+	  }
+		
+	 
+	
+	100%{
+	  transform: translateX(-140px);
+	}
+  }
+	
+.mobile-slider .sendmony{
+	margin-top: 80px;
+	margin-right: 200px;	
+		transform: translate(-153px,0);
+	height: 60px;
+	width: 217px;
+	
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+}
+.mobile-slider .billpay{
+	margin-top: 240px;	
+	margin-left: 100px;	
+	height: 90px;
+	width: 290px;	
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+
+		z-index: 2000;
+		position: absolute;
+		background-color: white;
+		border-radius: 8px;
+		/* transform: translate(100px,160px); */
+
+}
+.billpay{
+	animation: shake 3s ease infinite;
+
+
+	position: absolute;
+  }
+  @keyframes shake{
+
+	
+	0%{
+		transform: translateX(0)
+	  }
+	  25%{
+		transform: translateX(25px);
+	  }
+		
+	  50%{
+		transform: translateX(-25px);
+	  }
+	  100%{
+		transform: translateX(0px);
+	  }
+  }
 .slides{
   width: 650%;
-  /* height: 500px; */
+
   display: flex;
   padding-right:30px ;
 
@@ -310,109 +385,197 @@ color:rgb(233, 23, 23);
 }
 
 .tabcontent img{
-  height: 312px;
-  width:164px;
+  height: 370px;
+  width:197px;
   border-radius: 22px;
   margin: 0 0 0 -16px;
  
 }
 .slide-mobile img{
-  height: 311px;
-  width:162px;
+  height: 370px;
+  width:197px;
   border-radius: 24px;
   margin: 0 0 0 -14px;
  
 }
 
 
-/***********************************css for manual slide navigation***************************/
-.navigation-manual{
-  position: absolute;
-  width: 800px;
+  
+  .slides{
+	width: 500%;
+	height: 350px;
+	display: flex;
+  }
+  
+  .slides input{
+	display: none;
+  }
+  
+  
 
-  display: flex;
-  /* justify-content: center; */
-}
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 600px;
+	margin-top: 8px;
+	
+  }
+  
+  /* .manual-btn{
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+    background-color: red;
+	padding: 5px;
+	width: 30px;
+  } */
+  .manual-btn1{
+	margin-right: 12px;
+	cursor: pointer;
+	transition: 1s;
+	background: #EE2D43;
+	border-radius: 2px;
+	width: 12px;
+	height: 8px;
 
-.manual-btn{
-  /* border: 2px solid #40D3DC; */
-  /* padding: 5px; */
+  }
+  .manual-btn2{
+	margin-right: 12px;
+	cursor: pointer;
+	transition: 1s;
+	background: #EE2D43;
+	border-radius: 2px;
+	width: 12px;
+	height: 8px;
+  }
+  .manual-btn3{
+	margin-right: 12px;
+	cursor: pointer;
+	transition: 1s;
+	background: #EE2D43;
+	border-radius: 2px;
+	width: 12px;
+	height: 8px;
+  }
+  .manual-btn4{
+	margin-right: 12px;
+	cursor: pointer;
+	transition: 1s;
+	background: #EE2D43;
+	border-radius: 2px;
+	width: 12px;
+	height: 8px;
+  }
+  
+  .manual-btn:not(:last-child){
+	margin-right: 40px;
+  }
+  
  
-  cursor: pointer;
-  transition: 2s;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 12px;
-}
-
-.manual-btn.active,
-.manual-btn:hover{
-  background-color: #009456;
-  color: #FFFFFF;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-/***********************************End css for manual slide navigation***************************/
-/********************css for automatic navigation********************************************/
+  .manual-btn1:hover{
+	background: white;
+  }
+  
+  #radio1:checked ~ .first{
+	margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+	margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+	margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+	margin-left: -60%;
+  }
+  
+ 
+/*css for automatic navigation*/
 
 .navigation-auto{
-  position: absolute;
-  display: none;
-  width: 800px;
-  /* justify-content: center; */
-  /* margin-top: 460px;
-  */
- 
-}
+	position: absolute;
+	display: flex;
+	width: px;
+	justify-content: center;
+	margin-top: 500px;
+  }
 
-.navigation-auto div{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
+  .navigation-auto a{
+	
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+	transform: translate(-600px, -140px);
 
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: red;
-}
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: red;
-}
+  }
+  .navigation-auto a:hover{
+	
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: red;
-}
+	background-color: #009456;
+	color: #FFFFFF;
 
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: red;
-}
+
+  }
+  
+  .navigation-auto a:not(:last-child){
+	margin-right: 10px;
+  }
+  
+  #radio1:checked ~.navigation-auto .auto-btn1{
+	background-color: #009456;
+	color: #F0F0F0;
+  }
+  #radio1:checked ~.navigation-auto .manual-btn1{
+	background-color: #FFFFFF;
+	color: #F0F0F0;
+  }
+  #radio2:checked ~.navigation-auto .manual-btn2{
+	background-color: #FFFFFF;
+	color: #F0F0F0;
+  }
+  #radio3:checked ~.navigation-auto .manual-btn3{
+	background-color: #FFFFFF;
+	color: #F0F0F0;
+  }
+  #radio4:checked ~.navigation-auto .manual-btn4{
+	background-color: #FFFFFF;
+	color: #F0F0F0;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+	background-color: #009456;
+	color: #F0F0F0;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+	background-color: #009456;
+	color: #F0F0F0;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+	background-color: #009456;
+	color: #F0F0F0;
+  }
+		
+		
  /********************end css for automatic navigation********************************************/     
   /*********************Main content End********************/
 
   /*********************Home Popup start ****************/
   .popup {
-	display: inline-block;
-	margin: -3rem 0.9rem;
+	
+	/* margin: -3rem 0.9rem; */
   
 	animation:pulse; /* referring directly to the animation's @keyframe declaration */
 	animation-duration: 2s; /* don't forget to set a duration! */
@@ -421,7 +584,6 @@ color:rgb(233, 23, 23);
 	--animate-duration: 2s;
 
   }
-  
 
   .popup{
 	background-color: #FFFFFF;
@@ -429,22 +591,22 @@ color:rgb(233, 23, 23);
 	border: 1px solid #009456;
 	border-radius: 12px;
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
-	width: 45rem;
-	margin-left: 210px;
+	width: 780px;
+
 	margin-top:5%;
 
-
+	margin-left: 170px;
 position: absolute;
 display: none;
 z-index: 1000;
 }
 .popup p{
-	padding: 0px 10px;
-	padding-top: 40px;
+	padding: 0px 5px;
+	padding-top: 30px;
 	color: #666666;
 	font-family: 'Poppins', sans-serif;
-	font-size: 15px;
-	line-height: 25px;
+	font-size: 14px;
+	line-height: 30px;
 	width: 600px;
 	font-weight: 500;
 	text-align: justify;
@@ -456,7 +618,7 @@ z-index: 1000;
 	float: right;
     color: #000000;
 	cursor: pointer;
-	font-size: 30px;
+	font-size: 20px;
 	outline: none;
 	border: none;
 }
@@ -471,7 +633,7 @@ z-index: 1000;
 }
 .popup .button .accept{
 	background-color:  #009456;
-	transform: translate(-40%,-40%);
+	transform: translate(-40%,-80%);
 	
 	width: 100px;
 	height: 42px;
@@ -482,7 +644,7 @@ z-index: 1000;
 }
 .popup .button .deny{
 	background-color: #FF5569;
-	transform: translate(-40%,-40%);
+	transform: translate(-40%,-80%);
 	width: 100px;
 	height: 42px;
 	border-radius: 8px;
@@ -496,7 +658,10 @@ z-index: 1000;
 
 
 /* Partners image */
-
+.partner{
+padding-right: 330px;
+	margin-left: 160px;
+}
 h2{
 	text-align:center;
 	padding:5px 5px;
@@ -1594,16 +1759,24 @@ bottom: 0px;
 		border: 1px solid #009456;
 		border-radius: 12px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
-		width: 45rem;
-		margin-left: 210px;
-		margin-top:10%;
-	
+		width: 820px;
+		
+		margin-top:5%;
 	
 	position: absolute;
 	display: none;
 	z-index: 1000;
 	}
-
+	.navigation-auto a{
+	
+		padding: 5px;
+		border-radius: 10px;
+		transition: 1s;
+		transform: translate(-650px, -140px);
+	
+	
+	
+	  }
 	.main-content .easy{
      
 		font-size:5.5rem;
@@ -1650,5 +1823,66 @@ bottom: 0px;
 		
 		
 	}
+	
+	.navigation-auto a{
+	
+		padding: 5px;
+		border-radius: 10px;
+		transition: 1s;
+		transform: translate(-650px, -100px);
+	
+	
+	
+	  }
   }
 
+
+  @media screen and (min-width: 1440px) {
+	.main-content{
+   
+		padding-left: 240px;
+	
+	  }
+	  body{
+
+		background-color: #F9F9F9;
+		min-height: 52rem;
+		/* padding-top: 4.5rem; */
+	}
+
+	/*css for automatic navigation*/
+
+	.navigation-auto{
+		position: absolute;
+		display: flex;
+		width: px;
+		justify-content: center;
+		margin-top: 500px;
+	  }
+	
+  .navigation-auto a{
+	
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+	transform: translate(-650px, -100px);
+
+
+
+  }
+  .popup{
+	background-color: #FFFFFF;
+	padding: 0 5px;
+	border: 1px solid #009456;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
+	width: 830px;
+
+	margin-top:5%;
+
+	margin-left: 220px;
+position: absolute;
+display: none;
+z-index: 1000;
+}
+  }
