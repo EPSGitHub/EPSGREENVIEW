@@ -67,7 +67,7 @@ window.addEventListener("load",function(){
    
    document.getElementById("linkedin").innerHTML = ' — <i class="fa-brands fa-linkedin-in"></i> — LinkedIn ';
    document.getElementById("lnk").style.transform="rotate(-90deg)";
-    document.getElementById("lnk").style.margin="50px 0px 50px -50px";
+    document.getElementById("lnk").style.margin="50px 0px 50px -55px";
       document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
       document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
       document.getElementById("youtube").innerHTML = '<i class="fa-brands fa-youtube"></i>';
@@ -83,7 +83,7 @@ window.addEventListener("load",function(){
    
    document.getElementById("youtube").innerHTML = '— <i class="fa-brands fa-youtube"></i> — Youtube';
    document.getElementById("ytb").style.transform="rotate(-90deg)";
-    document.getElementById("ytb").style.margin="50px 0px 50px -50px";
+    document.getElementById("ytb").style.margin="50px 0px 50px -55px";
       document.getElementById("facebook").innerHTML = '<i class="fa-brands fa-facebook-f"></i>';
       document.getElementById("linkedin").innerHTML = '<i class="fa-brands fa-linkedin-in"></i>';
       document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
