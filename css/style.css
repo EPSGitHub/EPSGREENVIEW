@@ -325,21 +325,21 @@ color:rgb(233, 23, 23);
 }
 .mobile-slider .sendmony{
 	margin-top: 80px;
-	/* margin-right: 1000px;	 */
-
 	height: 60px;
 	width: 217px;
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-	animation: shake 6s;
 	animation-iteration-count: infinite;
-position: absolute;
+    position: absolute;
 	z-index: 100;  background-color: white;  border-radius: 8px;
+	display: inline-block;
+   margin: 80px -150px ;
+  animation: shakeX 50s infinite; 
 }
+
 .mobile-slider .text{
 	
 	margin-top: 60px;
 	/* margin-right: 1000px;	 */
-
 	height: 60px;
 	width: 217px;
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
@@ -373,155 +373,66 @@ position: absolute;
 		position: absolute;
 		background-color: white;
 		border-radius: 8px;
-		/* transform: translate(100px,160px); */
-		animation: shake1 0.4s;
-		animation-iteration-count: infinite;
-}
-@keyframes shake {
-	0% {
-	  transform: translate(-10px, 0);
-	}
-	50% {
-	  transform: translate(-150px, 0);
-	}
-	100% {
-	  transform: translate(2px, 0);
-	}
-  }
-
-  @keyframes shake1 {
-	0% {
-	  transform: translate(-3px, 0);
-	}
-	50% {
-	  transform: translate(-3px, 0);
-	}
-	100% {
-	  transform: translate(0, 0);
-	}
-  }
-
-  @-moz-keyframes shake {
-	0% {
-	  -moz-transform: translate(3px, 0);
-	}
-	50% {
-	  -moz-transform: translate(-3px, 0);
-	}
-	100% {
-	  -moz-transform: translate(0, 0);
-	}
-  }
-
-  @-webkit-keyframes shake {
-	0% {
-	  -webkit-transform: translate(3px, 0);
-	}
-	50% {
-	  -webkit-transform: translate(-3px, 0);
-	}
-	100% {
-	  -webkit-transform: translate(0, 0);
-	}
-  }
-
-  @-ms-keyframes shake {
-	0% {
-	  -ms-transform: translate(3px, 0);
-	}
-	50% {
-	  -ms-transform: translate(-3px, 0);
-	}
-	100% {
-	  -ms-transform: translate(0, 0);
-	}
-  }
-
-  @-o-keyframes shake {
-	0% {
-	  -o-transform: translate(3px, 0);
-	}
-	50% {
-	  -o-transform: translate(-3px, 0);
-	}
-	100% {
-	  -o-transform: translate(0, 0);
-	}
-  }
-  /* @keyframes shake{
-
 	
-	0%{
-		transform: translateX(0)
-	  }
-	  25%{
-		transform: translateX(-8px);
-	  }
-		
-	  50%{
-		transform: translateX(0px);
-	  }
-	  100%{
-		transform: translateX(-80px,);
-	  }
-  } */
-.slides{
-  width: 650%;
-
-  display: flex;
-  padding-right:30px ;
-
+		animation: shakeX 50s infinite; 
 }
 
-.slides input{
-  display: none;
-  /* margin-left: 12px; */
-}/*********************End Home Hover button Part ****************/
-
-.slide-mobile{
-  width: 20%;
-  transition: 2s;
-}
-
-	.slide-mobile	.content {
-		position: absolute;
-		left: 0;
-		z-index: 2000;
-		bottom: 99px;
-		color: #fff;
-		padding: 25px;
-		background-color: rgba(0, 0, 0, 0.5);
-	
-	}
-
-
-.tabcontent img{
-  height: 370px;
-  width:197px;
-  border-radius: 22px;
-  margin: 0 0 0 -16px;
- 
-}
-.slide-mobile img{
-  height: 370px;
-  width:197px;
-  border-radius: 24px;
-  margin: 0 0 0 -14px;
- 
-}
-
-
-  
   .slides{
-	width: 500%;
-	height: 350px;
+	width: 650%;
+  
 	display: flex;
+	padding-right:30px ;
+  
   }
   
   .slides input{
 	display: none;
+	/* margin-left: 12px; */
+  }/*********************End Home Hover button Part ****************/
+  
+  .slide-mobile{
+	width: 20%;
+	transition: 2s;
   }
   
+	  .slide-mobile	.content {
+		  position: absolute;
+		  left: 0;
+		  z-index: 2000;
+		  bottom: 99px;
+		  color: #fff;
+		  padding: 25px;
+		  background-color: rgba(0, 0, 0, 0.5);
+	  
+	  }
+  
+  
+  .tabcontent img{
+	height: 370px;
+	width:200px;
+	border-radius: 22px;
+	margin: 0 0 0 -16px;
+   
+  }
+  .tabcontent h6{
+	
+
+   
+  }
+
+  .slide-mobile img{
+	height: 370px;
+	width:197px;
+	border-radius: 24px;
+	margin: 0 0 0 -14px;
+   
+  }
+  
+  
+
+
+  
+ 
   
 
   /*css for manual slide navigation*/
@@ -698,23 +609,22 @@ position: absolute;
 
   .popup{
 	background-color: #FFFFFF;
-	padding: 0 5px;
+	
 	border: 1px solid #009456;
 	border-radius: 12px;
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 	width: 780px;
-
 	margin-top:12%;
-
 	margin-left: 170px;
-position: absolute;
-display: none;
-z-index: 1000;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	height: 120px;
 }
 .popup p{
-    padding-left: 5px;
+ 
     /* padding: 0px 5px; */
-    padding-top: 22px;
+	margin-left: 20px;
     color: #666666;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -722,17 +632,20 @@ z-index: 1000;
     width: 527px;
     font-weight: 500;
     text-align: justify;
-	
+	/* position: absolute; */
+	padding-top: 24px;
+
 }
 .popup #close{
 	display: block;
-	margin: 0 0 20px auto;
+	/* margin: 0 0 20px auto; */
 	float: right;
     color: #000000;
 	cursor: pointer;
 	font-size: 20px;
 	outline: none;
 	border: none;
+	padding-right: 5px;
 }
 .popup .cookie-link{
 	color: #EE2C43;
@@ -742,11 +655,13 @@ z-index: 1000;
 }
 .popup .button{
 	float: right;
+	margin-right: 20px;
+margin-top: -55px;
 }
 .popup .button .accept{
-	background-color:  #009456;
-	transform: translate(-15%,-122%);
-	
+	background-color:  #0E694B;
+
+	margin-right: 5px;
 	width: 90px;
 	height: 38px;
 	border-radius: 8px;
@@ -755,8 +670,8 @@ z-index: 1000;
 	padding-top: 8px;
 }
 .popup .button .deny{
-	background-color: #FF5569;
-	transform: translate(-15%,-122%);
+	background-color: #EE2C43;
+
 	width: 90px;
 	height: 38px;
 	border-radius: 8px;
@@ -2151,16 +2066,17 @@ bottom: 0px;
 		left:0px;
 		bottom: -16px;
 	}
+	
 	.popup{
 		background-color: #FFFFFF;
-		padding: 0 5px;
+	
 		border: 1px solid #009456;
 		border-radius: 12px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
-		width: 820px;
-		
-		/* margin-top:5%; */
-		margin-top:5%;
+		width: 858px;
+		height: 120px;
+		margin-left: 155px;
+		margin-top:10%;
 	
 	position: absolute;
 	display: none;
@@ -2270,19 +2186,22 @@ bottom: 0px;
 
   }
   .popup{
-	background-color: #FFFFFF;
-	padding: 0 5px;
-	border: 1px solid #009456;
-	border-radius: 12px;
-	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
-	width: 830px;
 
-	margin-top:10%;
-
+/* margin-top: 10%; */
 	margin-left: 220px;
-position: absolute;
-display: none;
-z-index: 1000;
+	background-color: #FFFFFF;
+	
+		border: 1px solid #009456;
+		border-radius: 12px;
+		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
+		width: 840px;
+		height: 120px;
+	
+		margin-top:10%;
+	
+	position: absolute;
+	display: none;
+	z-index: 1000;
 }
 
 /**/
