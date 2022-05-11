@@ -95,25 +95,75 @@ p {
 	
 
 }
+.appmodal{
+	margin-top: 62px;
+	margin-left: 60%;
+	width:400px;
+}
 
 .dwnappmodal{
 	font-family: 'poppins',sans-serif;
+	margin-bottom: 30px;
 }
 .dwnappmodal h4{
 color: #009456;
 text-align: center;
-font-size:20px;
+font-size:18px;
 font-weight:600;
 line-height: 20px;
-margin-bottom: 30px;
+margin-bottom: 10px;
+}
+
+.dwnappmodal p{
+	font-weight: 600;
 }
 
 .dwnbutton{
 	
-	padding: 10px 20px;
-	border: 1px dotted darkorange;
+	padding: 7px 15px;
+	border-radius: 8px;
+	background: green;
+	color: #F0F0F0;
+}
+.dwnbutton:hover{
+	color:#F0F0F0;
 }
 
+.playstore{
+	margin-top: 30px;
+}
+.Appstore{
+	margin-top: 30px;
+}
+
+.Appsection i{
+	font-size: 30px;
+
+}
+
+#searchdiv{
+	display: none;
+}
+.searchbox{
+	width: 100%;
+	height: 200px;
+	background: #009456;
+	margin-bottom: 20px;
+
+}
+
+.srcimg{
+	margin-top: 10px;
+}
+
+.srcimg img {
+	width:100px;
+}
+
+.searchform{
+	margin-top: 20px;
+	padding: 20px;
+}
 
 .navbar  li a:hover,
 .navbar li a.active
@@ -182,7 +232,7 @@ color:rgb(233, 23, 23);
 
 .subcription span{
 	position: absolute;
-	right:120px;
+	right:125px;
 
 	
 }
@@ -279,9 +329,13 @@ color:rgb(233, 23, 23);
 	color: #666666;
   }
   
+  #partner{
+	  margin-top: -20px;
+  }
   .partnertitle {
 	  font-size:60px;
 	  margin-bottom: -30px;
+	  
   }
 
   
@@ -530,7 +584,7 @@ position: absolute;
 	display: flex;
 	justify-content: center;
 	width: 600px;
-	margin-top: 8px;
+	margin-top: 250px;
 	
   }
   
@@ -608,12 +662,9 @@ position: absolute;
  
 /*css for automatic navigation*/
 
-.navigation-auto{
-	position: absolute;
-	display: flex;
-	width: px;
-	justify-content: center;
-	margin-top: 500px;
+  #navicons{
+	
+	  margin-top: 450px;
   }
 
   .navigation-auto a{
@@ -679,41 +730,29 @@ position: absolute;
   }
 		
 		
- /********************end css for automatic navigation********************************************/     
-  /*********************Main content End********************/
 
   /*********************Home Popup start ****************/
-  /* .popup {
-	
 
-  
-	animation:pulse; 
-	animation-duration: 2s;
-  } */
-  /* .animate__animated.animate__pulse{
-	--animate-duration: 2s;
+  #popup{
+	margin-top: 2%;
+	padding: 20px 25px;
 
-  } */
+}
 
   .popup{
 	background-color: #FFFFFF;
-	padding: 0 5px;
 	border: 1px solid #009456;
 	border-radius: 12px;
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 	width: 780px;
-
-	margin-top:12%;
-
-	margin-left: 170px;
-position: absolute;
-display: none;
-z-index: 1000;
+	position: absolute;
+	display: none;
+	z-index: 1000;
 }
 .popup p{
-    padding-left: 5px;
+   
     /* padding: 0px 5px; */
-    padding-top: 22px;
+   
     color: #666666;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -725,22 +764,27 @@ z-index: 1000;
 }
 .popup #close{
 	display: block;
-	margin: 0 0 20px auto;
 	float: right;
     color: #000000;
 	cursor: pointer;
 	font-size: 20px;
 	outline: none;
 	border: none;
+	margin-top: -10px;
+
 }
+
+
 .popup .cookie-link{
 	color: #EE2C43;
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 }
+
 .popup .button{
 	float: right;
+	margin-bottom:-35px;
 }
 .popup .button .accept{
 	background-color:  #009456;
@@ -752,6 +796,8 @@ z-index: 1000;
 	color: #FFFFFF;
 	text-align: center;
 	padding-top: 8px;
+	
+	
 }
 .popup .button .deny{
 	background-color: #FF5569;
@@ -1646,6 +1692,58 @@ text-align: center;
 	
 	}
 	
+
+	.appmodal{
+		margin-top: 50px;
+		margin-left: 0%;
+		width:100%;
+		padding: 5px;
+	
+	}
+	
+	.dwnappmodal{
+		font-family: 'poppins',sans-serif;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.dwnappmodal h4{
+	color: #009456;
+	text-align: center;
+	font-size:20px;
+	font-weight:600;
+	line-height: 20px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	}
+	
+	.dwnappmodal p{
+		font-weight: 600;
+	}
+	
+	.dwnbutton{
+		
+		padding: 7px 15px;
+		border-radius: 8px;
+		background: green;
+		color: #F0F0F0;
+	}
+	.dwnbutton:hover{
+		color:#F0F0F0;
+	}
+	
+	.playstore{
+		margin-top: 30px;
+	}
+	.Appstore{
+		margin-top: 30px;
+	}
+
+	
+
+	.btn-close{
+		margin-left: 90%;
+
+	}
 	.navbar-toggler{
 		background-image: url('../img/toggleicon.png');
 		background-repeat: no-repeat;
@@ -2121,6 +2219,12 @@ bottom: 0px;
 		font-size: 80px;
 	}
 	
+	.appmodal{
+		margin-top: 70px;
+		margin-left: 60%;
+		width:400px;
+	}
+
 	.front_banner h5{
 		font-size: 25px;
 		font-weight: 900;
@@ -2150,20 +2254,30 @@ bottom: 0px;
 		left:0px;
 		bottom: -16px;
 	}
+
+	#partner{
+		margin-top: 60px;
+	}
+
+	#popup{
+		margin-top: 12%;
+	
+	}
 	.popup{
 		background-color: #FFFFFF;
-		padding: 0 5px;
 		border: 1px solid #009456;
 		border-radius: 12px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 		width: 820px;
+		position: relative;
+		display: none;
+		z-index: 9999;
 		
-		/* margin-top:5%; */
-		margin-top:5%;
+	}
+
+	#navicons{
 	
-	position: absolute;
-	display: none;
-	z-index: 1000;
+		margin-top: 500px;
 	}
 	.navigation-auto a{
 	

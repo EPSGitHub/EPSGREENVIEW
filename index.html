@@ -15,60 +15,147 @@
 
 <body>
 <!-- Menu  Start  -->
-	<nav class="navbar navbar-expand-lg navbg sticky-top ">
+<nav class="navbar navbar-expand-lg navbg sticky-top ">
+		
+	<div class="container-fluid hd">
+  
+		<div class="logo1 col-md-2">
+		  <a href="#"><img  src="img/Frame.png" class="" alt=""></a>
+		</div>
+	  
+		<div class="collapse navbar-collapse col-md-6" id="navbarTogglerDemo03">
+	  
+		  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			<li class="nav-item ui">
+			  <a class="nav-link active" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+				  <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+				</svg> Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link " aria-current="page" href="offer.html"><i class="fa-solid fa-gift" style="color:green"></i> Offer</a>
+			</li>
+			
+			<li class="nav-item">
+			  <a class="nav-link " aria-current="page" href="service.html"><i class="fa-solid fa-hand-holding-medical"></i> Services</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-file-signature"></i> Blog</a>
+		  
+			<li class="nav-item">
+			  <a class="nav-link " aria-current="page" href="faq.html"><i class="fa-solid fa-question"></i> FAQ</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link " aria-current="page" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link " aria-current="page" href="Contact.html"> <i class="fa-solid fa-envelope-circle-check"></i> Contact Us</a>
+			</li>
+		   
+		  </ul>
+		  
+		</div>
+		<div class="col-md-3">
+		  <a  class="search" onclick="searchboxshow()"><i class="fa-solid fa-magnifying-glass" style="color:#666666"></i></a>
+			<button class="btn btn-outline-success hddownbtn" class="rgb-border-content" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Download App</button>
+			<button class="btn btn-sm btn-danger hddownbtn" type="submit">English</button>
+		</div>
 
-		  <div class="container-fluid hd">
+		<div class="col-md-1">
+		  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</div>
+  
+</nav>
 
-			  <div class="logo1 col-md-2">
-				<a href="#"><img  src="img/Frame.png" class="" alt=""></a>
-			  </div>
-
-			  <div class="collapse navbar-collapse col-md-6" id="navbarTogglerDemo03">
-
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				  <li class="nav-item ui">
-					<a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
-						<path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
-					  </svg> Home</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="df" style="font-weight: 700;"><i class="fa-solid fa-gift" style="color:green ; font-size:16px;"></i> Offer</a>
-				  </li>
-
-				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-hand-holding-medical"></i> Services</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-file-signature"></i> Blog</a>
-
-				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="#"><i class="fa-solid fa-question"></i> FAQ</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link " aria-current="page" href="Contact.html"> <i class="fa-solid fa-headset"></i> Contact Us</a>
-				  </li>
-
-				</ul>
-
-			  </div>
-			  <div class="col-md-3">
-				<a  class="search" href=""><i class="fa-solid fa-magnifying-glass" style="color:#666666"></i></a>
-				  <button class="btn btn-outline-success hddownbtn" type="submit">Download App</button>
-				  <button class="btn btn-sm btn-danger hddownbtn" type="submit">English</button>
-			  </div>
-
-			  <div class="col-md-1">
-				<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
+<!--  App Download Modal Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog  appmodal">
+<div class="modal-content">
+  
+  <div class="modal-body dwnappmodal">
+	  <div class="col-md-12">
+		  <div class="row">
+			  <div class="col-md-10"></div>
+			  <div class="col-md-2">
+				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			  </div>
 		  </div>
+	  </div>
 
-	  </nav>
- <!-- Menu  Start End -->
+	  <div class="col-md-12 Appsection ">
+		  <div class="row">
+			  <h4>Download EPS App</h4>
+		  
+			  <div class="col-md-12 playstore">
+				  <div class="row">
+					  <div class="col-md-1"></div>
+					  <div class="col-md-2 "><i class="fa-brands fa-google-play"></i></div>
+					  <div class="col-md-4"> <p>Play Store</p> </div>
+					  <div class="col-md-5"> <a href="#" class="dwnbutton">Download</a></div>
+				  </div>
+			  </div>
+			  <div class="col-md-12 Appstore">
+				  <div class="row">
+					  <div class="col-md-1"></div>
+					  <div class="col-md-2"><i class="fa-brands fa-app-store"></i></div>
+					  <div class="col-md-4"> <p>App Store</p> </div>
+					  <div class="col-md-5"> <a href="#" class="dwnbutton">Download</a></div>
+				  </div>
+			  </div>
+			  
+			  
+		  </div>
+	  </div>
+	  
+  </div>
+
+</div>
+</div>
+</div>		
+<!--  App Download Modal Modal End -->
+
+
+<!-- Search Area Design -->
+
+<div class="searchbox"  id="searchdiv">
+<div class="row">
+  <div class=" col-md-12 srcimg ">
+	  <div class="row">
+		  <div class="col-md-1"></div>
+		  <div class="col-md-3">
+		  
+		  </div>
+		  <div class="col-md-7"></div>
+		  <div class="col-md-1">
+			  <button type="button" onclick="searchboxhidden()" class="btn-close btn-close-white" aria-label="Close"></button>
+		  </div>
+	  </div>
+  </div>
+  <div class="col-md-12 searchform">
+	  <div class="row">
+		  <div class="col-md-2"></div>
+		  <div class="col-md-8">
+			  <form action="">
+				  <div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="Type Words and  Hits Enter" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					  <div class="input-group-append">
+						<button class="btn  btn-danger " type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+					  </div>
+					</div>
+			  </form>
+		  </div>
+		  <div class="col-md-2"></div>
+	  </div>
+	  
+  </div>
+
+</div>
+</div>
+
+<!-- Search Area Design -->
+<!-- Menu  Start End -->
 
 
 
@@ -84,10 +171,10 @@
 		  <!--main-content-->
 		  <div class=" main-content col-md-7 col-sm-12 mt-3" >
 			  <a class=" btn-1 btn-lg"  href="" ><span class="text" style="font-size: 14px; padding: 15px 0px;" > Easy solution for all transaction</span></a>
-			<h6 class="easy" style="" >Easy</h6>
+			<h6 class="easy" >Easy</h6>
 			<h6 class="payment" >Payment</h6>
 			 <h6 class="system" >System</h6>
-			 <p> Easy Payment System (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with an easy and instant payment solution... <a href="Cookie.html" target="_blank" class="readmore" >Read More </a></p>
+			 <p class="slidedescrip"> Easy Payment System (EPS) is an innovative payment solution aimed to make digital transactions effortless. Permitted by Bangladesh Bank as a Payment System Operator (PSO), EPS enables mass people with an easy and instant payment solution... <a href="Cookie.html" target="_blank" class="readmore" >Read More </a></p>
 			 <!--button start!--> <!--automatic navigation start-->
 
 		
@@ -116,7 +203,7 @@
 <input type="radio" name="radio-btn" id="radio4">
 
  <!--automatic navigation start-->
- <div class="navigation-auto">
+ <div class="navigation-auto" id="navicons">
 	<a href="Cookie.html" class="auto-btn1  btn btn-lg" onmouseover="setimage()" onmouseout="imageout()"><label for="radio1" class="manual-btn1"></label>Send Mony</a>
 	<a class="auto-btn2  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()"><label for="radio2" class="manual-btn2"></label>Bill Pay</a>
 	<a class="auto-btn3  btn btn-lg " onmouseover="setimage()" onmouseout="imageout()"><label for="radio3" class="manual-btn3"></label>Corporate</a>
@@ -148,14 +235,14 @@
  <img src="img/slider/slider1.png" alt="" class="">
 </div>
 
-<div class="billpay" style=" " >
- <img src="img/slider/bilpay.png" alt="" style=" ">
+<div class="billpay" >
+ <img src="img/slider/bilpay.png" alt="" >
 
 </div>
 
-<div class="sendmony" style=" " >
-	<img src="img/slider/sendmony.png" alt="" style="">
-	<p style="">Send Money to any Bank By EPS</p>
+<div class="sendmony" >
+	<img src="img/slider/sendmony.png" alt="" >
+	<p >Send Money to any Bank By EPS</p>
    </div>
 
 </div>  <!--img slider endt!-->
@@ -215,9 +302,9 @@
 	<div class="container">
 		<div class="row">
 
-	 <div class="col-md-12 mb-4">
+	 <div class="col-md-12">
 
-		<div class="popup animate__animated animate__pulse " >
+		<div class="popup animate__animated animate__pulse " id="popup" >
 
 			  <buttton id="close" onclick="toggle()">&times;</buttton>
 
@@ -247,10 +334,10 @@
 </div>
 
 <section>
-	<div class="container mt-2">
+	<div class="container">
 		<div class="row">
 
-			<div class="partner col-md-12">
+			<div class="partner col-md-12" id="partner">
 
 					<h2  class ="partnertitle" style="margin-top: 30px;">Our  Partners</h2>
 					 <section class="customer-logos slider" style="margin-top: 50px;">
@@ -278,56 +365,58 @@
 
  <!-- Footer  Start -->
 
-		<footer class="container-fluid  footer ">
-			<div class="row ">
-				<div class="container"></div>
+ <footer class="container-fluid  footer fixed-bottom">
+	<div class="row">
+		<div class="container"></div>
+	
+		<div class="col-md-12">
+			<ul class="sd">
 
-				<div class="col-md-12">
-					<ul class="sd">
+				<li><a href="event.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Event</a></li>
+				<li><a href="career.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Career</a></li>
+				<li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Support</a></li>
+				<li><a href="Terms-condition.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Terms & Condition</a></li>
+				<li><a href="privacy.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Privacy Policy</a></li>
+				<li><a href="Cookie.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Cookie</a></li>
+				<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> App Support</a></li>
+				<li><a href="sitemap.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Site Map</a></li>
+			
+			</ul>
+		</div>
 
-						<li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Event</a></li>
-						<li><a href="career.html"><i class="fa-solid fa-arrow-up-right-from-square"></i> Career</a></li>
-						<li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Support</a></li>
-						<li><a href="Terms-condition.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Terms & Condition</a></li>
-						<li><a href="privacy.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Privacy Policy</a></li>
-						<li><a href="cookie.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Cookie</a></li>
-						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> App Support</a></li>
-						<li><a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Site Map</a></li>
-
-					</ul>
-				</div>
-
-				<div class="col-md-12 ">
-					<div class="mobilesocial">
-						<ul>
-							<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-							<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-							<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-							<li><a href="" class="active"><i class="fa-brands fa-facebook-f"></i></a></li>
-
-
-						</ul>
-
-					</div>
-				</div>
-				<div class="col-md-12">
-					<div class="copyright">
-						<p> © Copyrights 2022 EPS All rights reserved.</p>
-					</div>
-				</div>
-
-
+		<div class="col-md-12 ">
+			<div class="mobilesocial">
+				<ul>
+					<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+					<li><a href="" class="active"><i class="fa-brands fa-facebook-f"></i></a></li>
+					
+				
+					
+					
+				</ul>
+				
 			</div>
-			<div class="col-md-2">
-
+		</div>
+		<div class="col-md-12">
+			<div class="copyright">
+				<p> © Copyrights 2022 EPS All rights reserved.</p>
 			</div>
-			</div>
+		</div>
+		
 
+	</div>
+	<div class="col-md-2">
+		
+	</div>
+	</div>
+	
+	
 
+</footer>
 
-		</footer>
-
-		<!-- Footer End -->
+<!-- Footer End -->
 
 
 
