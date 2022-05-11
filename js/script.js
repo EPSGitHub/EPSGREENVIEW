@@ -50,7 +50,7 @@ window.addEventListener("load",function(){
    
    document.getElementById("facebook").innerHTML = ' — <i class="fa-brands fa-facebook-f"></i>— Facebook ';
    document.getElementById("fb").style.transform="rotate(-90deg)";
-    document.getElementById("fb").style.margin="50px 0px 50px -50px";
+    document.getElementById("fb").style.margin="50px 0px 50px -55px";
       document.getElementById("twitter").innerHTML = '<i class="fa-brands fa-twitter"></i>';
       document.getElementById("linkedin").innerHTML = '<i class="fa-brands fa-linkedin-in"></i>';
       document.getElementById("youtube").innerHTML = '<i class="fa-brands fa-youtube"></i>';
@@ -112,3 +112,12 @@ window.addEventListener("load",function(){
 <div id="sub" style="margin-top: -50%;"></div>`;
 		
 	}
+
+  // Search box show and hide
+
+  function searchboxshow() {
+    document.getElementById("searchdiv").style.display = "block";
+    }
+    function searchboxhidden() {
+    document.getElementById("searchdiv").style.display = "none";
+    }
