@@ -55,6 +55,7 @@ p {
 .navbg{
 	background:#F5F5F5;
 	border-bottom: 3px solid green;
+	/*  */
 	
 
 }
@@ -156,7 +157,7 @@ color:rgb(233, 23, 23);
 
 
 .subcription{
-	
+	z-index: 2000;
 	position: fixed;
 	right: -80px;
 	top:45%;
@@ -314,7 +315,7 @@ color:rgb(233, 23, 23);
 	animation: shake 6s;
 	animation-iteration-count: infinite;
 position: absolute;
-	z-index: 2000;  background-color: white;  border-radius: 8px;
+	z-index: 100;  background-color: white;  border-radius: 8px;
 }
 .mobile-slider .text{
 	
