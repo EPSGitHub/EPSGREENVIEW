@@ -2,7 +2,7 @@
 body{
 
 	background-color: white;
-	min-height: 60rem;
+	min-height: 50rem;
 /* 	background-image: url(../img/Border_background.svg);
 	background-position:  center ; */
 	/* padding-top: 4.5rem; */
@@ -573,7 +573,7 @@ position: absolute;
 .navigation-auto{
 	position: absolute;
 	display: flex;
-	width: px;
+
 	justify-content: center;
 	margin-top: 500px;
   }
@@ -582,7 +582,7 @@ position: absolute;
 	
 	padding: 5px;
 	border-radius: 10px;
-	transition: 1s;
+	/* transition: 1s; */
 	transform: translate(-600px, -140px);
 
 
@@ -660,7 +660,7 @@ position: absolute;
 	margin-left: 170px;
 	position: absolute;
 	display: none;
-	z-index: 1000;
+	z-index: 2000;
 	height: 120px;
 }
 .popup p{
@@ -2260,8 +2260,8 @@ bottom: 0px;
 	  body{
 
 		background-color: #F9F9F9;
-		min-height: 50rem;
-		/* padding-top: 4.5rem; */
+	
+	
 	}
 
 	/*css for automatic navigation*/

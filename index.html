@@ -203,8 +203,8 @@
 		  <input type="radio" name="radio-btn" id="radio4">
 		  
 		   <!--automatic navigation start-->
-		   <div class="navigation-auto">
-			  <a href="Cookie.html" class="auto-btn1 btn btn-lg" onmouseover="sendMonyin()" onmouseout="sendMonyout()"><label for="radio1" class="manual-btn1"></label>Send Mony</a>
+		   <div class="navigation-auto  ">
+			  <a href="Cookie.html" class="auto-btn1 btn btn-lg " id="slideInner" onmouseover="sendMonyin()" onmouseout="sendMonyout()"><label for="radio1" class="manual-btn1"></label>Send Mony</a>
 			  <a class="auto-btn2  btn btn-lg " onmouseover="billPayin()" onmouseout="billPayout()"><label for="radio2" class="manual-btn2"></label>Bill Pay</a>
 			  <a class="auto-btn3  btn btn-lg " onmouseover="corPoratein()" onmouseout="corPorateout()"><label for="radio3" class="manual-btn3"></label>Corporate</a>
 			  <a class="auto-btn4  btn btn-lg " onmouseover="marChentin()" onmouseout="marChentout()"><label for="radio4" class="manual-btn4"></label>Marchent</a>
@@ -239,6 +239,7 @@
 		  </div>
 		  
 		  
+	
 		  <div class="billpay"  >
 		   <img src="img/slider/bilpay.png" alt="" >
 		  
@@ -310,7 +311,7 @@
 
 	 <div class="col-md-12">
 
-		<div class="popup animate__animated animate__pulse " id="popup" >
+		<div class="popup animate__animated animate__fadeInUp " id="popup" >
 
 			  <buttton id="close" onclick="toggle()">&times;</buttton>
 
@@ -465,16 +466,20 @@
 		<!-- Script for slider hover image -->
 
 <script>
+
+
+
 	function sendMonyin(){
 		document.getElementById("sendMony").innerHTML='<img src="img/slider/slider1.png"/>'
 	
 	}
+	
 	function sendMonyout(){
 	  document.getElementById("sendMony").innerHTML=""
 	}
 
 	function billPayin(){
-	  document.getElementById("billPay").innerHTML='<img src="img/slider/slider1.png"/>'
+	  document.getElementById("billPay").innerHTML='<img src="img/epslogo1.png" alt="" class="">'
 	}
 	function billPayout(){
 	  document.getElementById("billPay").innerHTML=""
@@ -486,7 +491,7 @@
 	  document.getElementById("corPorate").innerHTML=""
 	}
 	function marChentin(){
-	  document.getElementById("marChent").innerHTML='<img src="img/slider/slider1.png"/>'
+	  document.getElementById("marChent").innerHTML='<img src="img/slider/Easy.svg" alt="" class="" style="background-color:white;">'
 	}
 	function marChentout(){
 	  document.getElementById("marChent").innerHTML=""
@@ -524,6 +529,53 @@
     }
     repeater();
 
+</script>
+
+<script>
+    jQuery(function($) { // DOM ready and $ alias in scope
+
+var curr = 0;
+
+function autoplay() {
+  curr = ++curr % 3; // Increment and Reset to 0 when 3
+  $("[name=radio]")[curr].hover = true;
+}
+
+setInterval(autoplay, 1000);
+
+});
+
+
+</script>
+<script>
+
+$("#slideInner")
+         // when mouse enters, clear the timer if it has been set
+         .mouseenter(function() {
+			autoplay.stop();
+		console.log('slider stopped');
+        })
+// 	var mySwiper = document.getElementById('sendMony')
+// 	function stop(){
+// 		mySwiper.autoplay.stop();
+// 		console.log('slider stopped');
+// 	}
+	
+// 	function marChentin(){
+// 	  document.getElementById("marChent").innerHTML='<img src="img/slider/Easy.svg" alt="" class="" style="background-color:white;">'
+// 	}
+
+//  var mySwiper = document.querySelector('.mobile-slider ').swiper
+
+// $(".mobile-slider ").mouseenter(function() {
+//   mySwiper.autoplay.stop();
+//   console.log('slider stopped');
+// });
+
+// $(".mobile-slider ").mouseleave(function() {
+//   mySwiper.autoplay.start();
+//   console.log('slider started again');
+// });
 </script>
 <script>var element = document.getElementById("element");
 
