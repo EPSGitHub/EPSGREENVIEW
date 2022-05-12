@@ -478,11 +478,7 @@ position: absolute;
 	margin: 0 0 0 -16px;
    
   }
-  .tabcontent h6{
-	
 
-   
-  }
 
   .slide-mobile img{
 	height: 370px;
@@ -502,7 +498,8 @@ position: absolute;
   /*css for manual slide navigation*/
 
   #navicons{
-	  margin-top: 300px;
+	  margin-top: 200px;
+	background-color: red;
   }
   
   .navigation-manual{
