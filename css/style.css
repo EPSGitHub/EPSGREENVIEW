@@ -344,13 +344,9 @@ color:rgb(233, 23, 23);
 	color: #666666;
   }
   
-  #partner{
-	  margin-top: -20px;
-  }
   .partnertitle {
 	  font-size:60px;
 	  margin-bottom: -30px;
-	  
   }
 
   
@@ -482,7 +478,11 @@ position: absolute;
 	margin: 0 0 0 -16px;
    
   }
- 
+  .tabcontent h6{
+	
+
+   
+  }
 
   .slide-mobile img{
 	height: 370px;
@@ -510,7 +510,7 @@ position: absolute;
 	display: flex;
 	justify-content: center;
 	width: 600px;
-	margin-top: 250px;
+	margin-top: 8px;
 	
   }
   
@@ -588,9 +588,12 @@ position: absolute;
  
 /*css for automatic navigation*/
 
-  #navicons{
-	
-	  margin-top: 450px;
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: px;
+	justify-content: center;
+	margin-top: 500px;
   }
 
   .navigation-auto a{
@@ -656,6 +659,10 @@ position: absolute;
   }
 		
 		
+ /********************end css for automatic navigation********************************************/     
+  /*********************Main content End********************/
+
+		
 
   /*********************Home Popup start ****************/
  
@@ -689,7 +696,7 @@ position: absolute;
     width: 527px;
     font-weight: 500;
     text-align: justify;
-	/* position: absolute; */
+	
 	padding-top: 24px;
 
 }
@@ -2320,7 +2327,7 @@ bottom: 0px;
 
   .popup{
 
-/* margin-top: 10%; */
+
 	margin-left: 220px;
 	background-color: #FFFFFF;
 	
@@ -2337,7 +2344,8 @@ bottom: 0px;
 	z-index: 1000;
 }
 
-/**/
+
+
 
 
   }
