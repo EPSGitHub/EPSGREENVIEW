@@ -121,3 +121,7 @@ window.addEventListener("load",function(){
     function searchboxhidden() {
     document.getElementById("searchdiv").style.display = "none";
     }
+
+    //About Us 
+
+ 

@@ -12,6 +12,7 @@
   />
   <link rel="stylesheet" href="css/w3.css">
 	<link rel="stylesheet" href="css/style.css">
+	
 
 <body>
 <!-- Menu  Start  -->
@@ -57,7 +58,7 @@
 		<div class="col-md-3">
 		  <a  class="search" onclick="searchboxshow()"><i class="fa-solid fa-magnifying-glass" style="color:#666666"></i></a>
 			<button class="btn btn-outline-success hddownbtn" class="rgb-border-content" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Download App</button>
-			<button class="btn btn-sm btn-danger hddownbtn" type="submit">English</button>
+			<button class="btn btn-sm btn-danger hddownbtn"  type="submit">English</button>
 		</div>
 
 		<div class="col-md-1">
@@ -72,14 +73,14 @@
 <!--  App Download Modal Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog  appmodal">
-<div class="modal-content">
+<div class="modal-content appdwn">
   
   <div class="modal-body dwnappmodal">
 	  <div class="col-md-12">
 		  <div class="row">
 			  <div class="col-md-10"></div>
 			  <div class="col-md-2">
-				  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				  <button type="button" class="btn-close dwnclose" data-bs-dismiss="modal" aria-label="Close"></button>
 			  </div>
 		  </div>
 	  </div>
@@ -87,28 +88,48 @@
 	  <div class="col-md-12 Appsection ">
 		  <img class="appsectionimg" src="img/Vector 19.png" width="50px" alt="">
 		  <div class="row">
-			  <h4>DOWNLOAD <span style="color:green;font-size:28px"> EPS </span> APP</h4>
-		  
-			  <div class="col-md-12 playstore">
+			  <div class=".container">
 				  <div class="row">
-					  <div class="col-md-1"></div>
-					  <div class="col-md-2 " class="playimg"><img src="img/playstre.png" width="50px"  alt=""></div>
-					  <div class="col-md-4"> <p>Play Store</p> </div>
-					  <div class="col-md-5"> <a href="#" class="dwnbutton">Download</a></div>
+					<div class="col-md-3"></div>
+					<div class="col-md-2"><h4>Download</h4></div>
+					<div class="col-md-3 eps">EPS</div>
+					<div class="col-md-1"><h4>APP</h4></div>
+					<div class="col-md-3"></div>
 				  </div>
+				  
 			  </div>
-			  <div class="col-md-12 Appstore">
-				  <div class="row">
-					  <div class="col-md-1"></div>
-					  <div class="col-md-2"><img src="img/appstore.png" width="50px"  alt=""></div>
-					  <div class="col-md-4"> <p>App Store</p> </div>
-					  <div class="col-md-5"> <a href="#" class="dwnbutton">Download</a></div>
-				  </div>
-			  </div>
+			  <div class="col-md-1"></div>
+			 <div class="col-md-10 appborder">
+				<div class="col-md-12 playstore">
+					<div class="row">
+					
+						<div class="col-md-2 " class="playimg"><img src="img/playstre.png" width="50px"  alt=""></div>
+						<div class="col-md-5"> <p>Play Store</p> </div>
+						<div class="col-md-5"> <a href="#" class="dwnbutton">Download</a></div>
+					</div>
+				</div>
+				<div class="col-md-12 Appstore">
+					<div class="row">
+						
+						<div class="col-md-2"><img src="img/appstore.png" width="50px"  alt=""></div>
+						<div class="col-md-5"> <p>App Store</p> </div>
+						<div class="col-md-5"> <a href="#" class="dwnbutton">Download</a></div>
+					</div>
+				</div>
+
+				
+
+			 </div>
 			  
-			  
+			 <div class="col-md-1"></div>
 		  </div>
 	  </div>
+
+	  <div class="div">
+		<img class="dwnfooter" src="img/dwnfooter.png" alt="">
+	  </div>
+
+
 	  
   </div>
 
@@ -344,7 +365,7 @@
 
 			<div class="partner col-md-12" id="partner">
 
-					<h2  class ="partnertitle" style="margin-top: 30px;">Our  Partners</h2>
+					<h2  class ="partnertitle" style="margin-top: 30px; ">Our  Partners</h2>
 					 <section class="customer-logos slider" style="margin-top: 50px;">
 						<div class="slide"><a href=""><img src="img/partner/Brac_Bank.png"></a></div>
 						<div class="slide"><a href=""><img src="img/partner/City_Bank 1.png"></a></div>

@@ -1,10 +1,22 @@
 
-body{
+/* ******************************
+:: 1.0 WEB FONTS
+****************************** */
 
-	background-color: white;
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,900&display=swap');
+
+
+
+
+
+body{
+	background: white;
 	min-height: 60rem;
-/* 	background-image: url(../img/Border_background.svg);
-	background-position:  center ; */
+	
+	/* background-image: url(../img/Border_background.svg);
+	background-position:  top corner ; 
+	background-repeat: no-repeat; */
+	
 	/* padding-top: 4.5rem; */
 }
 
@@ -44,6 +56,7 @@ a{
     margin-bottom: 0.1px;
     font-weight: 500;
     line-height: 1;
+
 }
 p {
     margin-top: 0;
@@ -100,11 +113,12 @@ p {
 	margin-top: 62px;
 	margin-left: 60%;
 	width:400px;
+	z-index: 999999999;
 }
 
 .dwnappmodal{
 	font-family: 'poppins',sans-serif;
-	margin-bottom: 30px;
+	
 }
 .dwnappmodal h4{
 color: black;
@@ -131,14 +145,30 @@ margin-bottom: 10px;
 }
 
 
+.dwnclose{
+	margin-left: 25px;
+	font-size: 12px;
+}
 .appsectionimg {
 	transform: rotate(-180deg);
 	margin-top: -30px;
 	margin-left:-4px;
 }
 
+.dwnfooter{
+	width: 370px;
+	margin-top: 10px;
+	margin-bottom: -7px;
+}
+
+.appborder{
+	border: 4px solid #ee2c44;
+	border-radius: 10px;
+}
+
 .playstore{
 	margin-top: 30px;
+
 }
 
 .playstore img{
@@ -146,10 +176,29 @@ margin-bottom: 10px;
 }
 .Appstore{
 	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .Appstore img {
 	margin-top: -15px;
+}
+
+.Appsection h4{
+	font-size: 18px;
+	text-align: center;
+	font-family: 'poppins',sans-serif;
+	margin-top: 16px;
+	margin-left:-20px;
+
+}
+
+.Appsection .eps{
+	font-size: 32px;
+	font-weight: 900;
+	color:green;
+	margin-left:15px;
+	margin-right:-15px ;
+
 }
 .Appsection i{
 	font-size: 30px;
@@ -302,11 +351,14 @@ color:rgb(233, 23, 23);
 	  padding-top: 5px;
 	  color: #FFFFFF;
 	  font-weight:900;
-	  font-family: 'Poppins',sans-serif;
+	 
 	  -webkit-text-stroke: 1.5px #EE2D43;
 	
 	  margin-top: 10px;
-	  }
+	 
+		  font-family:'Roboto', sans-serif;;
+		 
+	}
   .main-content .payment{
 	
 		text-transform: uppercase;
@@ -420,7 +472,7 @@ position: absolute;
 	font-family: Poppins; font-weight: 400; font-size: 12px;text-align: center; color:#666666;
 }
 .billpay{
-	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;
+ position: absolute; background-color: white;  border-radius: 8px;
 }
 .billpay img{
 	width: 250px; height: 70px; margin-top: 12px;margin-left:17px;
@@ -433,7 +485,7 @@ position: absolute;
 	width: 290px;	
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
 
-		z-index: 2000;
+	
 		position: absolute;
 		background-color: white;
 		border-radius: 8px;
@@ -498,8 +550,8 @@ position: absolute;
   /*css for manual slide navigation*/
 
   #navicons{
-	  margin-top: 200px;
-	background-color: red;
+	  margin-top: 470px;
+
   }
   
   .navigation-manual{
@@ -669,7 +721,7 @@ position: absolute;
   .popup{
 	background-color: #FFFFFF;
 	
-	border: 1px solid #009456;
+	border: 3px solid #009456;
 	border-radius: 12px;
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 	width: 780px;
@@ -680,7 +732,8 @@ position: absolute;
 	height: 120px;
 }
 #popup{
-	margin-top: 5%;
+	margin-top: 6%;
+	z-index: 9999;
 }
 .popup p{
  
@@ -689,12 +742,13 @@ position: absolute;
     color: #666666;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 16px;
     width: 527px;
     font-weight: 500;
     text-align: justify;
 	
 	padding-top: 24px;
+
 
 }
 .popup #close{
@@ -745,21 +799,24 @@ margin-top: -55px;
 
 
 /* Partners image */
+#partner{
+	margin-top: -15px;
+	position: relative;
+
+}
 .partner{
 padding-right: 330px;
 	margin-left: 160px;
 	
 }
-#popup{
-	margin-top: 4%;
-}
 
-h2{
+
+.partnertitle{
 	text-align:center;
 	padding:5px 5px;
 	font-family: 'poppins',sans-serif;
 	color:#F0F0F0;
-	font-size: 75px;
+	font-size: 60px;
 	font-weight: 900;
   }
   /* Slider */
@@ -888,13 +945,18 @@ h2{
 .front_banner{
 	text-align: center;
 	
+	
 }
 .front_banner h1{
+
 	font-size: 80px;
 	font-weight: 900;
 	color: #F0F0F0;
 	padding: 20px 10px;
 	position: relative;
+	font-family: 'poppins',sans-serif;
+
+
 }
 
 .front_banner h5{
@@ -906,11 +968,13 @@ h2{
 	color: black;
 	margin-left: 37%;
 	margin-top:-90px;
+	font-family: 'poppins',sans-serif;
 
 }
 
 .front_banner h5 span{
 	color:green;
+
 }
 
 .frm{
@@ -921,6 +985,7 @@ h2{
 	margin-bottom: 250px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background: white;
+	font-family: 'poppins',sans-serif;
 }
 .frm h5{
 	margin-top: 50px;
@@ -959,6 +1024,7 @@ h2{
 	font-size: 16px;
 	margin-top:50px;
 	margin-bottom:15px;
+	font-family: 'poppins',sans-serif;
 }
 .adr i{
 	margin-top: 55px;
@@ -967,6 +1033,7 @@ h2{
 }
 .adr p{
 	font-size: 14px;
+	font-family: 'poppins',sans-serif;
 
 }
 
@@ -993,6 +1060,10 @@ padding-right:30px;
 .contact_social ul li a i{
 	font-size: 18px;
 	margin-left: -12px;
+}
+
+.mfrm h5{
+	margin-left: 10px;
 }
 
 
@@ -1100,21 +1171,37 @@ color:#666666;
 
 }
 
-#official_logo img{
-	width: 740px;
-	margin-left: 25%;
+
+.epsmainlogo  {
+	width: 700px;
+	height: 400px;
+	margin-left: 100px;
+	z-index:500;
+	background-image:url(../img/epslogo.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center ;
 
 	
 	
 }
-#official_logo a:hover img{
+
+
+
+.epsmainlogo:hover  {
 	background: rgba(0, 0, 0, 0.25);
 	background-image:url(../img/logohover.png);
-background-repeat: no-repeat;
-background-position: center bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center ;
+	
+
+} 
+
+/*EPS LOGO HOVER EFFECT*/
 
 
-}
+
 #achivement{
 	margin-bottom: 150px;
 	
@@ -1224,8 +1311,9 @@ margin-left: 20%;
 .full_des{
 	padding: 20px 20px 0px 20px;
 	font-family:spartan;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 34px;
+	font-family: 'poppins',sans-serif;
 
 }
 
@@ -1325,6 +1413,7 @@ line-height: 28px;
 	float: right;
 	margin-top: 30px;
 	font-size: 16px;
+	font-family: 'poppins',sans-serif;
 	
 }
 
@@ -1336,6 +1425,7 @@ Job Details page.......................
 
 .job_details{
 	margin: 30px 0px;
+	font-family: 'poppins',sans-serif;
 }
 .job_details_page
 {
@@ -1419,6 +1509,7 @@ font-size: 12px;
 .jobform_head{
 margin-top: 20px;
 text-align: center;
+font-family: 'poppins',sans-serif;
 }
 
 .jobform_head span{
@@ -1487,12 +1578,22 @@ text-align: center;
 #terms{
 
 	text-align: left;
+	font-family: 'poppins',sans-serif;
 }
 
 #terms p{
 	text-align: justify;
 	font-size: 15px;
 }
+#terms h4{
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+#terms h5{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	}
 
 #terms ul li{
 	list-style-type: square;
@@ -1510,6 +1611,7 @@ text-align: center;
 
 #cookie{
 	margin-bottom:200px;
+	font-family: 'poppins',sans-serif;
 }
 
 #cookie ul li{
@@ -1520,6 +1622,11 @@ text-align: center;
 
 #cookie p{
 	margin-bottom: 20px;
+}
+
+#cookie h4{
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 
@@ -1533,6 +1640,7 @@ text-align: center;
 	background-color: #FFFFFF;
 	position: fixed;
 	bottom: 0px;
+	z-index: 1000;
 	
 }
 
@@ -1638,8 +1746,8 @@ text-align: center;
 	
 	.dwnappmodal{
 		font-family: 'poppins',sans-serif;
-		margin-bottom: 30px;
 		text-align: center;
+	
 	}
 	.dwnappmodal h4{
 	color: #000a06;
@@ -2206,7 +2314,7 @@ bottom: 0px;
 	}
 
 	#navicons{
-		margin-top: 500px;
+		margin-top: 520px;
 	}
 	.navigation-auto a{
 	
@@ -2253,7 +2361,7 @@ bottom: 0px;
 	  }
 
 	  #partner{
-		margin-top: 30px;
+		margin-top: 40px;
 		position: relative;
 	}
 	
@@ -2295,7 +2403,7 @@ bottom: 0px;
 	  }
 	  body{
 
-		background-color: #F9F9F9;
+		background-color: white;
 		min-height: 50rem;
 		/* padding-top: 4.5rem; */
 	}
