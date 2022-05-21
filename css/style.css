@@ -7,15 +7,26 @@
 
 
 :root{
-	--red: #ee2c43;
-	--green: #0E694b;
+	--red: #EE2D43;
+	--green: #006B4F;
+	
 }
 
 
 body{
 	background: white;
 	min-height: 60rem;
+	background-image: url(../img/bgbl8.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: contain;
+
 	
+
+
+
+
 	/* background-image: url(../img/Border_background.svg);
 	background-position:  top corner ; 
 	background-repeat: no-repeat; */
@@ -358,8 +369,8 @@ color:var(--red);
 	text-align: center;
 	margin-left: 25px;
 }
-
 /*********************Home Main content Part start****************/
+
 /*********************Home Easy Payment System Part start****************/
 .main-content{
    
@@ -368,7 +379,7 @@ color:var(--red);
   }
 .btn-1{
    
-    background-color:var(--green);
+    background-color: var(--green);
     color: #FFFFFF;
     border-radius: 4px;
 	font-family: 'Poppins',sans-serif;
@@ -376,7 +387,7 @@ color:var(--red);
     }
 .btn-1:hover{
    
-    background-color: var(--green);
+    background-color:  var(--green);
     color: #FFFFFF;
     border-radius: 4px;
 	font-family: 'Poppins',sans-serif;
@@ -390,21 +401,18 @@ color:var(--red);
 	  padding-top: 5px;
 	  color: #FFFFFF;
 	  font-weight:900;
-	 
+	  font-family: 'Poppins',sans-serif;
 	  -webkit-text-stroke: 1.5px var(--red);
 	
 	  margin-top: 10px;
-	 
-		  font-family:'Roboto', sans-serif;;
-		 
-	}
+	  }
   .main-content .payment{
 	
 		text-transform: uppercase;
 		color: #FFFFFF;
 		font-size:4.5rem;
 		font-family: 'Poppins',sans-serif;
-		-webkit-text-stroke: 1.5px var(--green);
+		-webkit-text-stroke: 1.5px  var(--green);
 		font-weight: 900;
 	
 	  }
@@ -414,7 +422,7 @@ color:var(--red);
 		color: #FFFFFF;
 		font-size:4.5rem;
 		font-family: 'Poppins',sans-serif;
-		-webkit-text-stroke: 1.5px var(--green);
+		-webkit-text-stroke: 1.5px  var(--green);
 		font-weight: 900;
 		margin-bottom: 0.8rem;
 	
@@ -443,27 +451,10 @@ color:var(--red);
   
 
 
-/*********************End Home Easy Payment System Part start****************/
+/*********************End Home Easy Payment System Part ****************/
+
 /********************* Home Hover button Part start****************/
 
-.slides .btn{
-	font-family: 'Poppins',sans-serif;
-	font-size: 0.8rem;
-	color: #666666;
-	/* 
-	height:30px; */
-	width:110px;
-	background-color: #FFFFFF;
-	border-radius: 8px;
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-	padding-top:8px ;
-	font-weight: 600;
-  }
- .slides .btn.active{
-  
-    color: #FFFFFF;
-    
- }  
 
 .mobile-slider{
 	height: 400px;
@@ -478,277 +469,477 @@ color:var(--red);
   m: 0; */
  
 }
-.mobile-slider .sendmony{
-	margin-top: 80px;
-	height: 60px;
-	width: 217px;
-	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-	animation-iteration-count: infinite;
-    position: absolute;
-	z-index: 100;  background-color: white;  border-radius: 8px;
-	display: inline-block;
-   margin: 80px -150px ;
-  animation: shakeX 50s infinite; 
-}
 
-.mobile-slider .text{
-	
-	margin-top: 60px;
-	/* margin-right: 1000px;	 */
-	height: 60px;
-	width: 217px;
-	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-	animation: shake 6s;
-	animation-iteration-count: infinite;
-position: absolute;
-	z-index: 2000;  background-color: white;  border-radius: 8px;
-}
-
-.sendmony img{
-	padding-left: 25%; padding-top: 10px;
-}
-.sendmony p{
-	font-family: Poppins; font-weight: 400; font-size: 12px;text-align: center; color:#666666;
-}
-.billpay{
- position: absolute; background-color: white;  border-radius: 8px;
-}
-.billpay img{
-	width: 250px; height: 70px; margin-top: 12px;margin-left:17px;
-}
-
-.mobile-slider .billpay{
-	margin-top: 240px;	
-	margin-left: 100px;	
-	height: 90px;
-	width: 290px;	
-	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-
-	
-		position: absolute;
-		background-color: white;
-		border-radius: 8px;
-	
-		animation: shakeX 50s infinite; 
-}
-
-  .slides{
+.slider-main {
 	width: 650%;
+	max-width: 750px;
   
-	display: flex;
-	padding-right:30px ;
-  
+	position: relative;
   }
-  
-  .slides input{
-	display: none;
-	/* margin-left: 12px; */
-  }/*********************End Home Hover button Part ****************/
-  
-  .slide-mobile{
-	width: 20%;
-	transition: 2s;
-  }
-  
-	  .slide-mobile	.content {
-		  position: absolute;
-		  left: 0;
-		  z-index: 2000;
-		  bottom: 99px;
-		  color: #fff;
-		  padding: 25px;
-		  background-color: rgba(0, 0, 0, 0.5);
+
+.slider ol {
+
+	position: absolute;
+	  /* padding-top: 10px */
+	  transform: translate(280px, -15px);
+	}
+	.slider-main ol li {
+	  display: inline-block;
+	  margin-right: 5px;
+	
+	
+	}
+	.slider-p  li {
+	  display: inline-block;
+	  margin-right: 5px;
+	
+	
+	}
+	.slider-main ol .fa {
+	
+	  margin-right: 8px;
+		  cursor: pointer;
+		  transition: 1s;
+	 color: var(--red);
+		  border-radius: 2px;
+		font-size: 12px;
+	
+	}
+	.slider-main ol .fa:hover {
+	
+	
+		  transition: 1s;
+	 color: white;
+	
+	}
+
+	/* .slider-p .fa {
+	
+	  margin-right: 8px;
+		  cursor: pointer;
+		  transition: 1s;
+	 
+		  border-radius: 2px;
+		font-size: 12px;
+	
+	} */
+	/* .slider-main ol li.fa :hover{
+	  font-size: 20px;
+	  color: green;
+	  cursor: pointer;
+	  font-weight: normall;
+	}
+	 */
+	.auto-btn{
+
+		font-family: 'Poppins',sans-serif;
+		  font-size: 0.8rem;
+		  color: #666666;
+		width:112px;
+		  background-color: #FFFFFF;
+		  border-radius: 8px;
+		  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+		  padding-top:8px ;
+		  font-weight: 600;
+	  }
+	  
+	  
+	  .auto-btn a{
+		  padding: 5px;
+		  border-radius: 10px;
+	  align-items: center;
 	  
 	  }
+	  
+	.slider-main ol li .auto-btn:hover,
+	.slider-main ol li.active .auto-btn
+	 {
+	  color: white;
+		background-color: var(--green);
+	
+	
+	}
+	.slider-main ol li.active .fa{
+		color: white;
+	}
+  /*********************End Home Hover button Part ****************/
   
+   /********************* Home Main Slider Part Start ****************/
+
+  .slider-main ul, .slider-main ul li {
+	width: 600%;
   
-  .tabcontent img{
-	height: 370px;
-	width:200px;
-	border-radius: 22px;
-	margin: 0 0 0 -16px;
-   
-  }
-
-
-  .slide-mobile img{
-	height: 370px;
-	width:197px;
-	border-radius: 24px;
-	margin: 0 0 0 -14px;
-   
-  }
-  
-  
-
-
-  
- 
-  
-
-  /*css for manual slide navigation*/
-
-  #navicons{
-	  margin-top: 470px;
-
+	height: 100%
   }
   
-  .navigation-manual{
+  .slider-main ul {
 	position: absolute;
-	display: flex;
-	justify-content: center;
-	width: 600px;
-	margin-top: 8px;
-	
-  }
+	overflow: hidden;
+	border-radius: 15px;
+	margin-left: -300px;
   
-  /* .manual-btn{
-	border-radius: 10px;
-	cursor: pointer;
-	transition: 1s;
-    background-color: red;
-	padding: 5px;
-	width: 30px;
-  } */
-  .manual-btn1{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-
-  }
-  .manual-btn2{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-  }
-  .manual-btn3{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-  }
-  .manual-btn4{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-  }
+	width: 500px;
+	height: 500px;
   
-  .manual-btn:not(:last-child){
-	margin-right: 40px;
   }
-  
- 
-  .manual-btn1:hover{
-	background: white;
-  }
-  
-  #radio1:checked ~ .first{
-	margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-	margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-	margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-	margin-left: -60%;
-  }
-  
- 
-/*css for automatic navigation*/
-
-.navigation-auto{
+  .slider-main ul li {
 	position: absolute;
-	display: flex;
-	width: px;
-	justify-content: center;
-	margin-top: 500px;
+	left: -200%;
+	background-size: cover; /* semon #f98686 */
+	width: 500px;
+  
   }
+  
 
-  .navigation-auto a{
+  .slider-main ul li:first-of-type {
+	background-image: url("../img/slider/epslogo1.png");
 	
-	padding: 5px;
-	border-radius: 10px;
-	transition: 1s;
-	transform: translate(-600px, -140px);
-
-
-
   }
-  .navigation-auto a:hover{
+  
+  .slider-main ul li:nth-of-type(2) {
+	/* background-image: url("http://favim.com/orig/201107/19/cute-flowers-girl-pink-pretty-Favim.com-110225.jpg") */
+	height: 400px;
+	  width:198px;
+	  margin: 0 0 0 283px;
+  background-image: url("https://www.slideteam.net/media/catalog/product/cache/1280x720/b/a/banking_powerpoint_presentation_slides_Slide01.jpg");
+  }
+  
+  
+  .slider-main ul li:nth-of-type(3) {
+	  height: 400px;
+	  width:198px;
+	  margin: 0 0 0 283px;
+  background-image: url("../img/slider/slider3.png");
+  }
+  
+  
+  
+  .slider-main ul li:last-of-type {
+	  height: 424px;
+	  width:198px;
+	  margin: 0 0 0 283px;
+	background-image: url("https://image.shutterstock.com/image-photo/businessman-holding-word-banking-hand-260nw-1150180799.jpg");
+  }
+  
+  .slider-main .controll:first-of-type {
+	transform: rotate(45deg);
+	left: 20px
+  }
+  
+  .slider-main .controll:last-of-type {
+	transform: rotate(225deg);
+	right: 20px
+  }
+  
+
+  /********************* Home Main Slider Part End *********************************************/
+  
+
+  /********************* Top-popup Slider Part Start **********************/
+.slider-popup-top{
+	 width: 650%;
+max-width: 750px;
+
+position: relative; 
+
+}
+
+  .slider-popup-top ul {
+
+	width: 424px;
+	height: 80px;
+
+	position: absolute;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-left: 998px;
+	  margin-top: -325px; 
 	
-	padding: 5px;
-	border-radius: 10px;
-	transition: 1s;
-
-	background-color: var(--green);
-	color: #FFFFFF;
-
 
   }
+  .slider-popup-top ul li  {
+	position: absolute;
+
+	left: -200%;
+	
+	background-size: cover; 
+  }
+
+
+ 
+ /* .slider-popup-top ul li:first-of-type {
+	background-image: url('../img/slider/sendmony.png'),
+	url('../img/slider/bilpay.png');
+background-repeat: no-repeat, no-repeat;
+background-position:750px 80px, 950px 300px;
+height: 100px, 60px;
+background-size: 120px,200px;
+animation: shakeX 50s infinite;
+	
+  }  */
+
+   .slider-popup-top ul li:first-of-type {
+	/* background-image: url("https://image.shutterstock.com/image-photo/businessman-holding-word-banking-hand-260nw-1150180799.jpg"); */
+	background-image: url("../img/slider/sendmony.png");
+	background-color: white; 
+	position: absolute; 
+	border-radius:8px;
+	display: inline-block;
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
+	padding-top: 10px;
+	padding-left: 60px;padding-right: 60px;
+	padding-bottom: 21px;  
+	height: 60px;
+	width:220px ;
+	margin-left: 15px;
+	
+  } 
+  .slider-popup-top ul li:nth-of-type(2) {
+	/* background-image: url('../img/slider/sendmony.png'),
+	url('../img/slider/bilpay.png');
+background-repeat: no-repeat, no-repeat;
+background-position:750px 80px, 950px 300px;
+height: 100px, 60px;
+background-size: 120px,200px;
+animation: shakeX 50s infinite; */
+
+background-image: url("../img/slider/bilpay.png");
+	background-color: white; 
+	position: absolute; 
+	border-radius:8px;
+	display: inline-block;
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
+	padding-top: 10px;
+	padding-left: 60px;padding-right: 60px;
+	padding-bottom: 21px;  
+	height: 60px;
+	width:220px ;
+	margin-left: 15px; 
+  }
+  .slider-popup-top ul li:nth-of-type(3) {
+	background-image: url("../img/slider/sendmony.png");
   
-  .navigation-auto a:not(:last-child){
-	margin-right: 10px;
+	 background-color: white; 
+	position: absolute; 
+	border-radius:8px;
+	display: inline-block;
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
+	padding-top: 10px;
+	padding-left: 60px;padding-right: 60px;
+	padding-bottom: 21px;  
+	height: 60px;
+	width:220px ;
+	margin-left: 15px;
   }
   
-  #radio1:checked ~.navigation-auto .auto-btn1{
-	background-color: var(--green);
-	color: #F0F0F0;
+  .slider-popup-top ul li:last-of-type {
+	background-image: url("../img/slider/bilpay.png");
+  
+	background-color: white; 
+	position: absolute; 
+	border-radius:8px;
+	display: inline-block;
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+  animation: shakeX 50s infinite;
+	padding-top: 10px;
+	padding-left: 60px;padding-right: 60px;
+	padding-bottom: 21px;  
+	height: 60px;
+	width:220px ;
+	margin-left: 15px;
+  } 
+
+  .slider-main .top-controll:first-of-type {
+	transform: rotate(45deg);
+	left: 20px
   }
-  #radio1:checked ~.navigation-auto .manual-btn1{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
+  .slider-main .top-controll:last-of-type {
+	transform: rotate(225deg);
+	right: 20px
   }
-  #radio2:checked ~.navigation-auto .manual-btn2{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
+
+  .slider-main ol {
+	text-align: center;
+	padding-top: 10px
   }
-  #radio3:checked ~.navigation-auto .manual-btn3{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
-  }
-  #radio4:checked ~.navigation-auto .manual-btn4{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
+  .slider-main ol li {
+	display: inline-block;
+	margin-right: 5px;
   }
   
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: var(--green);
-	color: #F0F0F0;
+
+  /********************* Top-popup  Slider Part End **********************/
+
+  /********************* Bottom-popup  Slider Part Start **********************/
+  .slider-popup-bottom {
+    width: 650%;
+max-width: 750px;
+/* width: 200px; */
+position: relative;
+}
+  /* .slider-popup-bottom ul{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-left: 1255px;
+	  margin-top: -151px;
+	width: 424px;
+	height: 80px;
+} */
+ .slider-popup-bottom ul li {
+  width: 100%;
+  height: 30%;
+}
+/* .slider-popup-bottom ul {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px
+}
+.slider-popup-bottom ul li {
+  position: absolute;
+  top: 0;
+ 
+  background-size: cover; 
+  background-position: center;
+  color: #fff;
+  font-family: serif;
+} */
+
+.slider-popup-bottom ul {
+  position: absolute;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-left: 1255px;
+	margin-top: -151px;
+	width: 414px;
+	height: 70px;
+
+}
+
+.slider-popup-bottom ul li {
+  position: absolute;
+
+  left: -200%;
+  
+  background-size: cover; 
+
+
+}
+
+.slider-popup-bottom ul li:first-of-type {
+  background-image: url("../img/slider/bilpay.png");
+ 
+  /* margin: 80px -150px ;   */
+  /* z-index: 1000;  */
+   background-color: white; 
+  position: absolute; 
+  border-radius:8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+overflow: hidden;
+  animation: shakeX 50s infinite;
+  padding-top: 10px;
+  padding-left: 60px;padding-right: 60px;
+  padding-bottom: 21px;  
+  height: 60px;
+  width:220px ;
+  margin-left: 15px;
+  
+}
+.slider-popup-bottom ul li:nth-of-type(2) {
+  background-image: url("../img/slider/sendmony.png");
+	/* margin: 80px -150px ;   */
+  /* z-index: 1000;  */
+  background-color: white; 
+  position: absolute; 
+  border-radius:8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+  animation-iteration-count: infinite;animation: shakeX 50s infinite;
+  padding-top: 10px;
+  padding-left: 60px;padding-right: 60px;
+  padding-bottom: 21px;  
+  height: 60px;
+  width:220px ;
+  margin-left: 15px;
+}
+.slider-popup-bottom ul li:nth-of-type(3) {
+  background-image: url("../img/slider/bilpay.png");
+  /* margin: 80px -150px ;   */
+  /* z-index: 1000;  */
+   background-color: white; 
+  position: absolute; 
+  border-radius:8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+  animation-iteration-count: infinite;animation: shakeX 50s infinite;
+  padding-top: 10px;
+  padding-left: 60px;padding-right: 60px;
+  padding-bottom: 21px;  
+  height: 60px;
+  width:220px ;
+  margin-left: 15px;
+}
+/* .slider ul li:nth-of-type(4) {
+  background-image: url("https://37.media.tumblr.com/tumblr_lxkb5dtDuF1r5o9ano1_500.jpg");
+} */
+.slider-popup-bottom ul li:last-of-type {
+  background-image: url("../img/slider/sendmony.png");
+	/* margin: 80px -150px ;   */
+  /* z-index: 1000;  */
+  background-color: white; 
+  position: absolute; 
+  border-radius:8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+animation: shakeX 50s infinite;
+  padding-top: 10px;
+  padding-left: 60px;padding-right: 60px;
+  padding-bottom: 21px;  
+  height: 60px;
+  width:220px ;
+  margin-left: 15px;
+}
+
+/* .slider-p .bottom-controll:first-of-type {
+  transform: rotate(45deg);
+  left: 20px
+}
+.slider-p .bottom-controll:last-of-type {
+  transform: rotate(225deg);
+  right: 20px
+} */
+
+/* .slider-popup-bottom ol {
+  text-align: center;
+  padding-top: 10px
+}
+.slider-popup-bottom ol li {
+  display: inline-block;
+  margin-right: 5px;
+}
+ */
+ .slider-p li {
+	text-align: center;
+	padding-top: 10px
+  }
+  .slider-p li {
+	display: inline-block;
+	margin-right: 5px;
   }
   
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: var(--green);
-	color: #F0F0F0;
-  }
+
+  /********************* Bottom-popup  Slider Part End **********************/
   
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: var(--green);
-	color: #F0F0F0;
-  }
-		
-		
- /********************end css for automatic navigation********************************************/     
-  /*********************Main content End********************/
+ 
+  
+
+ /*********************Main content End********************/
 
 		
 
@@ -1114,6 +1305,8 @@ padding-right:30px;
 /* ABout Us page start*/
 .details{
 	margin-top:3%;;
+
+
 }
 
 .details span{
@@ -1211,13 +1404,16 @@ color:#666666;
 
 }
 
+#official_logo h5{
+	margin-left: 40%;
+}
 
 .epsmainlogo  {
 	width: 700px;
 	height: 400px;
 	margin-left: 100px;
 	z-index:500;
-	background-image:url(../img/epslogo.jpg);
+	background-image:url(../img/logo-png.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center ;
@@ -1230,7 +1426,7 @@ color:#666666;
 
 .epsmainlogo:hover  {
 	background: rgba(0, 0, 0, 0.25);
-	background-image:url(../img/logohover.png);
+	background-image:url(../img/logo-overlay.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center ;
@@ -1674,7 +1870,7 @@ margin-bottom: 10px;
 
 .footer {
 	
-	background-image: url("../img/Footer_banner_2.svg");
+	background-image: url("../img/ftup.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #FFFFFF;
@@ -2159,13 +2355,12 @@ bottom: 0px;
 
 	#official_logo img{
 		width: 300px;
-	
 		margin-left:15px;
 		
 		
 	}
 
-
+	
 	/*Career Section*/
 
 	.career {
@@ -2303,6 +2498,27 @@ bottom: 0px;
 /* ======================================================== Large Device ================================================================== */
 
 @media screen and (min-width: 1900px) {
+	body{
+		background: white;
+		min-height: 60rem;
+		background-image: url(../img/bgbl8.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	
+		
+	
+
+	
+	
+	
+	
+		/* background-image: url(../img/Border_background.svg);
+		background-position:  top corner ; 
+		background-repeat: no-repeat; */
+		
+		/* padding-top: 4.5rem; */
+	}
+	
 	.front_banner h1{
 		font-size: 80px;
 	}
@@ -2405,7 +2621,7 @@ bottom: 0px;
 	  }
 
 	  #partner{
-		margin-top: 40px;
+		margin-top: 80px;
 		position: relative;
 	}
 	
@@ -2423,6 +2639,9 @@ bottom: 0px;
 		
 	}
 	
+	#official_logo h5{
+		margin-left: 30%;
+	}
 	.navigation-auto a{
 	
 		padding: 5px;
@@ -2493,7 +2712,9 @@ bottom: 0px;
 	z-index: 1000;
 }
 
-
+.partner{
+	margin-top:20px;
+}
 
 
 

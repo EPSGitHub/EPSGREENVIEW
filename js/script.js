@@ -5,7 +5,7 @@ window.addEventListener("load",function(){
           document.querySelector(".popup").style.
           display="block";
       },
-      5000
+      1000
   )
   });
   
@@ -98,7 +98,7 @@ window.addEventListener("load",function(){
   
   //ENd  Social
   function subscription(){
-		document.getElementById("sub").innerHTML='<div class="subform " style="margin-right:200px; padding:10px 50px; position:relative; top:-40%"><img src="img/subimg.png" width="158px" height="129px" alt=""><button class="btn btn-sm text-white lbtn " style="transform: rotate(-90deg);background:#0e694b; width:200px; position:absolute; margin-left: -110%; margin-top: 60%;">Lets Make a Connection</button><p style="margin-bottom:25px;font-size:12px">Subscribe and get our exclusive offers delivered directly to your inbox</p><form action="" class="from-group"><input type="text" placeholder="Email / Phone Number" class="form-control"><input style="background:#0e694b; color:white; margin-top:20px" type="button" value="submit" style="margin-top:20px" class="form-control"></form> <img src="img/Ellipse.Png" style=" margin-top:76px; margin-left:200px"</div> ';
+		document.getElementById("sub").innerHTML='<div class="subform" style="margin-right:200px; padding:10px 50px; position:relative; top:-40%"><img src="img/subimg.png" width="158px" height="129px" alt=""><button class="btn btn-sm btn-success text-white lbtn " style="transform: rotate(-90deg); width:200px; position:absolute; margin-left: -110%; margin-top: 60%;">Lets Make a Connection</button><p style="margin-bottom:25px;font-size:12px">Subscribe and get our exclusive offers delivered directly to your inbox</p><form action="" class="from-group"><input type="text" placeholder="Email / Phone Number" class="form-control"><input style="background:green; color:white; margin-top:20px" type="button" value="submit" style="margin-top:20px" class="form-control"></form> <img src="img/Ellipse.Png" style=" margin-top:76px; margin-left:200px"</div> ';
 		document.getElementById("arw").innerHTML="";
 		document.getElementById("arw2").innerHTML='<i class="fa-solid fa-angle-right" style="margin-left:150px; font-size:20px;font-weight:900"></i></span>';
 	}
@@ -124,4 +124,17 @@ window.addEventListener("load",function(){
 
     //About Us 
 
- 
+
+  function sendMonyout(){
+      document.getElementById("phases").innerHTML= '';
+    }
+function billpayout(){
+      document.getElementById("phases").innerHTML= '';
+    }
+
+function corporateout(){
+      document.getElementById("phases").innerHTML= '';
+    }
+    function  marchentout(){
+      document.getElementById("phases").innerHTML= '';
+    }    
