@@ -463,7 +463,7 @@ color:var(--red);
   border:6px solid #3F3D56;
   border-radius: 24px;
 
- margin-left:100px;
+ margin-left:52px;
 
   /* margin: 0;
   m: 0; */
@@ -473,8 +473,8 @@ color:var(--red);
 .slider-main {
 	width: 650%;
 	max-width: 750px;
-  
 	position: relative;
+	
   }
 
 .slider ol {
@@ -576,7 +576,7 @@ color:var(--red);
 	position: absolute;
 	overflow: hidden;
 	border-radius: 15px;
-	margin-left: -300px;
+	margin-left: -400px;
   
 	width: 500px;
 	height: 500px;
@@ -585,15 +585,17 @@ color:var(--red);
   .slider-main ul li {
 	position: absolute;
 	left: -200%;
-	background-size: cover; /* semon #f98686 */
+
 	width: 500px;
   
   }
   
 
   .slider-main ul li:first-of-type {
-	background-image: url("../img/slider/epslogo1.png");
-	
+	background-image: url("../img/slider/Demo1.png");
+	height: 400px;
+	  width:198px;
+	  margin: 0 0 0 283px;
   }
   
   .slider-main ul li:nth-of-type(2) {
@@ -601,7 +603,7 @@ color:var(--red);
 	height: 400px;
 	  width:198px;
 	  margin: 0 0 0 283px;
-  background-image: url("https://www.slideteam.net/media/catalog/product/cache/1280x720/b/a/banking_powerpoint_presentation_slides_Slide01.jpg");
+  background-image: url("../img/slider/Demo2.png");
   }
   
   
@@ -609,7 +611,7 @@ color:var(--red);
 	  height: 400px;
 	  width:198px;
 	  margin: 0 0 0 283px;
-  background-image: url("../img/slider/slider3.png");
+  background-image: url("../img/slider/Demo3.png");
   }
   
   
@@ -618,7 +620,7 @@ color:var(--red);
 	  height: 424px;
 	  width:198px;
 	  margin: 0 0 0 283px;
-	background-image: url("https://image.shutterstock.com/image-photo/businessman-holding-word-banking-hand-260nw-1150180799.jpg");
+	background-image: url("../img/slider/Demo4.png");
   }
   
   .slider-main .controll:first-of-type {
@@ -640,7 +642,7 @@ color:var(--red);
 	 width: 650%;
 max-width: 750px;
 
-position: relative; 
+position: absolute; 
 
 }
 
@@ -651,105 +653,103 @@ position: relative;
 
 	position: absolute;
 	overflow: hidden;
-	border-radius: 15px;
-	margin-left: 998px;
+margin-left: 138px;
+
 	  margin-top: -325px; 
 	
 
   }
   .slider-popup-top ul li  {
 	position: absolute;
-
+	background-color: white; 
 	left: -200%;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+	border-radius:8px;
+
+  }
+ .sendmoney{
+	width: 250px;
+	height: 70px;
 	
-	background-size: cover; 
   }
 
-
- 
- /* .slider-popup-top ul li:first-of-type {
-	background-image: url('../img/slider/sendmony.png'),
-	url('../img/slider/bilpay.png');
-background-repeat: no-repeat, no-repeat;
-background-position:750px 80px, 950px 300px;
-height: 100px, 60px;
-background-size: 120px,200px;
-animation: shakeX 50s infinite;
+ .sendmoney img{
+		padding-top: 10px;
+	padding-left: 15px;
 	
-  }  */
+  }
+ .billpay{
+	width: 250px;
+	height: 70px;
+  }
+ .corporate{
+	width: 250px;
+	height: 70px;
+  }
+ .marchent{
+	width: 250px;
+	height: 70px;
+  }
+  .slider-popup-top .billpay img{
+		padding-top: 10px;
+	padding-left: 15px;
+	width: 250px;
+	height: 70px;
 
+  }
+  .slider-popup-top .corporate{
+	width: 250px;
+	height: 70px;
+	
+  }
+
+  .slider-popup-top .corporate img{
+		padding-top: 10px;
+	padding-left: 15px;
+	
+  }
+
+.slider-popup-top .marchent img{
+padding-top: 10px;
+padding-left: 15px;
+width: 250px;
+height: 70px;
+}
    .slider-popup-top ul li:first-of-type {
-	/* background-image: url("https://image.shutterstock.com/image-photo/businessman-holding-word-banking-hand-260nw-1150180799.jpg"); */
-	background-image: url("../img/slider/sendmony.png");
-	background-color: white; 
-	position: absolute; 
-	border-radius:8px;
-	display: inline-block;
+	
+	
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
 	animation-iteration-count: infinite;animation: shakeX 50s infinite;
-	padding-top: 10px;
-	padding-left: 60px;padding-right: 60px;
-	padding-bottom: 21px;  
-	height: 60px;
-	width:220px ;
-	margin-left: 15px;
+
+/* margin-left: 10px; */
+
+	
 	
   } 
   .slider-popup-top ul li:nth-of-type(2) {
-	/* background-image: url('../img/slider/sendmony.png'),
-	url('../img/slider/bilpay.png');
-background-repeat: no-repeat, no-repeat;
-background-position:750px 80px, 950px 300px;
-height: 100px, 60px;
-background-size: 120px,200px;
-animation: shakeX 50s infinite; */
 
-background-image: url("../img/slider/bilpay.png");
-	background-color: white; 
-	position: absolute; 
-	border-radius:8px;
-	display: inline-block;
+
+
+
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
 	animation-iteration-count: infinite;animation: shakeX 50s infinite;
-	padding-top: 10px;
-	padding-left: 60px;padding-right: 60px;
-	padding-bottom: 21px;  
-	height: 60px;
-	width:220px ;
-	margin-left: 15px; 
+
+	/* margin-left: 15px;  */
   }
   .slider-popup-top ul li:nth-of-type(3) {
-	background-image: url("../img/slider/sendmony.png");
-  
-	 background-color: white; 
-	position: absolute; 
-	border-radius:8px;
-	display: inline-block;
+	/* background-image: url("../img/slider/sendmony.png"); */
+
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
 	animation-iteration-count: infinite;animation: shakeX 50s infinite;
-	padding-top: 10px;
-	padding-left: 60px;padding-right: 60px;
-	padding-bottom: 21px;  
-	height: 60px;
-	width:220px ;
-	margin-left: 15px;
+
   }
   
   .slider-popup-top ul li:last-of-type {
-	background-image: url("../img/slider/bilpay.png");
-  
-	background-color: white; 
-	position: absolute; 
-	border-radius:8px;
-	display: inline-block;
+
 	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-  animation: shakeX 50s infinite;
-	padding-top: 10px;
-	padding-left: 60px;padding-right: 60px;
-	padding-bottom: 21px;  
-	height: 60px;
-	width:220px ;
-	margin-left: 15px;
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
+
   } 
 
   .slider-main .top-controll:first-of-type {
@@ -776,9 +776,10 @@ background-image: url("../img/slider/bilpay.png");
   /********************* Bottom-popup  Slider Part Start **********************/
   .slider-popup-bottom {
     width: 650%;
-max-width: 750px;
+/* max-width: 750px; */
 /* width: 200px; */
-position: relative;
+
+position: absolute; 
 }
   /* .slider-popup-bottom ul{
 	width: 100%;
@@ -791,10 +792,10 @@ position: relative;
 	width: 424px;
 	height: 80px;
 } */
- .slider-popup-bottom ul li {
+ /* .slider-popup-bottom ul li {
   width: 100%;
   height: 30%;
-}
+} */
 /* .slider-popup-bottom ul {
   position: relative;
   overflow: hidden;
@@ -813,97 +814,55 @@ position: relative;
 .slider-popup-bottom ul {
   position: absolute;
 	overflow: hidden;
-	border-radius: 15px;
-	margin-left: 1255px;
+
+	margin-left: 1400px;
 	margin-top: -151px;
-	width: 414px;
-	height: 70px;
+
+
+	width: 424px;
+	height: 80px;
+
+
 
 }
 
 .slider-popup-bottom ul li {
   position: absolute;
+  border-radius: 15px;
 
+  position: absolute;
+  background-color: white; 
   left: -200%;
-  
-  background-size: cover; 
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  border-radius:8px;
 
 
 }
 
 .slider-popup-bottom ul li:first-of-type {
-  background-image: url("../img/slider/bilpay.png");
- 
-  /* margin: 80px -150px ;   */
-  /* z-index: 1000;  */
-   background-color: white; 
-  position: absolute; 
-  border-radius:8px;
-  display: inline-block;
-  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-overflow: hidden;
-  animation: shakeX 50s infinite;
-  padding-top: 10px;
-  padding-left: 60px;padding-right: 60px;
-  padding-bottom: 21px;  
-  height: 60px;
-  width:220px ;
-  margin-left: 15px;
+
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
   
 }
 .slider-popup-bottom ul li:nth-of-type(2) {
-  background-image: url("../img/slider/sendmony.png");
-	/* margin: 80px -150px ;   */
-  /* z-index: 1000;  */
-  background-color: white; 
-  position: absolute; 
-  border-radius:8px;
-  display: inline-block;
-  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-  animation-iteration-count: infinite;animation: shakeX 50s infinite;
-  padding-top: 10px;
-  padding-left: 60px;padding-right: 60px;
-  padding-bottom: 21px;  
-  height: 60px;
-  width:220px ;
-  margin-left: 15px;
+
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
 }
 .slider-popup-bottom ul li:nth-of-type(3) {
-  background-image: url("../img/slider/bilpay.png");
-  /* margin: 80px -150px ;   */
-  /* z-index: 1000;  */
-   background-color: white; 
-  position: absolute; 
-  border-radius:8px;
-  display: inline-block;
-  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-  animation-iteration-count: infinite;animation: shakeX 50s infinite;
-  padding-top: 10px;
-  padding-left: 60px;padding-right: 60px;
-  padding-bottom: 21px;  
-  height: 60px;
-  width:220px ;
-  margin-left: 15px;
+  
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
 }
 /* .slider ul li:nth-of-type(4) {
   background-image: url("https://37.media.tumblr.com/tumblr_lxkb5dtDuF1r5o9ano1_500.jpg");
 } */
 .slider-popup-bottom ul li:last-of-type {
-  background-image: url("../img/slider/sendmony.png");
-	/* margin: 80px -150px ;   */
-  /* z-index: 1000;  */
-  background-color: white; 
-  position: absolute; 
-  border-radius:8px;
-  display: inline-block;
-  box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-animation: shakeX 50s infinite;
-  padding-top: 10px;
-  padding-left: 60px;padding-right: 60px;
-  padding-bottom: 21px;  
-  height: 60px;
-  width:220px ;
-  margin-left: 15px;
+  
+	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
+	animation-iteration-count: infinite;animation: shakeX 50s infinite;
 }
 
 /* .slider-p .bottom-controll:first-of-type {
@@ -1031,7 +990,7 @@ margin-top: -55px;
 
 /* Partners image */
 #partner{
-	margin-top: -15px;
+
 	position: relative;
 
 }
@@ -1043,6 +1002,7 @@ padding-right: 330px;
 
 
 .partnertitle{
+	margin-top: 30px; 
 	text-align:center;
 	padding:5px 5px;
 	font-family: 'poppins',sans-serif;
@@ -1178,6 +1138,8 @@ padding-right: 330px;
 	
 	
 }
+
+
 .front_banner h1{
 
 	font-size: 80px;
@@ -1202,6 +1164,7 @@ padding-right: 330px;
 	font-family: 'poppins',sans-serif;
 
 }
+
 
 .front_banner h5 span{
 	color:var(--green);
@@ -1915,10 +1878,189 @@ margin-bottom: 10px;
 }
 
 /* End Footer Code */
+/* ========================================================== Service Page ===================================================================== */
 
 
+.front_banners{
+	text-align: center;
+	
+	padding-left: 300px;
+}
+.front_banners h1{
+
+	font-size: 80px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+	font-family: 'poppins',sans-serif;
 
 
+}
+.front_banners h5{
+	font-size: 25px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 15%;
+	margin-top:-90px;
+	font-family: 'poppins',sans-serif;
+
+}
+.front_banners h5 span{
+	color:var(--green);
+
+}
+
+.service_banner{
+	margin-left: 206px;
+
+}
+.service_banner img{
+width: 933px;
+}
+.choice_service {
+	margin-left: 206px;
+}
+.choice_service .tittle{
+	font-family:'poppins',sans-serif;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--green);
+	margin-bottom: 14px;
+}
+.choice_service h5{
+	font-family:'poppins',sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: var(--red);
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.choice_service p{
+	font-family:'poppins',sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 34px;
+	color: #666666;
+	text-align: justify;
+	width: 920px;
+    height: 105px;
+	
+}
+.fa-arrow-right{
+	padding-left: 12px;
+	font-size: 30px;
+	width: 30px;
+}
+
+.our_service{
+box-sizing: border-box;
+box-shadow: 0 0 16px 0 rgba(0,0,0,0.12);
+border-radius: 12px;
+height: 100%;
+transition: 0.3s;
+/* width: 1112px;  */
+width: 900px; 
+ height: 382px;
+background-color:white;
+padding-top: 70px;
+margin-left: 206px;
+
+}
+
+.sr_sendmoney .readmore{
+margin-left: 100px;
+font-size: 18px;
+color: #666666;
+font-family:'poppins',sans-serif;
+font-weight: 600;
+}
+.sr_marchent .readmore{
+margin-left: 125px;
+font-size: 18px;
+color: #666666;
+font-family:'poppins',sans-serif;
+font-weight: 600;
+}
+.sr_corporate .readmore{
+	margin-left: 125px;
+font-size: 18px;
+color: #666666;
+font-family:'poppins',sans-serif;
+font-weight: 600;
+}
+.sr_sendmoney p{
+
+    padding-left: -8px;
+    margin-left: 62px;
+    line-height: 26px;
+	font-family:'poppins',sans-serif;
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #666666;
+}
+.sr_sendmoney h5{
+	text-align:center; 
+	font-weight: 900;
+	font-size: 22px;
+	color:#999999;
+	margin-bottom: 15px;
+}
+
+.sr_sendmoney h5 span{
+	color:var(--green) ;
+}
+.sr_sendmoney img{
+	padding-left: 137px;
+	margin-bottom: 29px; ;
+}
+.sr_marchent h5{
+	text-align:center; font-weight: 900; 	
+	font-size: 22px;
+	color:#999999;
+	margin-bottom: 15px;
+}
+
+
+.sr_marchent p{
+    padding-left: -8px;
+    margin-left: 62px;
+    line-height: 26px;
+	font-family:'poppins',sans-serif;
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #666666;
+}
+.sr_marchent img{
+	padding-left: 137px;
+	margin-bottom: 29px; ;
+
+}
+.sr_corporate h5{
+	text-align:center; font-weight: 900;
+	font-size: 22px;
+	color:var(--green) ;
+	margin-bottom: 15px;
+}
+
+.sr_corporate p{
+    padding-left: -8px;
+    margin-left: 62px;
+    line-height: 26px;
+	font-family:'poppins',sans-serif;
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #666666;
+}
+.sr_corporate img{
+	padding-left: 137px;
+	margin-bottom: 29px; ;
+}
 
 
 
@@ -2523,6 +2665,8 @@ bottom: 0px;
 		font-size: 80px;
 	}
 	
+
+	
 	.appmodal{
 		margin-top: 70px;
 		margin-left: 60%;
@@ -2539,6 +2683,7 @@ bottom: 0px;
 		margin-left: 28%;
 		margin-top:-90px;
 	}
+	
 
 	.logo1{
 		margin-left: 40px;
@@ -2570,7 +2715,7 @@ bottom: 0px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 		width: 858px;
 		height: 120px;
-		margin-left: 155px;
+		margin-left: 46px;
 	}
 
 	#navicons{
@@ -2583,7 +2728,13 @@ bottom: 0px;
 		transition: 1s;
 		transform: translate(-650px, -140px);
 	
-	
+	  }
+	  .slider-main{
+margin-left: -150px;
+	}  
+	  .main-content{
+   
+		padding-left: 25px;
 	
 	  }
 	.main-content .easy{
@@ -2619,14 +2770,16 @@ bottom: 0px;
 		margin-bottom: 0.8rem;
 	
 	  }
-
+	  
 	  #partner{
-		margin-top: 80px;
+		margin-top: 40px;
+		margin-left: 33px;
 		position: relative;
 	}
 	
 	  .partnertitle {
-		
+
+		/* margin-top: -45px;  */
 		font-size:72px;
 		margin-bottom: -20px;
 	}
@@ -2651,19 +2804,156 @@ bottom: 0px;
 	
 	
 	  }
-
+	  .slider-main ul {
+		position: absolute;
+		overflow: hidden;
+		border-radius: 15px;
+		margin-left: -250px;
+	  
+		width: 500px;
+		height: 500px;
+	  
+	  }
 	  #popup{
 		margin-top: 13%;
+		margin-left: 49px;
+		width: 894px;
 	}
+	  #popup p{
+	
+	}
+	.slider-popup-top {
+		margin-left: 700px;
+	}
+
+
+	/***SErvice Page******************************/
+
+	.front_banners h5{
+		font-size: 25px;
+		font-weight: 900;
+		color: #F0F0F0;
+		padding: 20px 10px;
+		position: absolute;
+		color: black;
+		margin-left: 16%;
+		margin-top:-90px;
+	}
+	.front_banners h1{
+		font-size: 80px;
+	}
+	.service_banner{
+		margin-left: 80px;
+	}
+	.choice_service {
+		margin-left: 80px;
+			
+	}
+.choice_service .tittle{
+	font-family: Poopins; 
+	font-weight: 900;
+
+}
+.our_service{
+	margin-left: 80px;
+	width: 1112px;
+}
+.service_banner img{
+	width: 1100px;
+	}
+
+	.choice_service p{
+	
+		width: 1090px;
+	
+		
+	}
+
+
+	.our_service{
+		box-sizing: border-box;
+		box-shadow: 0 0 16px 0 rgba(0,0,0,0.12);
+		border-radius: 12px;
+		height: 100%;
+		transition: 0.3s;
+		/* width: 1112px;  */
+
+		 height: 382px;
+		background-color:white;
+		padding-top: 70px;
+		margin-left: 80px;
+		
+		}
+		
+		.sr_sendmoney .readmore{
+		margin-left: 100px;
+		
+		}
+		.sr_marchent .readmore{
+			margin-left: 155px;
+	
+		}
+		.sr_corporate .readmore{
+			margin-left: 155px;
+	
+		}
+		.sr_sendmoney {
+		
+		
+			margin-left: 12px;
+			
+		}
+	
+		.sr_sendmoney h5{
+		
+			padding-left: 10px;
+			
+		}
+		
+	
+		.sr_sendmoney img{
+			padding-left: 137px;
+		
+		}
+		.sr_marchent{
+		margin-left: -60px;
+		}
+		
+		.sr_marchent h5{
+			padding-left: 15px;
+	
+		}
+		
+		
+
+		.sr_marchent img{
+			padding-left: 167px;
+			margin-bottom: 29px; ;
+		
+		}
+		.sr_corporate {
+			margin-left: -60px;
+		}
+		.sr_corporate h5{
+			padding-left: 15px;
+		
+		}
+		
+	
+		.sr_corporate img{
+			padding-left: 167px;
+		
+		}
+		
+		
+		
+		
+
   }
 
 
   @media screen and (min-width: 1440px) {
-	.main-content{
-   
-		padding-left: 240px;
-	
-	  }
+
 	  body{
 
 		background-color: white;
@@ -2692,7 +2982,14 @@ bottom: 0px;
 
   }
 
+/* .slider-main{
+margin-left: 75px;
+} */
+.main-content{
+   
+	margin-left: 58px;
 
+  }
   .popup{
 
 
@@ -2712,10 +3009,13 @@ bottom: 0px;
 	z-index: 1000;
 }
 
-.partner{
-	margin-top:20px;
-}
 
+.slider-popup-top{
+	margin-left: 513px;
+}
+.slider-popup-bottom  {
+	margin-left: -381px;
+}
 
 
   }
