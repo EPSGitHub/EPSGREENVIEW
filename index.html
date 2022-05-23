@@ -183,6 +183,7 @@
 
 <!-- // Start Code From Here -->
 
+
 <!-- // Main section Start -->
 <section >
 	<div class="container mt-4" >
@@ -331,7 +332,7 @@ padding-left: 85px">
   <ol class="" >
     <!-- point -->
     <li class="active" style=" ">
-			<a href="" class="auto-btn btn" class="hoverhand" id="title1" onmouseover="changePhase()" onmouseout="sendMonyout()">
+			<a href="sendMoney.html" class="auto-btn btn" class="hoverhand" id="title1" onmouseover="changePhase()" onmouseout="sendMonyout()">
       <i class="fa fa-square" style=""></i>Send Mony
 	  	</a>
 	</li>
@@ -361,6 +362,7 @@ padding-left: 85px">
 
 </div>
 </div>
+<!-- // Main section End -->
 <!-- // Main section End -->
 
 
@@ -577,36 +579,7 @@ padding-left: 85px">
 <!-- Script for slider hover image end-->
 
 
-<script>
-    const slides = document.querySelectorAll(".slide-mobile");
-    const slideIcons = document.querySelectorAll(".radio-btn");
-    const numberOfSlides = slides.length;
-    var slideNumber = 0;
-    //image slider autoplay
-    var playSlider;
 
-    var repeater = () => {
-      playSlider = setInterval(function(){
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-        slideIcons.forEach((slideIcon) => {
-          slideIcon.classList.remove("active");
-        });
-
-        slideNumber++;
-
-        if(slideNumber > (numberOfSlides - 1)){
-          slideNumber = 0;
-        }
-
-        slides[slideNumber].classList.add("active");
-        slideIcons[slideNumber].classList.add("active");
-      }, 3000);
-    }
-    repeater();
-
-</script>
 <script>var element = document.getElementById("element");
 
 	TweenMax.to(element, 0.1, {x:"+=20", yoyo:true, repeat:-1});
@@ -895,35 +868,7 @@ padding-left: 85px">
 	
 	</script>   
   
-  
-  <script>
-	  function changePhase(obj) {
-  
-	var img = "";
-  
-	switch (obj.id) {
-	  case "title1":
-  
-	   img = '<img src="img/slider/sendmony.png" alt=""style=" margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/bilpay.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;   ">';
-	  //  img = '<img src="img/slider/bilpay.png" alt=""style="" style="margin-top:200px">';
-		break;
-	  case "title2":
-	  img = '<img src="img/slider/bilpay.png" alt=""style="  margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/sendmony.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;  ">';
-		break;
-	  case "title3":
-	  img = '<img src="img/slider/sendmony.png" alt=""style=" margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/bilpay.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;   ">';
-		break;
-	  case "title4":
-	  img = '<img src="img/slider/bilpay.png" alt=""style="  margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/sendmony.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;  ">';
-	  
-		break;
-	}
-  
-	document.getElementById("phases").innerHTML = img;
-  }
-  
-  
-  </script> 
+
   
   <script>
 		function sendMonyout(){
