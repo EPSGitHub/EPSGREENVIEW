@@ -7,15 +7,26 @@
 
 
 :root{
-	--red: #ee2c43;
-	--green: #0E694b;
+	--red: #EE2D43;
+	--green: #006B4F;
+	
 }
 
 
 body{
 	background: white;
 	min-height: 60rem;
+	background-image: url(../img/bgbl8.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: contain;
+
 	
+
+
+
+
 	/* background-image: url(../img/Border_background.svg);
 	background-position:  top corner ; 
 	background-repeat: no-repeat; */
@@ -30,6 +41,7 @@ body{
 	height: 100px;
 	background: var(--green);
 	color:white;
+	font-family:'poppins',sans-serif;
 
 }
 .pagehead p{
@@ -123,6 +135,9 @@ p {
 	z-index: 999999999;
 }
 
+.appdwn{
+	border-radius: 10px;
+}
 .dwnappmodal{
 	font-family: 'poppins',sans-serif;
 	
@@ -169,7 +184,7 @@ margin-bottom: 10px;
 }
 
 .appborder{
-	border: 2px dotted red;
+	
 	border-radius: 10px;
 }
 
@@ -205,6 +220,13 @@ margin-bottom: 10px;
 
 .epstext{
 	margin-left: -22px;
+	
+
+}
+
+.dwnmodalhead{
+	border-bottom:2px solid var(--green) ;
+
 }
 
 .Appsection .eps{
@@ -579,7 +601,6 @@ position: absolute;
    
   }
   
-  
 
 
   
@@ -587,6 +608,10 @@ position: absolute;
   
 
   /*css for manual slide navigation*/
+
+  .navbar{
+	  background: white;
+  }
 
   #navicons{
 	  margin-top: 470px;
@@ -1017,6 +1042,389 @@ padding-right: 330px;
 
 }
 
+/* FAQ BANNER START*/
+
+.faq_banner{
+	text-align: center;
+	
+}
+.faq_banner h1{
+	font-size: 80px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+	font-family: 'poppins',sans-serif;
+}
+
+.faq_banner h5{
+	font-size: 25px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 30%;
+	margin-top:-90px;
+	font-family: 'poppins',sans-serif;
+
+}
+
+.faq_banner h5 span{
+	color:var(--green);
+}
+.faq_banner p{
+	margin-top: -35px;
+	
+}
+
+.faqsearch{
+	background: var(--green);
+	margin-top: 30px;
+
+}
+
+.faqsearch form{
+	margin-top: 18px;
+	width: 70%;
+	margin-left: 16%;
+	padding: 20px 0px;
+}
+#faq-links{
+	margin-top:110px;
+   }
+   #faq-links div {
+   
+	   color: #666666;
+	   cursor: pointer;
+	   font-weight: 600;
+	   text-transform: capitalize;
+	   margin: 18px 0;
+	   border-bottom:1px solid green;
+	   padding-bottom:5px ;
+	   padding-left: 10px;
+	   
+   
+	   
+   }
+   
+   .faq-group {
+	   padding: 0 20px 40px 20px;
+	   position: relative;
+   }
+   
+   .faq-group div {
+	   font-weight: 900;
+	  margin-left: 75px;
+	  text-transform: uppercase;
+	  Font-size:24px;
+	  margin-top: 32px;
+	  font-family: 'poppins',sans-serif;
+   }
+   
+   .faq-group hr {
+	 
+	   -moz-box-sizing: content-box;
+	   -webkit-box-sizing: content-box;
+			   box-sizing: content-box;
+	   height: 0;
+	   margin-top: 32px;
+	   
+   }
+   
+   .faq-group:after {
+	   top: 37%;
+		left: 28%;
+	   border: solid transparent;
+	   content: " ";
+	   height: 0;
+	   width: 0;
+	   position: absolute;
+	   pointer-events: none;
+	   border-top-color: green;
+	   border-width: 15px;
+
+   }
+
+   .faq-accordion{
+	margin-left:-25px;
+   }
+   
+   .faq-accordion>li  {
+	   border-top: 1px solid rgba(198, 198, 198, 0.4);
+	   color: #666;
+	   padding: 1.125em 0;
+	   font-family: 'poppins',sans-serif;
+   }
+   
+   .faq-accordion li a {
+	   color: #666;
+	 
+   }
+   
+   .faq-accordion > li:last-child {
+	   border-bottom: 1px solid rgba(198, 198, 198, 0.4);
+   }
+   
+   .faq-accordion > li > a:before {
+	   content: 'Q.';
+	   padding-right: 0.313em
+   }
+   
+   .faq-accordion > li > a:after {
+	   color: #ff8300;
+	   content: '+';
+	   float: right;
+	   font-weight:300;
+	   margin-right: 1.25em;
+	   -webkit-transform: scale(2);
+	   -ms-transform: scale(2);
+			   transform: scale(2);
+	   overflow-y: hidden;
+   }
+   
+   .faq-accordion > li > a.expanded:after {
+	   color:  #ffa326;
+	   content: '\2212';
+	   -webkit-transform: scale(2);
+	   -ms-transform: scale(2);
+			   transform: scale(2);
+   }
+   
+   .faq-accordion > li > a.expanded {font-weight: 700; opacity: 1 !important}
+   
+   .faq-content {
+	   background-color: #ececec;
+	   margin: 20px 0 -20px;
+   }
+   
+   .faq-content p:before {
+	   content: 'A.';
+	   color: #ff8300;
+	   float: left;
+	   font-weight: 700;
+	 margin-right: .5em
+   }
+   
+   .faq-content p {
+	   margin: 0 1.2em;
+	   padding: 1.250em 0
+   
+   }
+   
+   .faq-hide {display: none}
+   
+   .faq-selected {
+	   color: #49494b!important;
+	-webkit-transition: all 1s ease;
+			transition: all 1s ease;
+   }
+   
+   
+   .faq .slide-left{
+   
+	   -webkit-animation-name: slide-left;	
+	 -moz-animation-name: slide-left;	
+		 animation-name: slide-left;
+   
+	   
+	   -webkit-animation-duration: 1s;
+	 -moz-animation-duration: 1s;
+	 animation-duration: 1s;	
+   
+		   
+	   -webkit-animation-timing-function: ease-in-out;	
+	 -moz-animation-timing-function: ease-in-out;
+	 animation-timing-function: ease-in-out;
+   
+   }
+   
+   
+   
+   @-webkit-keyframes slide-left {
+	   0% {
+		   -webkit-transform: translateX(150%);
+	   }
+	   50%{
+		   -webkit-transform: translateX(-8%);
+	   }
+	   65%{
+		   -webkit-transform: translateX(4%);
+	   }
+	   80%{
+		   -webkit-transform: translateX(-4%);
+	   }
+	   95%{
+		   -webkit-transform: translateX(2%);
+	   }			
+	   100% {
+		   -webkit-transform: translateX(0%);
+	   }
+   }
+   
+   @-moz-keyframes slide-left {
+	   0% {
+		   -webkit-transform: translateX(150%);
+	   -moz-transform: translateX(150%);
+				   transform: translateX(150%);
+	   }
+	   50%{
+		   -webkit-transform: translateX(-8%);
+	   -moz-transform: translateX(-8%);
+				   transform: translateX(-8%);
+	   }
+	   65%{
+		   -webkit-transform: translateX(4%);
+	   -moz-transform: translateX(4%);
+				   transform: translateX(4%);
+	   }
+	   80%{
+		   -webkit-transform: translateX(-4%);
+	   -moz-transform: translateX(-4%);
+				   transform: translateX(-4%);
+	   }
+	   95%{
+		   -webkit-transform: translateX(2%);
+	   -moz-transform: translateX(2%);
+				   transform: translateX(2%);
+	   }			
+	   100% {
+		   -webkit-transform: translateX(0%);
+	   -moz-transform: translateX(0%);
+				   transform: translateX(0%);
+	   }
+   }
+   @keyframes slide-left {
+	   0% {
+		   -webkit-transform: translateX(150%);
+	   -moz-transform: translateX(150%);
+				   transform: translateX(150%);
+	   }
+	   50%{
+		   -webkit-transform: translateX(-8%);
+	   -moz-transform: translateX(-8%);
+				   transform: translateX(-8%);
+	   }
+	   65%{
+		   -webkit-transform: translateX(4%);
+	   -moz-transform: translateX(4%);
+				   transform: translateX(4%);
+	   }
+	   80%{
+		   -webkit-transform: translateX(-4%);
+	   -moz-transform: translateX(-4%);
+				   transform: translateX(-4%);
+	   }
+	   95%{
+		   -webkit-transform: translateX(2%);
+	   -moz-transform: translateX(2%);
+				   transform: translateX(2%);
+	   }			
+	   100% {
+		   -webkit-transform: translateX(0%);
+	   -moz-transform: translateX(0%);
+				   transform: translateX(0%);
+	   }
+   }
+
+   .faqquery {
+	   margin-top: 50px;
+	   font-family: 'poppins',sans-serif;
+	   margin-bottom: 100px;
+
+   }
+
+   .faqquery h3{
+	   size:35px;
+	   line-height: 83px;
+	   text-align: center;
+   }
+
+   .faqquery p{
+
+	   font-size: 18px;
+	   line-height: 26px;
+	   text-align: center;
+   }
+
+   .faqquery a {
+	   color:var(--green);
+	   font-weight: 600;
+	   text-decoration: underline;
+	 
+	   
+   }
+/* FAQ BANNER END*/
+
+
+/*Service Single Start*/
+.service-single{
+	margin-bottom: 150px;
+	font-family:'poppins',sans-serif;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+	background: white;
+}
+
+.service-single img{
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+.service-single p{
+	margin-top: 150px;
+}
+
+.service-single h3{
+	width: 400px;
+	font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 45px;
+color: var(--green);
+margin-bottom: 50px;
+}
+
+.service-single a{
+padding: 12px 30px;
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+}
+
+.single_page_details{
+	margin-top: 150px;
+	margin-bottom: 20px;
+}
+ 
+
+.single_page_details h3{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.sevdet p{
+	margin-top: 100px;
+}
+
+.smdt {
+	margin-top: 100px;
+	text-align: center;font-family: 'poppins',sans-serif;
+}
+
+.ServiceFaq{
+	margin-top: 50px;
+	margin-bottom: -20px;
+
+}
+
+.ServiceFaq h2{
+	text-align:center;
+	font-size: 30px;
+	font-weight: 900;
+	color: #666666;
+}
+
+/*Service Single End*/
 .frm{
 	border: 1px solid #F0F0F0;
 	margin-top: 50px;
@@ -1114,6 +1522,8 @@ padding-right:30px;
 /* ABout Us page start*/
 .details{
 	margin-top:3%;;
+
+
 }
 
 .details span{
@@ -1205,19 +1615,28 @@ color:#666666;
 	
 }
 
+#gallery .teambtn a{
+	margin-top: 7%;
+	width:120px;
+	margin-left: 50%;
+
+}
 #official_logo{
 	margin-top: 50px;
 
 
 }
 
+#official_logo h5{
+	margin-left: 40%;
+}
 
 .epsmainlogo  {
 	width: 700px;
 	height: 400px;
 	margin-left: 100px;
 	z-index:500;
-	background-image:url(../img/epslogo.jpg);
+	background-image:url(../img/logo-png.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center ;
@@ -1230,7 +1649,7 @@ color:#666666;
 
 .epsmainlogo:hover  {
 	background: rgba(0, 0, 0, 0.25);
-	background-image:url(../img/logohover.png);
+	background-image:url(../img/logo-overlay.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center ;
@@ -1516,6 +1935,20 @@ padding: 30px 20px 20px;
 margin-bottom: 30px;
 }
 
+.job_apply_side{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+	border-radius: 8px;
+	padding: 30px 20px 20px;
+	margin-bottom: 30px;
+	
+	}
+
+	.job_apply_side a{
+		margin-left:13.5% ; width:200px; margin-top:-7px;
+	}
+
+
 .job_details_side h4{
 	font-size: 18px;
 }
@@ -1674,7 +2107,7 @@ margin-bottom: 10px;
 
 .footer {
 	
-	background-image: url("../img/Footer_banner_2.svg");
+	background-image: url("../img/ftup.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #FFFFFF;
@@ -1788,6 +2221,7 @@ margin-bottom: 10px;
 		font-family: 'poppins',sans-serif;
 		text-align: center;
 	
+	
 	}
 	.dwnappmodal h4{
 	color: #000a06;
@@ -1873,16 +2307,14 @@ margin-bottom: 10px;
 
 /* Front Banner Mobile view Start */
 
-.front_banner{
-	text-align: center;
-	
-}
+
 .front_banner h1{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 900;
 	color: #F0F0F0;
 	padding: 20px 10px;
 	position: relative;
+	
 }
 
 .front_banner h5{
@@ -1892,8 +2324,8 @@ margin-bottom: 10px;
 	padding: 20px 10px;
 	position: absolute;
 	color: black;
-	margin-left: 28%;
-	margin-top:-68px;
+	margin-left: 30%;
+	margin-top:-63px;
 
 }
 
@@ -1901,7 +2333,147 @@ margin-bottom: 10px;
 	color:var(--green);
 }
 
+
 /* Front Banner Mobile view End */
+
+
+/* Faq Banner Mobile view Start */
+
+.faq_banner{
+	text-align: center;
+	
+}
+.faq_banner h1{
+	font-size: 60px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+}
+
+.faq_banner h5{
+	font-size: 18px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 10%;
+	margin-top:-78px;
+
+}
+
+.faq_banner h5 span{
+	color:var(--green);
+}
+
+
+.faq-group div {
+	font-weight: 900;
+   margin-left: 45px;
+   text-transform: uppercase;
+   Font-size:24px;
+   margin-top: 32px;
+   font-family: 'poppins',sans-serif;
+}
+
+.faq-group hr {
+  
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+			box-sizing: content-box;
+	height: 0;
+	margin-top: 32px;
+	
+}
+
+.faq-group:after {
+	top: 37%;
+	 left: 47%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-top-color: green;
+	border-width: 15px;
+  margin-left: 0px;
+}
+
+.faqquery p{
+	padding: 0px 10px;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+
+}
+
+.faqp{
+	margin-top: 100px;
+}
+/* Faq Banner Mobile view End */
+
+
+/* SINGLE SERVICE DETAILS START*/
+
+.service-single p{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.service-single h3{
+	width: 340px;
+	font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 45px;
+color: var(--green);
+margin-bottom: 50px;
+text-align: center;
+}
+
+.service-single a{
+padding: 12px 30px;
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+border-radius: 8px;
+margin-bottom: 30px;
+margin-left: 28%;
+
+}
+
+.service-single img{
+	margin-left: 16%;
+}
+.single_page_details{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+ 
+
+.single_page_details h3{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.sevdet p{
+	margin-top: 100px;
+	text-align: center;
+
+}
+.sevdet img{
+	margin-left: 8%;
+}
+.smdt {
+	margin-top: 100px;
+	text-align: center;font-family: 'poppins',sans-serif;
+}
+
+
+/* SINGLE SERVICE DETAILS END*/
+
+
 
 
  /* Mobile Footer Section start*/
@@ -2120,6 +2692,10 @@ bottom: 0px;
 		
 	}
 
+	#gallery{
+		margin-left: 20px;
+	}
+
 	#gallery img{
 		width: 300px;
 		height: auto;
@@ -2127,6 +2703,7 @@ bottom: 0px;
 		border: 1px solid rgba(0.19, 0.19, 0.19, 0.19);
 		border-radius: 5px;
 		position: relative;
+	
 	}
 	
 	#gallery .dtl {
@@ -2134,7 +2711,7 @@ bottom: 0px;
 		width: 250px;
 		position: absolute;
 		margin-top: -20px;
-		margin-left: 2%;
+		margin-left: 7%;
 		text-align: center;
 		background: #FFFFFF;
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -2155,17 +2732,37 @@ bottom: 0px;
 		margin-top: 80px;
 	
 	}
-
+	#gallery .teambtn a{
+		margin-top: 18%;
+		width:120px;
+		margin-left:30%;
+	
+	}
 
 	#official_logo img{
 		width: 300px;
-	
 		margin-left:15px;
+
 		
 		
 	}
 
-
+	.epsmainlogo  {
+		margin-top: -100px;
+		width: 330px;
+		z-index:500;
+		background-image:url(../img/logo-png.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center ;
+		margin-left: 20px;	
+	}
+	
+	#achivement{
+		margin-top: -100px;
+		margin-bottom: 50px;
+		
+	}
 	/*Career Section*/
 
 	.career {
@@ -2303,6 +2900,27 @@ bottom: 0px;
 /* ======================================================== Large Device ================================================================== */
 
 @media screen and (min-width: 1900px) {
+	body{
+		background: white;
+		min-height: 60rem;
+		background-image: url(../img/bgbl8.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	
+		
+	
+
+	
+	
+	
+	
+		/* background-image: url(../img/Border_background.svg);
+		background-position:  top corner ; 
+		background-repeat: no-repeat; */
+		
+		/* padding-top: 4.5rem; */
+	}
+	
 	.front_banner h1{
 		font-size: 80px;
 	}
@@ -2324,6 +2942,18 @@ bottom: 0px;
 		margin-top:-90px;
 	}
 
+	.faq_banner h5{
+		font-size: 25px;
+		font-weight: 900;
+		color: #F0F0F0;
+		padding: 20px 10px;
+		position: absolute;
+		color: black;
+		margin-left: 24%;
+		margin-top:-90px;
+		font-family: 'poppins',sans-serif;
+	
+	}
 	.logo1{
 		margin-left: 40px;
 		
@@ -2413,6 +3043,9 @@ bottom: 0px;
 		
 		font-size:72px;
 		margin-bottom: -20px;
+	
+	
+	
 	}
 
 	#official_logo img{
@@ -2423,6 +3056,9 @@ bottom: 0px;
 		
 	}
 	
+	#official_logo h5{
+		margin-left: 30%;
+	}
 	.navigation-auto a{
 	
 		padding: 5px;
