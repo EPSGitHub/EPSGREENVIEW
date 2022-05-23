@@ -384,17 +384,17 @@ color:var(--red);
 	text-align: center;
 	margin-left: 25px;
 }
-
 /*********************Home Main content Part start****************/
+
 /*********************Home Easy Payment System Part start****************/
 .main-content{
    
-    padding-left: 180px;
+    padding-left: 250px;
 
   }
 .btn-1{
    
-    background-color:var(--green);
+    background-color: var(--green);
     color: #FFFFFF;
     border-radius: 4px;
 	font-family: 'Poppins',sans-serif;
@@ -402,7 +402,7 @@ color:var(--red);
     }
 .btn-1:hover{
    
-    background-color: var(--green);
+    background-color:  var(--green);
     color: #FFFFFF;
     border-radius: 4px;
 	font-family: 'Poppins',sans-serif;
@@ -416,21 +416,18 @@ color:var(--red);
 	  padding-top: 5px;
 	  color: #FFFFFF;
 	  font-weight:900;
-	 
+	  font-family: 'Poppins',sans-serif;
 	  -webkit-text-stroke: 1.5px var(--red);
 	
 	  margin-top: 10px;
-	 
-		  font-family:'Roboto', sans-serif;;
-		 
-	}
+	  }
   .main-content .payment{
 	
 		text-transform: uppercase;
 		color: #FFFFFF;
 		font-size:4.5rem;
 		font-family: 'Poppins',sans-serif;
-		-webkit-text-stroke: 1.5px var(--green);
+		-webkit-text-stroke: 1.5px  var(--green);
 		font-weight: 900;
 	
 	  }
@@ -440,7 +437,7 @@ color:var(--red);
 		color: #FFFFFF;
 		font-size:4.5rem;
 		font-family: 'Poppins',sans-serif;
-		-webkit-text-stroke: 1.5px var(--green);
+		-webkit-text-stroke: 1.5px  var(--green);
 		font-weight: 900;
 		margin-bottom: 0.8rem;
 	
@@ -469,27 +466,10 @@ color:var(--red);
   
 
 
-/*********************End Home Easy Payment System Part start****************/
+/*********************End Home Easy Payment System Part ****************/
+
 /********************* Home Hover button Part start****************/
 
-.slides .btn{
-	font-family: 'Poppins',sans-serif;
-	font-size: 0.8rem;
-	color: #666666;
-	/* 
-	height:30px; */
-	width:110px;
-	background-color: #FFFFFF;
-	border-radius: 8px;
-	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
-	padding-top:8px ;
-	font-weight: 600;
-  }
- .slides .btn.active{
-  
-    color: #FFFFFF;
-    
- }  
 
 .mobile-slider{
 	height: 400px;
@@ -498,91 +478,91 @@ color:var(--red);
   border:6px solid #3F3D56;
   border-radius: 24px;
 
- margin-left:52px;
+ margin-left:px;
 
   /* margin: 0;
   m: 0; */
  
 }
-.mobile-slider .sendmony{
-	margin-top: 80px;
-	height: 60px;
-	width: 217px;
-	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-	animation-iteration-count: infinite;
-    position: absolute;
-	z-index: 100;  background-color: white;  border-radius: 8px;
-	display: inline-block;
-   margin: 80px -150px ;
-  animation: shakeX 50s infinite; 
-}
 
-.mobile-slider .text{
-	
-	margin-top: 60px;
-	/* margin-right: 1000px;	 */
-	height: 60px;
-	width: 217px;
-	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-	animation: shake 6s;
-	animation-iteration-count: infinite;
-position: absolute;
-	z-index: 2000;  background-color: white;  border-radius: 8px;
-}
-
-.sendmony img{
-	padding-left: 25%; padding-top: 10px;
-}
-.sendmony p{
-	font-family: Poppins; font-weight: 400; font-size: 12px;text-align: center; color:#666666;
-}
-.billpay{
- position: absolute; background-color: white;  border-radius: 8px;
-}
-.billpay img{
-	width: 250px; height: 70px; margin-top: 12px;margin-left:17px;
-}
-
-.mobile-slider .billpay{
-	margin-top: 240px;	
-	margin-left: 100px;	
-	height: 90px;
-	width: 290px;	
-	box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
-
-	
-		position: absolute;
-		background-color: white;
-		border-radius: 8px;
-	
-		animation: shakeX 50s infinite; 
-}
-
-  .slides{
+.slider-main {
 	width: 650%;
 	max-width: 750px;
 	position: relative;
+	margin-left: 70px;
+  }
+
+.slider ol {
+
+	position: absolute;
+	  /* padding-top: 10px */
+	  transform: translate(280px, -15px);
+	}
+	.slider-main ol li {
+	  display: inline-block;
+	  margin-right: 5px;
 	
-  }
-  
-  .slides input{
-	display: none;
-	/* margin-left: 12px; */
-  }/*********************End Home Hover button Part ****************/
-  
-  .slide-mobile{
-	width: 20%;
-	transition: 2s;
-  }
-  
-	  .slide-mobile	.content {
-		  position: absolute;
-		  left: 0;
-		  z-index: 2000;
-		  bottom: 99px;
-		  color: #fff;
-		  padding: 25px;
-		  background-color: rgba(0, 0, 0, 0.5);
+	
+	}
+	.slider-p  li {
+	  display: inline-block;
+	  margin-right: 5px;
+	
+	
+	}
+	.slider-main ol .fa {
+	
+	  margin-right: 8px;
+		  cursor: pointer;
+		  transition: 1s;
+	 color: var(--red);
+		  border-radius: 2px;
+		font-size: 12px;
+	
+	}
+	.slider-main ol .fa:hover {
+	
+	
+		  transition: 1s;
+	 color: white;
+	
+	}
+
+	/* .slider-p .fa {
+	
+	  margin-right: 8px;
+		  cursor: pointer;
+		  transition: 1s;
+	 
+		  border-radius: 2px;
+		font-size: 12px;
+	
+	} */
+	/* .slider-main ol li.fa :hover{
+	  font-size: 20px;
+	  color: green;
+	  cursor: pointer;
+	  font-weight: normall;
+	}
+	 */
+	.auto-btn{
+
+		font-family: 'Poppins',sans-serif;
+		  font-size: 0.8rem;
+		  color: #666666;
+		width:112px;
+		  background-color: #FFFFFF;
+		  border-radius: 8px;
+		  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+		  padding-top:8px ;
+		  font-weight: 600;
+	  }
+	  
+	  
+	  .auto-btn a{
+		  padding: 5px;
+		  border-radius: 10px;
+	  align-items: center;
 	  
 	  }
 	  
@@ -611,7 +591,7 @@ position: absolute;
 	position: absolute;
 	overflow: hidden;
 	border-radius: 15px;
-	margin-left: -400px;
+	margin-left: -450px;
   
 	width: 500px;
 	height: 500px;
@@ -680,7 +660,9 @@ max-width: 750px;
 position: absolute; 
 
 }
-
+	.slider-popup-top {
+		margin-left: 490px;
+	}
   .slider-popup-top ul {
 
 	width: 424px;
@@ -688,7 +670,7 @@ position: absolute;
 
 	position: absolute;
 	overflow: hidden;
-margin-left: 138px;
+margin-left: 188px;
 
 	  margin-top: -325px; 
 	
@@ -806,6 +788,7 @@ height: 70px;
   }
   
 
+  /********************* Top-popup  Slider Part End **********************/
 
   /********************* Bottom-popup  Slider Part Start **********************/
   .slider-popup-bottom {
@@ -849,7 +832,7 @@ position: absolute;
   position: absolute;
 	overflow: hidden;
 
-	margin-left: 1400px;
+	margin-left: 908px;
 	margin-top: -151px;
 
 
@@ -932,173 +915,7 @@ position: absolute;
  
   
 
-  /*css for manual slide navigation*/
-
-  .navbar{
-	  background: white;
-  }
-
-  #navicons{
-	  margin-top: 470px;
-
-  }
-  
-  .navigation-manual{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	width: 600px;
-	margin-top: 8px;
-	
-  }
-  
-  /* .manual-btn{
-	border-radius: 10px;
-	cursor: pointer;
-	transition: 1s;
-    background-color: red;
-	padding: 5px;
-	width: 30px;
-  } */
-  .manual-btn1{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-
-  }
-  .manual-btn2{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-  }
-  .manual-btn3{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-  }
-  .manual-btn4{
-	margin-right: 12px;
-	cursor: pointer;
-	transition: 1s;
-	background: var(--red);
-	border-radius: 2px;
-	width: 12px;
-	height: 8px;
-  }
-  
-  .manual-btn:not(:last-child){
-	margin-right: 40px;
-  }
-  
- 
-  .manual-btn1:hover{
-	background: white;
-  }
-  
-  #radio1:checked ~ .first{
-	margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-	margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-	margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-	margin-left: -60%;
-  }
-  
- 
-/*css for automatic navigation*/
-
-.navigation-auto{
-	position: absolute;
-	display: flex;
-	width: px;
-	justify-content: center;
-	margin-top: 500px;
-  }
-
-  .navigation-auto a{
-	
-	padding: 5px;
-	border-radius: 10px;
-	transition: 1s;
-	transform: translate(-600px, -140px);
-
-
-
-  }
-  .navigation-auto a:hover{
-	
-	padding: 5px;
-	border-radius: 10px;
-	transition: 1s;
-
-	background-color: var(--green);
-	color: #FFFFFF;
-
-
-  }
-  
-  .navigation-auto a:not(:last-child){
-	margin-right: 10px;
-  }
-  
-  #radio1:checked ~.navigation-auto .auto-btn1{
-	background-color: var(--green);
-	color: #F0F0F0;
-  }
-  #radio1:checked ~.navigation-auto .manual-btn1{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
-  }
-  #radio2:checked ~.navigation-auto .manual-btn2{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
-  }
-  #radio3:checked ~.navigation-auto .manual-btn3{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
-  }
-  #radio4:checked ~.navigation-auto .manual-btn4{
-	background-color: #FFFFFF;
-	color: #F0F0F0;
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: var(--green);
-	color: #F0F0F0;
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: var(--green);
-	color: #F0F0F0;
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: var(--green);
-	color: #F0F0F0;
-  }
-		
-		
- /********************end css for automatic navigation********************************************/     
-  /*********************Main content End********************/
+ /*********************Main content End********************/
 
 		
 
@@ -1113,8 +930,9 @@ position: absolute;
 	border: 3px solid var(--green);
 	border-radius: 12px;
 	box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
+
 	width: 780px;
-	margin-left: 170px;
+	margin-left: 290px;
 	position: absolute;
 	display: none;
 	z-index: 1000;
@@ -2651,8 +2469,8 @@ border-radius: 12px;
 height: 100%;
 transition: 0.3s;
 /* width: 1112px;  */
-width: 900px; 
- height: 382px;
+/* width: 900px;  */
+ /* height: 382px; */
 background-color:white;
 padding-top: 70px;
 margin-left: 206px;
@@ -2749,7 +2567,11 @@ font-weight: 600;
 }
 
 
-
+.comming h1{
+	text-align: center; font-size:50px;
+	color: var(--green);
+	font-family:'poppins',sans-serif;
+}
 
 
 
@@ -3629,7 +3451,7 @@ bottom: 0px;
 		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
 		width: 858px;
 		height: 120px;
-		margin-left: 46px;
+		margin-left: 200px;
 	}
 
 	#navicons{
@@ -3643,12 +3465,10 @@ bottom: 0px;
 		transform: translate(-650px, -140px);
 	
 	  }
-	  .slider-main{
-margin-left: -150px;
-	}  
-	  .main-content{
+
+	.main-content{
    
-		padding-left: 25px;
+		padding-left: 120px;
 	
 	  }
 	.main-content .easy{
@@ -3687,7 +3507,7 @@ margin-left: -150px;
 	  
 	  #partner{
 		margin-top: 40px;
-		margin-left: 33px;
+		margin-left: 140px;
 		position: relative;
 	}
 	
@@ -3721,11 +3541,17 @@ margin-left: -150px;
 	
 	
 	  }
+	  .slider-main{
+		margin-left: -60px;
+			}  
+		.mobile-slider{
+				margin-left: 10px;
+			}
 	  .slider-main ul {
 		position: absolute;
 		overflow: hidden;
 		border-radius: 15px;
-		margin-left: -250px;
+		margin-left: -340px;
 	  
 		width: 500px;
 		height: 500px;
@@ -3733,12 +3559,15 @@ margin-left: -150px;
 	  }
 	  #popup{
 		margin-top: 13%;
-		margin-left: 49px;
+		margin-left: 160px;
 		width: 894px;
 	}
-	 
+	
 	.slider-popup-top {
-		margin-left: 700px;
+		margin-left: 480px;
+	}
+	.slider-popup-bottom {
+		margin-left: 10px;
 	}
 
 
@@ -3751,7 +3580,7 @@ margin-left: -150px;
 		padding: 20px 10px;
 		position: absolute;
 		color: black;
-		margin-left: 16%;
+		margin-left: 12%;
 		margin-top:-90px;
 	}
 	.front_banners h1{
@@ -3935,32 +3764,7 @@ margin-left: 75px;
 	margin-left: 58px;
 
   }
-  .popup{
 
-
-	margin-left: 220px;
-	background-color: #FFFFFF;
-	
-		border: 1px solid var(--green);
-		border-radius: 12px;
-		box-shadow: 0 4px 10px 0 rgba(0.19, 0.19, 0.19, 0.19);
-		width: 840px;
-		height: 120px;
-	
-		margin-top:10%;
-	
-	position: absolute;
-	display: none;
-	z-index: 1000;
-}
-
-
-.slider-popup-top{
-	margin-left: 513px;
-}
-.slider-popup-bottom  {
-	margin-left: -381px;
-}
 
 
 
