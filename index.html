@@ -204,78 +204,127 @@
 
 
 		<!--Slider start!-->
-		 <div class="mobile-slider  col-md-5  col-sm-12 mt-2 " data-interval="false">
+		<div class="mobile-slider  col-md-5  col-sm-12 mt-2 "  data-interval="false">
 
-
-  
-  <div class="slides"> <!--SLIDEER img slider start!-->
-
-	<!--hover img!-->
-	<div id="sendMony" class="tabcontent" style="z-index: 100;"></div>
-	<div id="billPay" class="tabcontent"style="z-index: 100;"></div>
-	<div id="corPorate" class="tabcontent"style="z-index: 100;"></div>
-	<div id="marChent" class="tabcontent"style="z-index: 100;"></div>
-
-  <!--hover img end!-->
-
-<input type="radio" name="radio-btn" id="radio1">
-<input type="radio" name="radio-btn" id="radio2">
-<input type="radio" name="radio-btn" id="radio3">
-<input type="radio" name="radio-btn" id="radio4">
-
- <!--automatic navigation start-->
- <div class="navigation-auto" id="navicons">
-	<a href="Cookie.html" class="auto-btn1 btn btn-lg" onmouseover="sendMonyin()" onmouseout="sendMonyout()"><label for="radio1" class="manual-btn1"></label>Send Mony</a>
-	<a class="auto-btn2  btn btn-lg " onmouseover="billPayin()" onmouseout="billPayout()"><label for="radio2" class="manual-btn2"></label>Bill Pay</a>
-	<a class="auto-btn3  btn btn-lg " onmouseover="corPoratein()" onmouseout="corPorateout()"><label for="radio3" class="manual-btn3"></label>Corporate</a>
-	<a class="auto-btn4  btn btn-lg " onmouseover="marChentin()" onmouseout="marChentout()"><label for="radio4" class="manual-btn4"></label>Marchent</a>
 	
-  </div>
-  <!--automatic navigation end-->
-      <!--manual navigation start-->
-      
-      <!--manual navigation end-->
-<!--slide img!-->
+  
 
-<div class="slide-mobile first">
- <img src="img/slider/slider1.png" alt="" class="">
- <h6 >Slide 1</h6>
+			<!-- slider -->
+ <div class="slider-main"style=" ">
+
+  <!-- slide -->
+  <ul style="z-index: -100;">
+	
+     <li class="active" style=" " >
+
+		<p style="background-color: #f98686;  text-align: center; padding-left:140px; margin-top:12px;">Slider 1</p>
+	</li> 
+
+    <li>
+		<p style="background-color: #f98686;  text-align: center;">Slider 2</p>
+	</li>
+    <li>
+		<p style="background-color: #f98686;  padding-left:140px;text-align: center;">Slider 3</p>
+	</li>
+    <li>
+		<p style="background-color: #f98686; padding-left:140px;text-align: center; ">Slider 4</p>
+	</li>
+  </ul>
+
+
+ </div>
+ <!--mobile slider end!-->
+
+
+  <div id="phases"  ></div>
+
+ </div>
+</div> <!--row!-->
 </div>
-<div class="slide-mobile" >
-	<img src="img/epslogo1.png" alt="" class="">
-	<h6 >Slide 2</h6>
-</div>
-
-<div class="slide-mobile" >
-	<img src="img/slider/slider1.png" alt="" class="">
-	<h6 >Slide 3</h6>
-   </div>
-   
-
-   
-
-<div class="slide-mobile" >
- <img src="img/slider/Easy.svg" alt="" class="">
- <h6 >Slide 4</h6>
-</div>
-
-
-<div class="billpay"  >
- <img src="img/slider/bilpay.png" alt="" >
-
-</div>
-
-<div class="sendmony animate__animated animate__shakeX" >
-	<img src="img/slider/sendmony.png" alt="">
-	<p >Send Money to any Bank By EPS</p>
-   </div>
-
-</div>  <!--img slider endt!-->
-		 </div><!--mobile slider end!-->
-		</div> <!--row!-->
-
-	</div>
 </section><!-- // Main section End -->
+<!-- width: 12000px; height: 1800px; -->
+<div class="slider-popup-top" >
+    <!-- slide -->
+    <ul style="">
+      <li class="active" style=""></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  
+    </ul>
+  
+    <!-- controll -->
+  
+  </div>
+
+
+<div class="slider-popup-bottom" style=" ">
+ 
+  <ul>
+    <li class="active"></li>
+    <li  style=""></li>
+    <li  style=""></li>
+    <li  style=""></li>
+    
+   
+
+  </ul> 
+  <!-- <ol>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ol> -->
+  <span class="bottom-controll active"  style="display: none;"></span>
+  <span class="bottom-controll"  style="display: none;"></span>
+ 
+</div> 
+<div id="phases"  ></div>
+
+<div class="container" >
+
+<div class="row">
+<div class="col-md-12 slider-main" class="slider-p" style="margin-left:85px;">
+  <!-- slide -->
+  <!-- <li class="active"></li>
+  <li></li>
+  <li></li>
+  <li></li> -->
+  
+  <ol class="" >
+    <!-- point -->
+    <li class="active" style=" ">
+			<a href="" class="auto-btn btn" class="hoverhand" id="title1" onmouseover="changePhase(this)" onmouseout="sendMonyout()">
+      <i class="fa fa-square" style=""></i>Send Mony
+	  	</a>
+	</li>
+
+    <li class=""> <a href="" class="auto-btn btn " class="hoverhand" id="title2" onmouseover="changePhase(this)" onmouseout="billpayout()">
+      <i class="fa fa-square"></i>Billpay</a></li>
+
+    <li class=" "> <a href="" class="auto-btn btn" class="hoverhand" id="title3" onmouseover="changePhase(this)" onmouseout="corporateout()">
+      <i class="fa fa-square"></i>Corporate</a></li>
+
+    <li class=""> <a href="" class="auto-btn btn" class="hoverhand" id="title4" onmouseover="changePhase(this)" onmouseout="marchentout()">
+      <i class="fa fa-square"></i>Marchent</a></li>
+
+    <!-- playpause -->
+    <!-- <i class="fa fa-circle" title="pause"></i> -->
+  </ol>
+  <!-- controll -->
+  <span class="controll active" style="display: none;"></span>
+  <span class="controll" style="display: none;"></span>
+
+  <span class="top-controll active"  style="display: none;"></span>
+  <span class="top-controll"  style="display: none;"></span>
+  <span class="bottom-controll active"  style="display: none;"></span>
+  <span class="bottom-controll"  style="display: none;"></span>
+ 
+</div>
+
+</div>
+</div>
+<!-- // Main section End -->
 
 
 
@@ -364,7 +413,7 @@
 
 			<div class="partner col-md-12" id="partner">
 
-					<h2  class ="partnertitle" style="margin-top: 30px; ">Our  Partners</h2>
+					<h2  class ="partnertitle" style="margin-top: 20px; ">Our  Partners</h2>
 					 <section class="customer-logos slider" style="margin-top: 50px;">
 						<div class="slide"><a href=""><img src="img/partner/Brac_Bank.png"></a></div>
 						<div class="slide"><a href=""><img src="img/partner/City_Bank 1.png"></a></div>
@@ -454,6 +503,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 		<script src="js/script.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 		<script>
 		  AOS.init();
 		</script>
@@ -487,34 +537,6 @@
 
 		<!-- Script for slider hover image -->
 
-<script>
-	function sendMonyin(){
-		document.getElementById("sendMony").innerHTML='<img src="img/slider/slider1.png"/>'
-	
-	}
-	function sendMonyout(){
-	  document.getElementById("sendMony").innerHTML=""
-	}
-
-	function billPayin(){
-	  document.getElementById("billPay").innerHTML='<img src="img/slider/slider1.png"/>'
-	}
-	function billPayout(){
-	  document.getElementById("billPay").innerHTML=""
-	}
-	function corPoratein(){
-	  document.getElementById("corPorate").innerHTML='<img src="img/slider/slider1.png"/>'
-	}
-	function corPorateout(){
-	  document.getElementById("corPorate").innerHTML=""
-	}
-	function marChentin(){
-	  document.getElementById("marChent").innerHTML='<img src="img/slider/slider1.png"/>'
-	}
-	function marChentout(){
-	  document.getElementById("marChent").innerHTML=""
-	}
-	</script>
 <!-- Script for slider hover image end-->
 
 
@@ -556,6 +578,333 @@
 
 <!-- Subscription button feature -->
 
+<script>
+	$(function() {
+	  "use strict";
+	  var body = $("body"),
+		  // var slideCont = document.querySelector(".fa fa-circle-o"),
+		  // active = $(".slider ol li .auto-btn, .slider .controll"),
+		  active = $(".slider-main ol li ,  .slider-main .controll"),
+		  controll = $(".slider-main .controll"),
+		  playpause = $(".playpause"),
+		  sliderTime = 1,
+		  sliderWait = 3000,
+		  i = 999,
+		  autoRun,
+		  stop = false;
+	  // Reset
+	  $(".slider-main ul li:first").css("left", 0);
+	  // Run Slider
+	  function runSlider(what) {
+		  what.addClass("active").siblings("li, span").removeClass("active");
+	  }
+	  // slider gsap
+	  function gsapSlider(whose, left) {
+		  i++;
+		  if (whose.hasClass("active")) {
+			  TweenMax.fromTo(
+			  
+				  ".slider-main ul li.active",
+				  sliderTime,
+				  { zIndex: i, left: left },
+				  { left: 0 }
+			  );
+		  }
+	  }
+	  // Active
+	  active.on("mouseover", function() {
+		  runSlider($(this));
+	  });
+	  // Arrow left
+	  controll.first().on("click", function() {
+		  var slide = $(".slider-main ul li.active, .slider-main ol li.active, ").is(
+			  ":first-of-type"
+		  )
+			  ? $(".slider-main ul li:last, .slider-main ol li :last")
+			  : $(".slider-main ul li.active, .slider-main ol li.active").prev("li");
+		  runSlider(slide);
+		  gsapSlider(slide, "100%");
+	  });
+	  // Arrow right
+	  controll.last().on("click", function() {
+		  var slide = $(".slider-main ul li.active, .slider-main ol li.active").is(
+			  ":last-of-type"
+		  )
+			  ? $(".slider-main ul li:first, .slider-main ol li :first")
+			  : $(".slider-main ul li.active, .slider-main ol li .active").next("li");
+		  runSlider(slide);
+		  gsapSlider(slide, "-100%");
+	  });
+	  // Point
+	  $(".slider-main ol li ").on("mouseover", function() {
+		  var start = $(".slider-main ul li.active").index();
+		  var slide = $(".slider-main ul li").eq($(this).index());
+		  runSlider(slide);
+		  var end = $(".slider-main ul li.active").index();
+		  if (start > end) {
+			  gsapSlider(slide, "100%");
+		  }
+		  if (start < end) {
+			  gsapSlider(slide, "-100%");
+		  }
+	  });
+	  // Auto run slider
+	  function autoRunSlider() {
+		  if (body.css("direction") === "ltr" && stop === false) {
+			  autoRun = setInterval(function() {
+				  controll.last().click();
+			  }, sliderWait);
+		  } else if (body.css("direction") === "rtl" && stop === false) {
+			  autoRun = setInterval(function() {
+				  controll.first().click();
+			  }, sliderWait);
+		  }
+	  }
+	  autoRunSlider();
+	  // When hover
+	  active.on("mouseover", function() {
+		  if (stop === false) {clearInterval(autoRun);}
+	  });
+	  active.on("mouseout", function() {
+		  if (stop === false) {autoRunSlider();}
+	  });
+	  // play pause click
+  
+  
+  });
+  
+  </script>
+  
+  <script>
+	$(function() {
+	  "use strict1";
+	  var body = $("body"),
+		  active = $(".slider-main ol li , .slider-main .top-controll"),
+		  controll = $(".slider-main .top-controll"),
+		  playpause = $(".playpause"),
+		  sliderTime = 1,
+		  sliderWait = 3000,
+		  i = 999,
+		  autoRun,
+		  stop = false;
+	  // Reset
+	  $(".slider-popup-top ul li:first").css("left", 0);
+	  // Run Slider
+	  function runSlider(what) {
+		  what.addClass("active").siblings("li, span").removeClass("active");
+	  }
+	  // slider gsap
+	  function gsapSlider(whose, left) {
+		  i++;
+		  if (whose.hasClass("active")) {
+			  TweenMax.fromTo(
+				  ".slider-popup-top ul li.active",
+				  sliderTime,
+				  { zIndex: i, left: left },
+				  { left: 0 }
+			  );
+		  }
+	  }
+	  // Active
+	  active.on("mouseover", function() {
+		  runSlider($(this));
+	  });
+	  // Arrow left
+	  controll.first().on("click", function() {
+		  var slide = $(".slider-popup-top ul li.active, .slider-main ol li.active").is(
+			  ":first-of-type"
+		  )
+			  ? $(".slider-popup-top ul li:last, .slider-main  ol li:last")
+			  : $(".slider-popup-top ul li.active, .slider-main  ol li.active").prev("li");
+		  runSlider(slide);
+		  gsapSlider(slide, "100%");
+	  });
+	  // Arrow right
+	  controll.last().on("click", function() {
+		  var slide = $(".slider-popup-top ul li.active, .slider-main  ol li.active").is(
+			  ":last-of-type"
+		  )
+			  ? $(".slider-popup-top ul li:first, .slider-main  ol li:first")
+			  : $(".slider-popup-top ul li.active, .slider-main  ol li.active").next("li");
+		  runSlider(slide);
+		  gsapSlider(slide, "-100%");
+	  });
+	  // Point
+	  $(".slider-p ol li").on("mouseover", function() {
+		  var start = $(".slider-popup-top ul li.active").index();
+		  var slide = $(".slider-popup-top ul li").eq($(this).index());
+		  runSlider(slide);
+		  var end = $(".slider-popup-top ul li.active").index();
+		  if (start > end) {
+			  gsapSlider(slide, "100%");
+		  }
+		  if (start < end) {
+			  gsapSlider(slide, "-100%");
+		  }
+	  });
+	  // Auto run slider
+	  function autoRunSlider1() {
+		  if (body.css("direction") === "ltr" && stop === false) {
+			  autoRun = setInterval(function() {
+				  controll.last().click();
+			  }, sliderWait);
+		  } else if (body.css("direction") === "rtl" && stop === false) {
+			  autoRun = setInterval(function() {
+				  controll.first().click();
+			  }, sliderWait);
+		  }
+	  }
+	  autoRunSlider1();
+	  // When hover
+	  active.on("mouseenter", function() {
+		  if (stop === false) {clearInterval(autoRun);}
+	  });
+	  active.on("mouseleave", function() {
+		  if (stop === false) {autoRunSlider1();}
+	  });
+	
+  });
+  
+  </script> 
+   <script>
+	  $(function() {
+		"use strict2";
+		var body = $("body"),
+			active = $(".slider-main ol li, .slider-popup-bottom .bottom-controll"),
+			controll = $(".slider-popup-bottom .bottom-controll"),
+			playpause = $(".playpause"),
+			sliderTime = 1,
+			sliderWait = 3000,
+			i = 999,
+			autoRun,
+			stop = false;
+		// Reset
+		$(".slider-popup-bottom ul li:first").css("left", 0);
+		// Run Slider
+		function runSlider(what) {
+			what.addClass("active").siblings("li, span").removeClass("active");
+		}
+		// slider gsap
+		function gsapSlider(whose, left) {
+			i++;
+			if (whose.hasClass("active")) {
+				TweenMax.fromTo(
+					".slider-popup-bottom ul li.active",
+					sliderTime,
+					{ zIndex: i, left: left },
+					{ left: 0 }
+				);
+			}
+		}
+		// Active
+		active.on("mouseover", function() {
+			runSlider($(this));
+		});
+		// Arrow left
+		controll.first().on("click", function() {
+			var slide = $(".slider-popup-bottom ul li.active, .slider-p ol li.active").is(
+				":first-of-type"
+			)
+				? $(".slider-popup-bottom ul li:last, .slider-p ol li:last")
+				: $(".slider-popup-bottom ul li.active, .slider-p ol li.active").prev("li");
+			runSlider(slide);
+			gsapSlider(slide, "100%");
+		});
+		// Arrow right
+		controll.last().on("click", function() {
+			var slide = $(".slider-popup-bottom ul li.active, .slider-p ol li.active").is(
+				":last-of-type"
+			)
+				? $(".slider-popup-bottom ul li:first, .slider-p ol li:first")
+				: $(".slider-popup-bottom ul li.active, .slider-p ol li.active").next("li");
+			runSlider(slide);
+			gsapSlider(slide, "-100%");
+		});
+		// Point
+		$(".slider-p  li").on("mouseover", function() {
+			var start = $(".slider-popup-bottom ul li.active").index();
+			var slide = $(".slider-popup-bottom ul li").eq($(this).index());
+			runSlider(slide);
+			var end = $(".slider-popup-bottom ul li.active").index();
+			if (start > end) {
+				gsapSlider(slide, "100%");
+			}
+			if (start < end) {
+				gsapSlider(slide, "-100%");
+			}
+		});
+		// Auto run slider
+		function autoRunSlider1() {
+			if (body.css("direction") === "ltr" && stop === false) {
+				autoRun = setInterval(function() {
+					controll.last().click();
+				}, sliderWait);
+			} else if (body.css("direction") === "rtl" && stop === false) {
+				autoRun = setInterval(function() {
+					controll.first().click();
+				}, sliderWait);
+			}
+		}
+		autoRunSlider1();
+		// When hover
+		active.on("mouseover", function() {
+			if (stop === false) {clearInterval(autoRun);}
+		});
+		active.on("mouseout", function() {
+			if (stop === false) {autoRunSlider1();}
+		});
+	  
+	});
+	
+	</script>   
+  
+  
+  <script>
+	  function changePhase(obj) {
+  
+	var img = "";
+  
+	switch (obj.id) {
+	  case "title1":
+  
+	   img = '<img src="img/slider/sendmony.png" alt=""style=" margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/bilpay.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;   ">';
+	  //  img = '<img src="img/slider/bilpay.png" alt=""style="" style="margin-top:200px">';
+		break;
+	  case "title2":
+	  img = '<img src="img/slider/bilpay.png" alt=""style="  margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/sendmony.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;  ">';
+		break;
+	  case "title3":
+	  img = '<img src="img/slider/sendmony.png" alt=""style=" margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/bilpay.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;   ">';
+		break;
+	  case "title4":
+	  img = '<img src="img/slider/bilpay.png" alt=""style="  margin: 69px -190px ; width:260px;  z-index: 3000;  background-color: white; position: absolute; border-radius:8px;display: inline-block;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);animation: shakeX 50s infinite;padding-top: 10px;padding-left: 60px;padding-right: 60px;padding-bottom: 30px; "><img src="img/slider/sendmony.png" alt="" style="margin-top:246px; 	z-index: 2000; position: absolute; background-color: white;  border-radius: 8px;margin-left:50px;animation: shakeX 50s infinite;box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25); height: 73px;width: 263px; 220px; padding:5px;  ">';
+	  
+		break;
+	}
+  
+	document.getElementById("phases").innerHTML = img;
+  }
+  
+  
+  </script> 
+  
+  <script>
+		function sendMonyout(){
+		document.getElementById("phases").innerHTML= '';
+	  }
+  function billpayout(){
+		document.getElementById("phases").innerHTML= '';
+	  }
+  
+  function corporateout(){
+		document.getElementById("phases").innerHTML= '';
+	  }
+	  function  marchentout(){
+		document.getElementById("phases").innerHTML= '';
+	  }    
+  
+  </script>
+  
 
 	</body>
 </html>
