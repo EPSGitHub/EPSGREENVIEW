@@ -21,12 +21,6 @@ body{
 	background-repeat: no-repeat;
 	background-position: center left;
 	background-size: contain;
-
-	
-
-
-
-
 	/* background-image: url(../img/Border_background.svg);
 	background-position:  top corner ; 
 	background-repeat: no-repeat; */
@@ -39,6 +33,16 @@ body{
 
 	width: 100%;
 	height: 100px;
+	background: var(--green);
+	color:white;
+	font-family:'poppins',sans-serif;
+
+}
+
+.singlepagehead{
+
+	width: 100%;
+	height: 50px;
 	background: var(--green);
 	color:white;
 	font-family:'poppins',sans-serif;
@@ -1342,7 +1346,6 @@ padding-right: 330px;
 	font-weight: 900;
 	color: #F0F0F0;
 	padding: 20px 10px;
-	position: relative;
 	font-family: 'poppins',sans-serif;
 
 
@@ -1353,9 +1356,7 @@ padding-right: 330px;
 	font-weight: 900;
 	color: #F0F0F0;
 	padding: 20px 10px;
-	position: absolute;
 	color: black;
-	margin-left: 37%;
 	margin-top:-90px;
 	font-family: 'poppins',sans-serif;
 
@@ -1367,6 +1368,13 @@ padding-right: 330px;
 
 }
 
+.front_banner p{
+	margin-top:-8px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-family: 'poppins',sans-serif;
+
+}
 /* FAQ BANNER START*/
 
 .faq_banner{
@@ -1683,19 +1691,63 @@ padding-right: 330px;
 
 
 /*Service Single Start*/
+
+
+
+.service-single h1{
+	font-size: 80px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+	font-family: 'poppins',sans-serif;
+	text-align: center;
+}
+
+.service-single h5{
+	font-size: 25px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 38%;
+	margin-top:-90px;
+	font-family: 'poppins',sans-serif;
+
+}
+
+.service-single p{
+	
+	text-align: center;
+	margin-top: -25px;
+	
+}
+.service-single h5 span{
+	color:var(--green);
+}
+
+.boxstyle{
+	width: 950px;
+	height: 40px;
+	background: var(--green);
+	margin-left: 16%;
+
+	
+}
 .service-single{
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 	font-family:'poppins',sans-serif;
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
 	background: white;
 }
 
 .service-single img{
-	margin-top: 60px;
-	margin-bottom: 100px;
+	margin-top: 40px;
+	margin-bottom: 50px;
 }
 
-.service-single p{
+.service-single h6{
 	margin-top: 150px;
 }
 
@@ -1717,7 +1769,7 @@ border-radius: 8px;
 }
 
 .single_page_details{
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-bottom: 20px;
 }
  
@@ -1795,7 +1847,7 @@ border-radius: 8px;
 
 .adr h5{
 	font-size: 16px;
-	margin-top:50px;
+	margin-top:60px;
 	margin-bottom:15px;
 	font-family: 'poppins',sans-serif;
 }
@@ -1816,7 +1868,7 @@ border-radius: 8px;
 
 .contact_social{
 	margin-top: -40px;
-	margin-left: -25px;
+	margin-left: -20px;
 }
 .contact_social ul li{
 display: flex;
@@ -1952,9 +2004,7 @@ color:#666666;
 
 }
 
-#official_logo h5{
-	margin-left: 40%;
-}
+
 
 .epsmainlogo  {
 	width: 700px;
@@ -2108,6 +2158,37 @@ margin-left: 20%;
 *** Career Section Code Start
 */
 
+.career-head h1{
+	font-size: 80px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+
+	font-family: 'poppins',sans-serif;
+	text-align: center;
+}
+
+.career-head h5{
+	font-size: 25px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+
+	color: black;
+	text-align: center;
+	margin-top:-90px;
+	font-family: 'poppins',sans-serif;
+
+}
+
+.career-head h5 span{
+	color:var(--green);
+}
+.career-head p{
+	margin-top: -7px;
+	text-align: center;
+	
+}
 .career{
 
 	padding: 40px 0px 30px 0px;
@@ -2133,7 +2214,12 @@ margin-left: 20%;
 	padding: 20px  10px;
 	font-family: 'poppins',sans-serif;
 	margin-bottom: 100px;
+	margin-top:20px ;
 	
+}
+
+.career_cat .jobblock{
+	margin-top: 0px;
 }
 
 .career_cat ul{
@@ -2513,6 +2599,7 @@ margin-bottom: 10px;
 
 }
 
+
 .service_banner{
 	margin-left: 206px;
 
@@ -2813,11 +2900,11 @@ font-weight: 600;
 
 
 .front_banner h1{
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: 900;
 	color: #F0F0F0;
 	padding: 20px 10px;
-	position: relative;
+
 	
 }
 
@@ -2826,10 +2913,8 @@ font-weight: 600;
 	font-weight: 900;
 	color: #F0F0F0;
 	padding: 20px 10px;
-	position: absolute;
 	color: black;
-	margin-left: 30%;
-	margin-top:-63px;
+	margin-top:-66px;
 
 }
 
@@ -2837,6 +2922,15 @@ font-weight: 600;
 	color:var(--green);
 }
 
+.front_banner p{
+	margin-top:-20px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'poppins',sans-serif;
+
+	
+}
 
 /* Front Banner Mobile view End */
 
@@ -2920,18 +3014,52 @@ font-weight: 600;
 
 
 /* SINGLE SERVICE DETAILS START*/
-
-.service-single p{
-	margin-top: 10px;
+.service-single h1{
+	font-size: 36px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: relative;
+	font-family: 'poppins',sans-serif;
 	text-align: center;
 }
+.service-single h5{
+	font-size: 20px;
+	font-weight: 900;
+	color: #F0F0F0;
+	padding: 20px 10px;
+	position: absolute;
+	color: black;
+	margin-left: 25%;
+	margin-top:-68px;
+	font-family: 'poppins',sans-serif;
 
+}
+
+.service-single p{
+	
+	text-align: center;
+	margin-top: -25px;
+	font-size: 12px;
+	
+}
+.service-single h5 span{
+	color:var(--green);
+}
+
+
+
+.service-single h6{
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+}
 .service-single h3{
-	width: 340px;
+	width: 320px;
 	font-style: normal;
 font-weight: 700;
 font-size: 20px;
-line-height: 45px;
+line-height:35px;
 color: var(--green);
 margin-bottom: 50px;
 text-align: center;
@@ -3297,6 +3425,9 @@ bottom: 0px;
 
 	/*Career Section*/
 
+	.career_cat .jobblock{
+		margin-top: 50px;
+	}
 	.career_cat h5{
 		margin-left: 5px;
 	}
@@ -3448,6 +3579,13 @@ bottom: 0px;
 		margin-top:-90px;
 	}
 	
+	.front_banner p{
+		margin-top:-30px;
+		margin-bottom: 20px;
+		font-weight: 400;
+		font-family: 'poppins',sans-serif;
+		
+	}
 
 	.faq_banner h5{
 		font-size: 25px;
@@ -3598,9 +3736,7 @@ margin-left: -150px;
 		margin-left: 49px;
 		width: 894px;
 	}
-	  #popup p{
-	
-	}
+	 
 	.slider-popup-top {
 		margin-left: 700px;
 	}
@@ -3724,7 +3860,37 @@ margin-left: -150px;
 		
 		}
 		
+		.service-single h5{
+			font-size: 25px;
+			font-weight: 900;
+			color: #F0F0F0;
+			padding: 20px 10px;
+			position: absolute;
+			color: black;
+			margin-left: 30%;
+			margin-top:-90px;
+			font-family: 'poppins',sans-serif;
 		
+		}
+		
+		.service-single p{
+			
+			text-align: center;
+			margin-top: -25px;
+			
+		}
+		.service-single h5 span{
+			color:var(--green);
+		}
+		
+		.boxstyle{
+			width: 950px;
+			height: 40px;
+			background: var(--green);
+			margin-left: 16%;
+		
+			
+		}
 		
 		
 
@@ -3795,6 +3961,7 @@ margin-left: 75px;
 .slider-popup-bottom  {
 	margin-left: -381px;
 }
+
 
 
   }
